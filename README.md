@@ -4,7 +4,7 @@
 
 ## Summary 
 
-Building a machine learning classifier + familiarizing myself with tools learned in the first week of the BrainHack school.
+Building a machine learning classifier + familiarizing myself with tools learned in the first week of the BrainHack school. Details to be determined based on whether I collaborate with others.
 
 ## Project definition 
 
@@ -39,4 +39,4 @@ The data that I ultimately use will presumably depend on whether I work with oth
 ### Deliverables
 
 At the end of this project, I plan to have:
- - A classifier using at least one type of biosignal, trained using Compute Canada.
+ - A classifier trained using Compute Canada.
