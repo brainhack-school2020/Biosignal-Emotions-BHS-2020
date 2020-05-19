@@ -4,7 +4,7 @@
 
 ## Summary 
 
-Building a machine learning classifier + familiarizing myself with tools learned in the first week of the BrainHack school. Details to be determined based on whether I collaborate with others.
+Familiarizing myself with tools learned in the first week of the BrainHack school.
 
 ## Project definition 
 
@@ -21,15 +21,14 @@ Assuming that #2 is where I can make the most of the expertise of fellow BrainHa
 
 Tools and techniques I'm interested in familiarizing myself with:
  1.	High-performance computing: Compute Canada
- 2.	1+ Python library for machine learning (e.g. PyTorch)
- 3.	Biosignal pre-processing and feature extraction with Python
- 4.	Data visualization with Python
- 5.	GitHub
- 6.	Containerization (e.g. Singularity)
+ 2.	Preprocessing and feature extraction with Python
+ 3.	Data visualization with Python
+ 4.	GitHub
+ 5.	Python Virtual Environment
 
 ### Data 
 
-The data collection for my master’s project has been postponed due to Covid-19, so this is the perfect opportunity to play around with open data instead! Last week when I started thinking about what kind of project I’d like to do for the BrainHack school, I sent out a couple of emails requesting access to multi-modal emotion recognition databases. So far, I’ve gotten access to:
+Last week when I started thinking about what kind of project I’d like to do for the BrainHack school, I sent out a couple of emails requesting access to multi-modal emotion recognition databases. So far, I’ve gotten access to:
 
  * [The MAHNOB-HCI-Tagging database](https://mahnob-db.eu/hci-tagging/)
  * [DREAMER: A Database for Emotion Recognition through EEG and ECG Signals from Wireless Low-cost Off-the-Shelf Devices](https://ieeexplore.ieee.org/document/7887697)
@@ -38,5 +37,5 @@ The data that I ultimately use will presumably depend on whether I work with oth
 
 ### Deliverables
 
-At the end of this project, I plan to have:
- - A classifier trained using Compute Canada.
+At the end of this project, I plan to complete:
+ - Data preprocessing and feature extraction using Compute Canada.
