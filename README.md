@@ -38,10 +38,13 @@ Tools and techniques we plan to use:
 
 ### Data 
 
-So far, we have access to the following multi-modal emotion recognition databases: 
+So far, we have access to the following emotion-correlated biosignal databases: 
 
  - [The MAHNOB-HCI-Tagging database](https://mahnob-db.eu/hci-tagging/)
  - [DREAMER: A Database for Emotion Recognition through EEG and ECG Signals from Wireless Low-cost Off-the-Shelf Devices](https://ieeexplore.ieee.org/document/7887697)
+ - [A dataset recording joint EEG-fMRI during affective music listening](https://openneuro.org/datasets/ds002725/versions/1.0.0)
+ - [An EEG dataset recorded during affective music listening](https://openneuro.org/datasets/ds002721/versions/1.0.1)
+ - [AffectiveROAD system and database to assess driver's attention.](https://affect.media.mit.edu/share-data.php)
 
 ### Deliverables
 
