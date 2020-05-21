@@ -6,11 +6,11 @@
 
 *Project title* : **Biosignal processing for automatic emotion recognition**
 
-In this project we will be using multimodal datasets found from open data sources with the goal of using *bioprocessing* and *machine learning* techniques to perform *automatic emotion recognition*, mainly from *EEG signals*.
-The project will be performed using *python* and *high performance computing* to build a classifier recognizing distress in subjects.
-We will make a good use of *data visualization* and will be sharing our progress through a *notebook* for anyone interested.
+In this project we will be using multimodal datasets found from open data sources with the goal of using *biosignal processing* and *machine learning* techniques to perform *automatic emotion recognition*.
+The project will be performed using *Python* and *high performance computing* to build a classifier of discrete emotional states.
+We will make good use of *data visualization* and will be sharing our progress through a *notebook* for anyone interested.
 
-This project is a collaboration between Danielle Benesch and Achraf Kabbabi. Other fellow Brain Hack School 2020 participants are welcome to participate if their interests fit the proposed outline.
+Right now, we're a team of 2 people (Danielle and Achraf), but other fellow BrainHack School 2020 participants are very welcome to participate if their interests fit!
 
 ## Project definition 
 
