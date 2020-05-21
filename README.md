@@ -18,6 +18,14 @@ Danielle:
  2.	Biosignal-based automatic emotion recognition for the detection of sound-induced distress
 
  Assuming that #2 is where I can make the most of the expertise of fellow BrainHack school participants, I thought I could focus on biosignal processing for automatic emotion recognition during the project weeks.
+ 
+ Achraf :
+ 
+I am currently studying Biomedical Engineering at Polytechnique Montréal (M.Eng) and am enrolled in the Brain Hack School 2020 adventure for growing my technical skills as well as networking. I have been modestly introduced to NeuroImaging before enrolling in the biomedical engineering path and would like to broaden my knowledge of the field and sharpen my skills in it.
+
+My goal through the Brain Hack School 2020 is to learn as much as I can about modern ways of doing NeuroImaging, to improve my python skills through a hands-on multi-disciplinary project, and to exchange information and expertise with the other participants.
+
+The project idea is from Danielle Benesch with whom I will be collaborating.
 
 ### Tools 
 
