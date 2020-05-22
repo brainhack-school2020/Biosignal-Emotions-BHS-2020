@@ -19,3 +19,7 @@
 ## Determining classes for emotion recognition
 
 1. [Emotion Classification in Arousal Valence Model using MAHNOB-HCI Database](https://pdfs.semanticscholar.org/3750/b635d455fee489305b24ead4b7e9233b7209.pdf)
+
+## Scripts - Good practices
+
+1. https://github.com/hyruuk/saflow/blob/master/scripts/saflow_raw2BIDS.py for BIDS restructuration of raw EEG data (yharel109)
