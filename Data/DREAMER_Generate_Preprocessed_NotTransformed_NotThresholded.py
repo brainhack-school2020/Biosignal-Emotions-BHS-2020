@@ -4,10 +4,10 @@ import numpy as np
 import pandas as pd
 
 # load features extracted from preprocessed EEG and ECG data
-path_EEG='Extracted_EEG.csv'
-path_ECG='Extracted_ECG.csv'
-data_EEG=pd.read_csv(path_EEG).drop(["Unnamed: 0"],axis=1)
-data_ECG=pd.read_csv(path_ECG).drop(["Unnamed: 0"],axis=1)
+path_EEG='DREAMER_Extracted_EEG.csv'
+path_ECG='DREAMER_Extracted_ECG.csv'
+data_EEG=pd.read_csv(path_EEG).drop(['Unnamed: 0'],axis=1)
+data_ECG=pd.read_csv(path_ECG).drop(['Unnamed: 0'],axis=1)
 # load mat file containing raw biosignal, emotion, participant, and video data
 data=sio.loadmat('DREAMER.mat')
 
