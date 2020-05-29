@@ -12,6 +12,9 @@ from sklearn import preprocessing as pre
 from argparse import ArgumentParser
 from scipy import signal
 
+import matplotlib
+matplotlib.use('agg')
+
 import scipy.io as sio
 import neurokit2 as nk
 import pandas as pd
@@ -125,6 +128,75 @@ def feature_extraction_EEG_end_baseline(file_name_csv,raw,secs):
 def driver():
     description = "Biosignal Emotions project BHS 2020."
     parser = ArgumentParser(__file__, description)
+    parser.add_argument("dreamer_matfile", action="store",
+                        help="Path to raw data mat file, i.e. DREAMER.mat.")
+    parser.add_argument("dreamer_eeg_csv", action="store",
+                        help="")
+    parser.add_argument("threshold", action="store", default=0.4, type=float,
+                        help="")
+    parser.add_argument("mode", action="store",
+                        choices=["process", "store", "deleteeverything"],
+                        default="process",
+                        help="")
+    parser.add_argument("--n_datapoints", "-n", action="store", type=int,
+                        help="number of datapoints")
+    parser.add_argument("--crash", "-q", action="store_true")
+
+    results = parser.parse_args()
+
+    raw = sio.loadmat(results.dreamer_matfile)
+
+    df_ECG = preprocessing_and_feature_extraction_ECG('DREAMER_Extracted_EEG.csv', raw)
+    # print(df_ECG.head())
+
+    df_EEG = feature_extraction_EEG('DREAMER_Extracted_EEG.csv', raw)
+    # print(df_EEG.head())
+
+    last_four_secs_EEG = feature_extraction_EEG_end_baseline('Extracted_EEG_last4s.csv', raw, 4)
+    # print(last_four_secs_EEG.head())
+
+    # load features extracted from preprocessed EEG and ECG data
+    path_EEG='DREAMER_Extracted_EEG.csv'
+    path_ECG='DREAMER_Extracted_ECG.csv'
+    data_EEG=pd.read_csv(path_EEG).drop(['Unnamed: 0'],axis=1)
+    data_ECG=pd.read_csv(path_ECG).drop(['Unnamed: 0'],axis=1)
+    # load mat file containing raw biosignal, emotion, participant, and video data
+    raw=sio.loadmat(results.dreamer_matfile)
+
+    # create new dataframe with emotion, participant, and video data
+    a=np.zeros((23,18,9),dtype=object)
+    for participant in range(0,23):
+        for video in range(0,18):
+            a[participant,video,0]=raw['DREAMER'][0,0]['Data'][0,participant]['Age'][0][0][0]
+            a[participant,video,1]=raw['DREAMER'][0,0]['Data'][0,participant]['Gender'][0][0][0]
+            a[participant,video,2]=participant+1
+            a[participant,video,3]=video+1
+            a[participant,video,4]=['Searching for Bobby Fischer','D.O.A.', 'The Hangover', 'The Ring', '300',
+                      'National Lampoon\'s VanWilder', 'Wall-E', 'Crash', 'My Girl', 'The Fly',
+                      'Pride and Prejudice', 'Modern Times', 'Remember the Titans', 'Gentlemans Agreement',
+                      'Psycho', 'The Bourne Identitiy', 'The Shawshank Redemption', 'The Departed'][video]
+            a[participant,video,5]=['calmness', 'surprise', 'amusement', 'fear', 'excitement', 'disgust',
+                      'happiness', 'anger', 'sadness', 'disgust', 'calmness', 'amusement',
+                      'happiness', 'anger', 'fear', 'excitement', 'sadness', 'surprise'][video]
+            a[participant,video,6]=raw['DREAMER'][0,0]['Data'][0,participant]['ScoreValence'][0,0][video,0]
+            a[participant,video,7]=raw['DREAMER'][0,0]['Data'][0,participant]['ScoreArousal'][0,0][video,0]
+            a[participant,video,8]=raw['DREAMER'][0,0]['Data'][0,participant]['ScoreDominance'][0,0][video,0]
+    b=pd.DataFrame(a.reshape((23*18,a.shape[2])),columns=['Age','Gender','Participant','Video','Video_Name','Target_Emotion','Valence','Arousal','Dominance'])
+    # combine feature extraction dataframes with the new dataframe
+    all_data=pd.concat([data_EEG,data_ECG,b],axis=1)
+    print(all_data.head())
+    all_data.to_csv('DREAMER_Preprocessed_NotTransformed_NotThresholded.csv')
+
+    All_Features = pd.read_csv("DREAMER_Preprocessed_NotTransformed_NotThresholded.csv")
+    del All_Features['Unnamed: 0']
+    Last4s_EEG_Features = pd.read_csv('Extracted_EEG_last4s.csv')
+    del Last4s_EEG_Features['Unnamed: 0']
+    for column in All_Features.columns:
+        if not(All_Features[column].dtype == np.object):
+            All_Features[column]=(All_Features[column]-np.min(All_Features[column]))/(np.max(All_Features[column])-np.min(All_Features[column]))
+    for column in Last4s_EEG_Features.columns:
+        if not(Last4s_EEG_Features[column].dtype == np.object):
+            Last4s_EEG_Features[column]=(Last4s_EEG_Features[column]-np.min(Last4s_EEG_Features[column]))/(np.max(Last4s_EEG_Features[column])-np.min(Last4s_EEG_Features[column]))
 
 
 # main scripting details could go here
