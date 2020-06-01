@@ -21,8 +21,41 @@ import pandas as pd
 import numpy as np
 import math
 
+# Checklist :
+#   preprocessing_and_feature_extraction_EEG(raw)
+#   preprocessing_and_feature_extraction_ECG(raw)
+#   preprocessing_and_feature_extraction_EEG_baseline(raw,seconds)
+#   preprocessing_and_feature_extraction_ECG_baseline(raw,seconds min=40)
 
-def preprocessing_and_feature_extraction_ECG(file_name_csv,raw):
+# EEG Feature Extraction : feature_extraction_EEG
+def preprocessing_and_feature_extraction_EEG(raw):#(file_name_csv,raw):
+    EEG_tmp=np.zeros((23,18,42))
+    for participant in range(0,23):
+        for video in range(0,18):
+            for i in range(0,14):
+                B,S=[],[]
+                basl=raw['DREAMER'][0,0]['Data'][0,participant]['EEG'][0,0]['baseline'][0,0][video,0][:,i]
+                stim=raw['DREAMER'][0,0]['Data'][0,participant]['EEG'][0,0]['stimuli'][0,0][video,0][:,i]
+                B=preprocessing(basl,B)
+                S=preprocessing(stim,S)
+                Extrod=np.divide(S,B)
+                EEG_tmp[participant,video,3*i]=Extrod[0]
+                EEG_tmp[participant,video,3*i+1]=Extrod[1]
+                EEG_tmp[participant,video,3*i+2]=Extrod[2]
+    col=[]
+    for i in range(0,14):
+        col.append('psdtheta_'+str(i + 1)+'_un')
+        col.append('psdalpha_'+str(i + 1)+'_un')
+        col.append('psdbeta_'+str(i + 1)+'_un')
+    EEG=pd.DataFrame(EEG_tmp.reshape((23 * 18,EEG_tmp.shape[2])),columns=col)
+    scaler=pre.StandardScaler()
+    for i in range(len(col)):
+        EEG[col[i][:-3]]=scaler.fit_transform(EEG[[col[i]]])
+    EEG.drop(col,axis=1,inplace=True)
+    # EEG.to_csv(file_name_csv) # We decided not to use CSV files
+    return EEG
+
+def preprocessing_and_feature_extraction_ECG(raw):#(file_name_csv,raw):
     data_ECG={}
     for participant in range(0,23):
         for video in range(0,18):
@@ -49,6 +82,7 @@ def preprocessing_and_feature_extraction_ECG(file_name_csv,raw):
                 data_ECG=features_ecg
             else:
                 data_ECG=pd.concat([data_ECG,features_ecg],ignore_index=True)
+    return data_ECG
 
 
 def preprocessing(raw, feature):
@@ -69,32 +103,7 @@ def preprocessing(raw, feature):
     return feature
 
 
-def feature_extraction_EEG(file_name_csv,raw):
-    EEG_tmp=np.zeros((23,18,42))
-    for participant in range(0,23):
-        for video in range(0,18):
-            for i in range(0,14):
-                B,S=[],[]
-                basl=raw['DREAMER'][0,0]['Data'][0,participant]['EEG'][0,0]['baseline'][0,0][video,0][:,i]
-                stim=raw['DREAMER'][0,0]['Data'][0,participant]['EEG'][0,0]['stimuli'][0,0][video,0][:,i]
-                B=preprocessing(basl,B)
-                S=preprocessing(stim,S)
-                Extrod=np.divide(S,B)
-                EEG_tmp[participant,video,3*i]=Extrod[0]
-                EEG_tmp[participant,video,3*i+1]=Extrod[1]
-                EEG_tmp[participant,video,3*i+2]=Extrod[2]
-    col=[]
-    for i in range(0,14):
-        col.append('psdtheta_'+str(i + 1)+'_un')
-        col.append('psdalpha_'+str(i + 1)+'_un')
-        col.append('psdbeta_'+str(i + 1)+'_un')
-    EEG=pd.DataFrame(EEG_tmp.reshape((23 * 18,EEG_tmp.shape[2])),columns=col)
-    scaler=pre.StandardScaler()
-    for i in range(len(col)):
-        EEG[col[i][:-3]]=scaler.fit_transform(EEG[[col[i]]])
-    EEG.drop(col,axis=1,inplace=True)
-    EEG.to_csv(file_name_csv)
-    return EEG
+
 
 
 def feature_extraction_EEG_end_baseline(file_name_csv,raw,secs):
@@ -124,46 +133,8 @@ def feature_extraction_EEG_end_baseline(file_name_csv,raw,secs):
     EEG.to_csv(file_name_csv)
     return EEG
 
-
-def driver():
-    description = "Biosignal Emotions project BHS 2020."
-    parser = ArgumentParser(__file__, description)
-    parser.add_argument("dreamer_matfile", action="store",
-                        help="Path to raw data mat file, i.e. DREAMER.mat.")
-    parser.add_argument("dreamer_eeg_csv", action="store",
-                        help="")
-    parser.add_argument("threshold", action="store", default=0.4, type=float,
-                        help="")
-    parser.add_argument("mode", action="store",
-                        choices=["process", "store", "deleteeverything"],
-                        default="process",
-                        help="")
-    parser.add_argument("--n_datapoints", "-n", action="store", type=int,
-                        help="number of datapoints")
-    parser.add_argument("--crash", "-q", action="store_true")
-
-    results = parser.parse_args()
-
-    raw = sio.loadmat(results.dreamer_matfile)
-
-    df_ECG = preprocessing_and_feature_extraction_ECG('DREAMER_Extracted_EEG.csv', raw)
-    # print(df_ECG.head())
-
-    df_EEG = feature_extraction_EEG('DREAMER_Extracted_EEG.csv', raw)
-    # print(df_EEG.head())
-
-    last_four_secs_EEG = feature_extraction_EEG_end_baseline('Extracted_EEG_last4s.csv', raw, 4)
-    # print(last_four_secs_EEG.head())
-
-    # load features extracted from preprocessed EEG and ECG data
-    path_EEG='DREAMER_Extracted_EEG.csv'
-    path_ECG='DREAMER_Extracted_ECG.csv'
-    data_EEG=pd.read_csv(path_EEG).drop(['Unnamed: 0'],axis=1)
-    data_ECG=pd.read_csv(path_ECG).drop(['Unnamed: 0'],axis=1)
-    # load mat file containing raw biosignal, emotion, participant, and video data
-    raw=sio.loadmat(results.dreamer_matfile)
-
-    # create new dataframe with emotion, participant, and video data
+def Participants_Data(raw):
+    # Create new dataframe with emotion, participant, and video data
     a=np.zeros((23,18,9),dtype=object)
     for participant in range(0,23):
         for video in range(0,18):
@@ -178,28 +149,96 @@ def driver():
             a[participant,video,5]=['calmness', 'surprise', 'amusement', 'fear', 'excitement', 'disgust',
                       'happiness', 'anger', 'sadness', 'disgust', 'calmness', 'amusement',
                       'happiness', 'anger', 'fear', 'excitement', 'sadness', 'surprise'][video]
-            a[participant,video,6]=raw['DREAMER'][0,0]['Data'][0,participant]['ScoreValence'][0,0][video,0]
-            a[participant,video,7]=raw['DREAMER'][0,0]['Data'][0,participant]['ScoreArousal'][0,0][video,0]
-            a[participant,video,8]=raw['DREAMER'][0,0]['Data'][0,participant]['ScoreDominance'][0,0][video,0]
+            a[participant,video,6]=raw['DREAMER'][0,0]['Data'][0,participant]['ScoreValence'][0,0][video,0].astype(float)
+            a[participant,video,7]=raw['DREAMER'][0,0]['Data'][0,participant]['ScoreArousal'][0,0][video,0].astype(float)
+            a[participant,video,8]=raw['DREAMER'][0,0]['Data'][0,participant]['ScoreDominance'][0,0][video,0].astype(float)
     b=pd.DataFrame(a.reshape((23*18,a.shape[2])),columns=['Age','Gender','Participant','Video','Video_Name','Target_Emotion','Valence','Arousal','Dominance'])
-    # combine feature extraction dataframes with the new dataframe
-    all_data=pd.concat([data_EEG,data_ECG,b],axis=1)
-    print(all_data.head())
-    all_data.to_csv('DREAMER_Preprocessed_NotTransformed_NotThresholded.csv')
+    ## combine feature extraction dataframes with the new dataframe
+    #all_data=pd.concat([data_EEG,data_ECG,b],axis=1)
+    return b
 
-    All_Features = pd.read_csv("DREAMER_Preprocessed_NotTransformed_NotThresholded.csv")
-    del All_Features['Unnamed: 0']
-    Last4s_EEG_Features = pd.read_csv('Extracted_EEG_last4s.csv')
-    del Last4s_EEG_Features['Unnamed: 0']
-    for column in All_Features.columns:
-        if not(All_Features[column].dtype == np.object):
-            All_Features[column]=(All_Features[column]-np.min(All_Features[column]))/(np.max(All_Features[column])-np.min(All_Features[column]))
-    for column in Last4s_EEG_Features.columns:
-        if not(Last4s_EEG_Features[column].dtype == np.object):
-            Last4s_EEG_Features[column]=(Last4s_EEG_Features[column]-np.min(Last4s_EEG_Features[column]))/(np.max(Last4s_EEG_Features[column])-np.min(Last4s_EEG_Features[column]))
+def minmax(df):
+    for column in df.columns:
+            if (((df[column].dtype == np.int64) or (df[column].dtype == np.float_)) or (column=='Valence' or column=='Arousal' or column=='Dominance') and not(column=="Video")):#if not(df[column].dtype == np.object) and not(column=="Video"): # : Fails for integers
+                if not((np.max(df[column])-np.min(df[column]))==0):
+                    df[column]=(df[column]-np.min(df[column]))/(np.max(df[column])-np.min(df[column]))
+    return df
+
+def driver():
+    # Description
+    description = "Biosignal Emotions project BHS 2020 \n usage : DREAMER_main.py <dreamer_matfile> <Biosignal_Option> <Biosignal_Processing_Function> [--Emotion_Option <emotion>] [--Add_Target_Emotion <target>] \n example : DREAMER_main.py Data/DREAMER.mat eeg --Add_Target_Emotion Disgust --Add_Target_Emotion Fear"
+    parser = ArgumentParser(__file__, description)
+    # Input files :
+    parser.add_argument("dreamer_matfile",action="store",
+                        help="Path/Name to raw data .mat file : DREAMER.mat")
+    # Biosignal options: EEG, ECG, or both
+    parser.add_argument("Biosignal_Option",action="store",choices=["eeg", "ecg", "both"],default="both",help="Biosignal option : 'eeg', 'ecg', or 'both'")
+    # Biosignal processing options: whether to divide by the baseline, minmax scaling
+    ##parser.add_argument("--Biosignal_Processing_Function", action="store",
+    ##                    choices=["preprocessing_and_feature_extraction_ECG","preprocessing_and_feature_extraction_ECG"],
+    ##                    default="preprocessing_and_feature_extraction_EEG",
+    ##                    help="Biosignal Processing Function to be executed : preprocessing_and_feature_extraction_ECG, preprocessing_and_feature_extraction_EEG, (minmax scaling, dividing by the baseline)")
+    parser.add_argument("--Scaling_Option", action="store",
+                        choices=["minmax","none"],
+                        default="minmax",
+                        help="Scaling option for all the features : minmax (default), none")
+    # Emotion options: valence, arousal, thresholded valence/arousal after minmax scaling per participant
+    parser.add_argument("--Emotion_Option", action="store", choices=["Valence_High","Valence_Low","Arousal_High","Arousal_Low"], default="Valence_High", help="Emotion options (Thresholded valence/arousal after minmax scaling per participant) : Valence (High/Low), Arousal (High/Low)")
+    # target emotion (all target emotions, just disgust and anger vs. calmness).
+    # the options chosen for each should be listed in columns of the output dataframe
+    parser.add_argument("--Add_Target_Emotion", dest="Target_Emotions", action="append", help="Add a target emotion : All, Amusement,Excitement, Happiness, Calmness, Anger, Disgust, Fear, Sadness, Surprise")#choices=["All", "Amusement","Excitement", "Happiness", "Calmness", "Anger", "Disgust", "Fear", "Sadness", "Surprise"], default="All", help="Target emotions (list) : All, Amusement,Excitement, Happiness, Calmness, Anger, Disgust, Fear, Sadness, Surprise")
+    # --- Execute the parsing ---
+    results = parser.parse_args()
+    # --- Create a DataFrame containing the parsing summary
+    # --- Convert the Argparse's namespace to a dictionary via vars( ) and convert the resulting dictionary into a DataFrame via pd.DataFrame( )
+    df_Configuration = pd.DataFrame(vars(results))
+    print("Configuration DataFrame:")
+    print(df_Configuration)
+    # Load the .MAT file
+    print("Loading "+str(results.dreamer_matfile)+" ...")
+    raw = sio.loadmat(results.dreamer_matfile)
+    print("Success")
+    
 
 
-# main scripting details could go here
+    ### Processing pipeline :
+    ## 1. Create a DataFrame containing the Features, according to the user choice for Biosignals (eeg,ecg,both)
+    df_Features=pd.DataFrame()
+    if results.Biosignal_Option=="eeg":
+        print("Creating a DataFrame containing the Features for EEG only ... (This may take a few minutes)")
+        df_Features = preprocessing_and_feature_extraction_EEG(raw)
+        print("Success")
+        #print(df_Features)
+        #return df_Features
+    elif results.Biosignal_Option=="ecg":
+        print("Creating a DataFrame containing the Features for ECG only ... (This may take a few hours)")
+        df_Features = preprocessing_and_feature_extraction_ECG(raw)
+        print("Success")
+        #return df_Features
+    elif results.Biosignal_Option=="both":
+        print("Creating a DataFrame containing the Features for EEG and ECG ... (This may take a few hours)")
+        df_EEG = preprocessing_and_feature_extraction_EEG(raw)
+        df_ECG = preprocessing_and_feature_extraction_ECG(raw)
+        df_Features = pd.concat([df_EEG, df_ECG], axis=1)
+        print("Success")
+        #return df_Features
+    print(df_Features)
+    ## 2. Add Participant's data :
+    print("Reading Participant's data ...")
+    df_Participants_Data = Participants_Data(raw)
+    print("Success")
+    print("Concatenating Participant's data into the Features DataFrama")
+    df_Features = pd.concat([df_Features,df_Participants_Data],axis=1)
+    print("Success")
+    ## 3. Scaling of all numerical data : minmax (default)
+    if(results.Scaling_Option=="minmax"):
+        print("Scaling (minmax) ...")
+        df_Features=minmax(df_Features)
+        print("Success")
+    else:
+        print("No scaling. Skipping this step.")
+    print(df_Features)
+
+# Main scripting details
 if __name__ == "__main__":
     driver()
-
