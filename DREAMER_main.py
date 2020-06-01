@@ -174,10 +174,6 @@ def driver():
     # Biosignal options: EEG, ECG, or both
     parser.add_argument("Biosignal_Option",action="store",choices=["eeg", "ecg", "both"],default="both",help="Biosignal option : 'eeg', 'ecg', or 'both'")
     # Biosignal processing options: whether to divide by the baseline, minmax scaling
-    ##parser.add_argument("--Biosignal_Processing_Function", action="store",
-    ##                    choices=["preprocessing_and_feature_extraction_ECG","preprocessing_and_feature_extraction_ECG"],
-    ##                    default="preprocessing_and_feature_extraction_EEG",
-    ##                    help="Biosignal Processing Function to be executed : preprocessing_and_feature_extraction_ECG, preprocessing_and_feature_extraction_EEG, (minmax scaling, dividing by the baseline)")
     parser.add_argument("--Scaling_Option", action="store",
                         choices=["minmax","none"],
                         default="minmax",
@@ -238,7 +234,10 @@ def driver():
     else:
         print("No scaling. Skipping this step.")
     print(df_Features)
+    return df_Features
 
 # Main scripting details
 if __name__ == "__main__":
-    driver()
+    # Step 1 : Preprocessing
+    df_Features = driver()
+    # Step 2 : Machine Learning (TODO)
