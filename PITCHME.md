@@ -1,1 +1,1 @@
-<iframe src="https://raw.githubusercontent.com/brainhack-school2020/Biosignal-Emotions-BHS-2020/master/docs/index.html" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0"></iframe>
+<iframe src="https://brainhack-school2020.github.io/Biosignal-Emotions-BHS-2020/" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0"></iframe>
