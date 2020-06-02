@@ -179,7 +179,7 @@ def driver():
                         default="minmax",
                         help="Scaling option for all the features : minmax (default), none")
     # Emotion options: valence, arousal, thresholded valence/arousal after minmax scaling per participant
-    parser.add_argument("--Emotion_Option", action="store", choices=["Valence_High","Valence_Low","Arousal_High","Arousal_Low"], default="Valence_High", help="Emotion options (Thresholded valence/arousal after minmax scaling per participant) : Valence (High/Low), Arousal (High/Low)")
+    parser.add_argument("--Emotion_Option", action="store", choices=["1","2","3","4"], default="1", help="Emotion options:  1 : Valence_High and Arousal_High \t 2 : Valence_High and Arousal_Low \t 3 : Valence_Low and Arousal_High \t 4 : Valence_Low and Arousal_Low")
     # target emotion (all target emotions, just disgust and anger vs. calmness).
     # the options chosen for each should be listed in columns of the output dataframe
     parser.add_argument("--Add_Target_Emotion", dest="Target_Emotions", action="append", help="Add a target emotion : All, Amusement,Excitement, Happiness, Calmness, Anger, Disgust, Fear, Sadness, Surprise")#choices=["All", "Amusement","Excitement", "Happiness", "Calmness", "Anger", "Disgust", "Fear", "Sadness", "Surprise"], default="All", help="Target emotions (list) : All, Amusement,Excitement, Happiness, Calmness, Anger, Disgust, Fear, Sadness, Surprise")
