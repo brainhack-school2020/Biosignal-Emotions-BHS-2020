@@ -136,13 +136,12 @@ Pearson's correlation
 
 #### What we learned in the BHS2020
 
-- Theoretical novelties : a lot !
 - Modern tools for coding and IT
 - Distance teamwork (GitHub)
 - Project organization
 - Better Python skills
 - Modern data visualization tools and practices
-- Time flies !
+- OpenScience mindset and good practices
 
 ---
 
