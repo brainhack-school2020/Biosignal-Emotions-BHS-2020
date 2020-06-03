@@ -74,7 +74,7 @@ Example for ECG : 2 lines to extract Features !
 ![width=400](images/basl.gif)
 ![width=400](images/stim.gif)
 
-Hard to extract relevant features from so many Biosignals !
+Challenge : Extract relevant features from all this !
 
 ---
 
