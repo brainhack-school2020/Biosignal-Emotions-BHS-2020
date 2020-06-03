@@ -4,7 +4,9 @@
 ##### AKA Danielle & Achraf
 <sup><sub>Made with GitPitch (thank you Agah!)</sub></sup>
 
-<sup><sub> Link to this presentation : https://gitpitch.com/brainhack-school2020/Biosignal-Emotions-BHS-2020 </sub></sup>
+<sup><sub> Link to this presentation :
+  
+  https://gitpitch.com/brainhack-school2020/Biosignal-Emotions-BHS-2020 </sub></sup>
 
 ---
 
