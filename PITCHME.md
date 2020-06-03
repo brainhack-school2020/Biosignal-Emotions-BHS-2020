@@ -10,15 +10,19 @@
 
 ---
 
-# Hook !
+# Punchline !
 
 
 ---
 
-# Outline 
+## Outline 
 
-1. Test
-2. Test2
+1. Project definition
+2. Tools
+3. Biosignals data
+4. Emotional data
+5. Machine Learning aspect
+6. What we learned in BHS2020
 
 ---
 
@@ -69,8 +73,8 @@ Example for ECG : 2 lines to extract Features !
 
 <sup><sub><sub>23 subjects x 18 videos x 2 paradigms = 828 EEG recordings (x14 electrodes)!</sub></sub></sup>
 
-![width=300](images/stim.gif)
-![width=300](images/basl.gif)
+![width=400](images/basl.gif)
+![width=400](images/stim.gif)
 
 Hard to extract relevant features from so many Biosignals !
 
@@ -89,16 +93,16 @@ Maximum of the PSDs for each of the 14 electrodes
 ---
 
 ### Biosignals preprocessing : Features extraction
-### ECG
-![width=100](images/ECG_features.png)
+ECG
+![width=200](images/ECG_features.png)
 
-Neurokit2 automatically extracts features
+<sub><sub>Neurokit2 automatically extracts features</sub></sub>
 
 ---
 
 ### Exploring the data
-### EEG
-![width=100](images/plotly_EEG.gif)
+EEG
+![width=200](images/plotly_EEG.gif)
 
 ---
 
@@ -134,6 +138,11 @@ Neurokit2 automatically extracts features
 ---
 
 ## What we learned in the BHS2020
+
+- Distance teamwork
+- Enhanced our Python skills
+- Modern data visualization tools and practices
+
 
 ---
 
