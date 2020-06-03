@@ -2,7 +2,7 @@
 
 #### by the Effective Affective Team 
 ##### (AKA Danielle & Achraf)
-Made with GitPitch (thank you Adah!)
+<sub>Made with GitPitch (thank you Adah!)</sub>
 
 ---
 
@@ -12,8 +12,10 @@ Made with GitPitch (thank you Adah!)
 2. Test2
 
 ---
-
+@snap[north span-25]
 ### Foo
+@snapend
+
 @snap[south span-100]
 <iframe src="https://brainhack-school2020.github.io/Biosignal-Emotions-BHS-2020/" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0"></iframe>
 @snapend
