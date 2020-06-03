@@ -13,7 +13,6 @@
 # Hook !
 
 
-
 ---
 
 # Outline 
@@ -42,12 +41,16 @@ DREAMER dataset: Participants were shown videos intended to elicit certain emoti
 ![width=100](images/scipy.png)
 ![width=100](images/scipy_importexample.png)
 ![width=100](images/scipy_signalexample.png)
+### Plotly
+![width=100](images/plotly.png)
+
+---
+
+## Tools
 ### Neurokit2
 ![width=100](images/neurokit2.png)
 ![width=100](images/neurokit2_importexample.png)
 ![width=100](images/neurokit2_ecgdemo.png)
-### Plotly
-![width=100](images/plotly.png)
 
 ---
 
@@ -100,6 +103,10 @@ DREAMER dataset: Participants were shown videos intended to elicit certain emoti
 @snap[south span-100]
 <iframe src="https://brainhack-school2020.github.io/Biosignal-Emotions-BHS-2020/DREAMER_group_cross_validation.html" width="1000" height="500" frameborder="0" marginwidth="0" marginheight="0"></iframe>
 @snapend
+
+---
+
+## What we learned in the BHS2020
 
 ---
 
