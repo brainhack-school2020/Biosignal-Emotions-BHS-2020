@@ -102,7 +102,7 @@ EEG & ECG
 ![width=800](images/plotly_ECG.gif)
 
 ---
-### Valence and Arousal ↔ Biosignal Features
+#### Subjective ratings ↔ Physiological Features ?
 
 Pearson's correlation
 
