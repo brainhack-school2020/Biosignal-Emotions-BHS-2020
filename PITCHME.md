@@ -8,12 +8,27 @@
 
 ### Hook !
 
+
+
 ---
 
 ### Outline 
 
 1. Test
 2. Test2
+
+---
+
+### Project idea
+
+# Goal 
+Predicting affective states based on biosignals for automatic stress detection in a wearable
+
+# Dataset
+
+DREAMER dataset: Participants were shown videos intended to elicit certain emotions while wearing an EEG headset and ECG sensors
+
+(The DREAMER dataset must be requested to the authors : https://ieeexplore.ieee.org/document/7887697 )
 
 ---
 
@@ -29,61 +44,44 @@
 ---
 
 ### Tools
-
 # Scipy
-
 ![width=100](images/scipy.png)
 ![width=100](images/scipy_importexample.png)
 ![width=100](images/scipy_signalexample.png)
-
 # Neurokit2
-
 ![width=100](images/neurokit2.png)
 ![width=100](images/neurokit2_importexample.png)
 ![width=100](images/neurokit2_ecgdemo.png)
-
 # Plotly
-
 ![width=100](images/plotly.png)
 
 ---
 
 ### Big data : Overview
-
-![width=100](images/stim.gif)
-![width=100](images/basl.gif)
+![width=100](images/stim.gif) ![width=100](images/basl.gif)
 
 ---
 
 ### Biosignals preprocessing : Features extraction
-
-## EEG
-
-![width=100](images/EEG_features.png)
-
-## ECG
-
-![width=100](images/ECG_features.png)
+## EEG                        ECG
+![width=100](images/EEG_features.png) ![width=100](images/ECG_features.png)
 
 ---
 
-### Hoping for correlation
-
-## Pearson's correlation : Valence and Arousal versus Biosignal Features
-
-![width=100](images/pearson_eeg_ecg.png)
-
----
-
-### Interactive visualization : Exploration
-
+### Exploring the data
 ## EEG
-
 ![width=100](images/plotly_EEG.gif)
 
-## ECG
+---
 
+### Exploring the data
+## ECG
 ![width=100](images/plotly_ECG.gif)
+
+---
+### Valence and Arousal versus Biosignal Features
+## Pearson's correlation
+![width=100](images/pearson_eeg_ecg.png)
 
 ---
 
