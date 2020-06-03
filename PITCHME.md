@@ -12,6 +12,7 @@
 2. Test2
 
 ---
+
 @snap[north span-100]
 ### Emotion data
 @snapend
@@ -21,6 +22,7 @@
 @snapend
 
 ---
+
 @snap[north span-100]
 ### Cross-validation
 @snapend
@@ -30,4 +32,5 @@
 @snapend
 
 ---
+
 # Thank you!
