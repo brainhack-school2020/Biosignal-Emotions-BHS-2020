@@ -108,6 +108,8 @@ Pearson's correlation
 
 ![width=800](images/pearson_eeg_ecg.png)
 
+##### Still challenging to find relevant features for automatic emotion recognition ...
+
 ---
 
 @snap[north span-100]
