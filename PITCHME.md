@@ -38,34 +38,61 @@ DREAMER dataset: Participants were shown videos intended to elicit certain emoti
 
 ## Tools
 ### Scipy
-![width=100](images/scipy.png)
-![width=100](images/scipy_importexample.png)
-![width=100](images/scipy_signalexample.png)
+![width=200](images/scipy.png)
+![width=200](images/scipy_importexample.png)
+![width=200](images/scipy_signalexample.png)
+- Can read .MAT files in python
+
+-Example for EEG :
+Easy specification of Theta, Alpha, Beta bands
+Filter the signal
+Compute PSD (Welch)
+
 ### Plotly
 ![width=100](images/plotly.png)
+
+Interactive data visualization (Exploration)
 
 ---
 
 ## Tools
 ### Neurokit2
 ![width=500](images/neurokit2.png)
-![width=500](images/neurokit2_importexample.png)
+![width=600](images/neurokit2_importexample.png)
+
+Example for ECG : 2 lines to extract Features !
 ![width=500](images/neurokit2_ecgdemo.png)
 
 ---
 
 ### Big data : Overview
 
-<sup><sub>23 subjects x 18 videos x 2 paradigms = 828 EEG recordings (x14 electrodes) !</sub></sup>
+<sup><sub><sub>23 subjects x 18 videos x 2 paradigms = 828 EEG recordings (x14 electrodes)!</sub></sub></sup>
 
 ![width=300](images/stim.gif)
 ![width=300](images/basl.gif)
 
+Hard to extract relevant features from so many Biosignals !
+
 ---
 
 ### Biosignals preprocessing : Features extraction
-### EEG  <br/> ECG
-![width=100](images/EEG_features.png) ![width=100](images/ECG_features.png)
+### EEG
+![width=100](images/EEG_features.png)
+
+Theta band : 8Hz - 16Hz
+Alpha band : 16Hz - 26 Hz
+Beta band   : 26 Hz - 60Hz
+
+Maximum of the PSDs for each of the 14 electrodes
+
+---
+
+### Biosignals preprocessing : Features extraction
+### ECG
+![width=100](images/ECG_features.png)
+
+Neurokit2 automatically extracts features
 
 ---
 
