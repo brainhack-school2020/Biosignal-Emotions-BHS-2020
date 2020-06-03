@@ -48,39 +48,39 @@ DREAMER dataset: Participants were shown videos intended to elicit certain emoti
 
 ## Tools
 ### Neurokit2
-![width=100](images/neurokit2.png)
-![width=100](images/neurokit2_importexample.png)
-![width=100](images/neurokit2_ecgdemo.png)
+![width=500](images/neurokit2.png)
+![width=500](images/neurokit2_importexample.png)
+![width=500](images/neurokit2_ecgdemo.png)
 
 ---
 
-## Big data : Overview
+### Big data : Overview
 
-23 subjects x 18 videos x 2 paradigms = 828 EEG recordings !
-(+14 electrodes per EEG recording)
+<sup><sub>23 subjects x 18 videos x 2 paradigms = 828 EEG recordings (x14 electrodes) !</sub></sup>
 
-![width=100](images/stim.gif) ![width=100](images/basl.gif)
+![width=300](images/stim.gif)
+![width=300](images/basl.gif)
 
 ---
 
-## Biosignals preprocessing : Features extraction
-### EEG  <br /><br /><br /><br /><br /><br /><br /><br /> ECG
+### Biosignals preprocessing : Features extraction
+### EEG  <br/> ECG
 ![width=100](images/EEG_features.png) ![width=100](images/ECG_features.png)
 
 ---
 
-## Exploring the data
+### Exploring the data
 ### EEG
 ![width=100](images/plotly_EEG.gif)
 
 ---
 
-## Exploring the data
+### Exploring the data
 ### ECG
 ![width=100](images/plotly_ECG.gif)
 
 ---
-## Valence and Arousal versus Biosignal Features
+### Valence and Arousal versus Biosignal Features
 ### Pearson's correlation
 ![width=100](images/pearson_eeg_ecg.png)
 
