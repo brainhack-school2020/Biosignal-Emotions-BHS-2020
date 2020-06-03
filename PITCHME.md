@@ -1,8 +1,8 @@
 ### Biosignal processing for automatic emotion recognition
 
 #### by the Effective Affective Team 
-##### (AKA Danielle & Achraf)
-<sub>Made with GitPitch (thank you Adah!)</sub>
+##### AKA Danielle & Achraf
+<sup><sub>Made with GitPitch (thank you Adah!)</sub></sup>
 
 ---
 
@@ -13,7 +13,7 @@
 
 ---
 @snap[north span-100]
-### What to predict?
+### Emotion data
 @snapend
 
 @snap[south span-100]
@@ -28,3 +28,6 @@
 @snap[south span-100]
 <iframe src="https://brainhack-school2020.github.io/Biosignal-Emotions-BHS-2020/DREAMER_group_cross_validation.html" width="1000" height="500" frameborder="0" marginwidth="0" marginheight="0"></iframe>
 @snapend
+
+---
+# Thank you!
