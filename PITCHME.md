@@ -45,17 +45,22 @@ DREAMER dataset: Participants were shown videos intended to elicit certain emoti
 ![width=200](images/scipy.png)
 ![width=200](images/scipy_importexample.png)
 ![width=200](images/scipy_signalexample.png)
+<sup><sub>
 - Can read .MAT files in python
 
 -Example for EEG :
+
 Easy specification of Theta, Alpha, Beta bands
+
 Filter the signal
+
 Compute PSD (Welch)
+</sub></sup>
 
 ### Plotly
-![width=100](images/plotly.png)
+![width=200](images/plotly.png)
 
-Interactive data visualization (Exploration)
+<sup><sub> Interactive data visualization (Exploration) </sub></sup>
 
 ---
 
@@ -81,19 +86,25 @@ Hard to extract relevant features from so many Biosignals !
 ---
 
 ### Biosignals preprocessing : Features extraction
-### EEG
+
+EEG
+
 ![width=100](images/EEG_features.png)
 
+<sup><sub>
 Theta band : 8Hz - 16Hz
 Alpha band : 16Hz - 26 Hz
 Beta band   : 26 Hz - 60Hz
 
 Maximum of the PSDs for each of the 14 electrodes
+</sub></sup>
 
 ---
 
 ### Biosignals preprocessing : Features extraction
+
 ECG
+
 ![width=200](images/ECG_features.png)
 
 <sub><sub>Neurokit2 automatically extracts features</sub></sub>
@@ -101,14 +112,14 @@ ECG
 ---
 
 ### Exploring the data
-EEG
-![width=200](images/plotly_EEG.gif)
+
+![width=800](images/plotly_EEG.gif)
 
 ---
 
 ### Exploring the data
-### ECG
-![width=100](images/plotly_ECG.gif)
+
+![width=800](images/plotly_ECG.gif)
 
 ---
 ### Valence and Arousal versus Biosignal Features
