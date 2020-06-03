@@ -84,23 +84,9 @@ EEG
 
 ![width=200](images/EEG_features.png)
 
-<sup><sub> Theta band : 8Hz - 16Hz </sub></sup>
-<sup><sub> Alpha band : 16Hz - 26 Hz </sub></sup>
-<sup><sub> Beta band   : 26 Hz - 60Hz </sub></sup>
+<sup><sub> ECG : Features = Maximum of the PSDs for each of the 14 electrodes for each band : Theta (8-16Hz), Alpha (16-26Hz), Beta (26-60Hz)</sub></sup>
 
-<sup><sub> Features = Maximum of the PSDs for each of the 14 electrodes </sub></sup>
-
----
-
-### Biosignals preprocessing : Features extraction
-
-ECG
-
-![width=200](images/ECG_features.png)
-
-<sub><sub>Neurokit2 automatically extracts features</sub></sub>
-
-<sub><sub>e.g. Mean Heart Rate, Heart Rate Variability</sub></sub>
+<sub><sub>Neurokit2 automatically extracts features e.g. Mean Heart Rate, Heart Rate Variability</sub></sub>
 
 ---
 
