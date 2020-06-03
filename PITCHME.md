@@ -48,7 +48,7 @@ DREAMER dataset: Participants were shown videos intended to elicit certain emoti
 
 <sup><sub> Can read .MAT files in python </sub></sup>
 
-<sup><sub> Example for EEG : Easy specification of bands (Theta, Alpha, Beta), filtering, PSD</sub></sup>
+<sup><sub> Example for EEG : Easy specification of bands (Theta, Alpha, Beta), PSD</sub></sup>
 
 
 ![width=200](images/plotly.png)
