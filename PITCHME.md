@@ -78,19 +78,17 @@ Challenge : Extract relevant features from all this !
 
 ---
 
-### Biosignals preprocessing : Features extraction
+#### Biosignals preprocessing : Features extraction
 
 EEG
 
-![width=100](images/EEG_features.png)
+![width=200](images/EEG_features.png)
 
-<sup><sub>
-Theta band : 8Hz - 16Hz
-Alpha band : 16Hz - 26 Hz
-Beta band   : 26 Hz - 60Hz
+<sup><sub> Theta band : 8Hz - 16Hz </sub></sup>
+<sup><sub> Alpha band : 16Hz - 26 Hz </sub></sup>
+<sup><sub> Beta band   : 26 Hz - 60Hz </sub></sup>
 
-Maximum of the PSDs for each of the 14 electrodes
-</sub></sup>
+<sup><sub> Features = Maximum of the PSDs for each of the 14 electrodes </sub></sup>
 
 ---
 
@@ -101,6 +99,8 @@ ECG
 ![width=200](images/ECG_features.png)
 
 <sub><sub>Neurokit2 automatically extracts features</sub></sub>
+
+<sub><sub>e.g. Mean Heart Rate, Heart Rate Variability</sub></sub>
 
 ---
 
@@ -115,9 +115,11 @@ ECG
 ![width=800](images/plotly_ECG.gif)
 
 ---
-### Valence and Arousal versus Biosignal Features
-### Pearson's correlation
-![width=100](images/pearson_eeg_ecg.png)
+### Valence and Arousal ↔ Biosignal Features
+
+Pearson's correlation
+
+![width=800](images/pearson_eeg_ecg.png)
 
 ---
 
