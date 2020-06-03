@@ -85,9 +85,9 @@ EEG & ECG
 ![width=200](images/EEG_features.png)
 ![width=200](images/ECG_features.png)
 
-<sup><sub> ECG : Features = Maximum of the PSDs for each of the 14 electrodes for each band : Theta (8-16Hz), Alpha (16-26Hz), Beta (26-60Hz)</sub></sup>
+<sup><sub> EEG : Features = Maximum of the PSDs for each of the 14 electrodes for each band : Theta (8-16Hz), Alpha (16-26Hz), Beta (26-60Hz)</sub></sup>
 
-<sub><sub>Neurokit2 automatically extracts features e.g. Mean Heart Rate, Heart Rate Variability</sub></sub>
+<sub><sub> ECG : Neurokit2 automatically extracts features e.g. Mean Heart Rate, Heart Rate Variability</sub></sub>
 
 ---
 
