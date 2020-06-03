@@ -13,18 +13,18 @@
 
 ---
 @snap[north span-20]
-### Foo
+### What to predict?
 @snapend
 
 @snap[south span-90]
-<iframe src="https://brainhack-school2020.github.io/Biosignal-Emotions-BHS-2020/" width="800" height="500" frameborder="0" marginwidth="0" marginheight="0"></iframe>
+<iframe src="https://brainhack-school2020.github.io/Biosignal-Emotions-BHS-2020/" width="1000" height="500" frameborder="0" marginwidth="0" marginheight="0"></iframe>
 @snapend
 
 ---
 @snap[north span-20]
-### Boop
+### Cross-validation
 @snapend
 
 @snap[south span-90]
-<iframe src="https://brainhack-school2020.github.io/Biosignal-Emotions-BHS-2020/DREAMER_group_cross_validation.html" width="100%" height="100%" frameborder="0" marginwidth="0" marginheight="0"></iframe>
+<iframe src="https://brainhack-school2020.github.io/Biosignal-Emotions-BHS-2020/DREAMER_group_cross_validation.html" width="1000" height="500" frameborder="0" marginwidth="0" marginheight="0"></iframe>
 @snapend
