@@ -30,17 +30,28 @@
 
 ### Tools
 
-## Scipy
+# Scipy
 
-![width=800](images/scipy.png)
+![width=100](images/scipy.png)
+![width=100](images/scipy_importexample.png)
+![width=100](images/scipy_signalexample.png)
 
-## Neurokit2
+# Neurokit2
 
-## Plotly
+![width=100](images/neurokit2.png)
+![width=100](images/neurokit2_importexample.png)
+![width=100](images/neurokit2_ecgdemo.png)
+
+# Plotly
+
+![width=100](images/plotly.png)
 
 ---
 
 ### Big data : Overview
+
+![width=100](images/stim.gif)
+![width=100](images/basl.gif)
 
 ---
 
@@ -48,7 +59,11 @@
 
 ## EEG
 
+![width=100](images/EEG_features.png)
+
 ## ECG
+
+![width=100](images/ECG_features.png)
 
 ---
 
@@ -56,13 +71,19 @@
 
 ## Pearson's correlation : Valence and Arousal versus Biosignal Features
 
+![width=100](images/pearson_eeg_ecg.png)
+
 ---
 
 ### Interactive visualization : Exploration
 
 ## EEG
 
+![width=100](images/plotly_EEG.gif)
+
 ## ECG
+
+![width=100](images/plotly_ECG.gif)
 
 ---
 
