@@ -12,19 +12,19 @@
 2. Test2
 
 ---
-@snap[north span-20]
+@snap[north span-100]
 ### What to predict?
 @snapend
 
-@snap[south span-90]
+@snap[south span-100]
 <iframe src="https://brainhack-school2020.github.io/Biosignal-Emotions-BHS-2020/" width="1000" height="500" frameborder="0" marginwidth="0" marginheight="0"></iframe>
 @snapend
 
 ---
-@snap[north span-20]
+@snap[north span-100]
 ### Cross-validation
 @snapend
 
-@snap[south span-90]
+@snap[south span-100]
 <iframe src="https://brainhack-school2020.github.io/Biosignal-Emotions-BHS-2020/DREAMER_group_cross_validation.html" width="1000" height="500" frameborder="0" marginwidth="0" marginheight="0"></iframe>
 @snapend
