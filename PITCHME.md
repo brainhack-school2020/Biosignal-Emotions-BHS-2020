@@ -56,10 +56,10 @@ DREAMER dataset: Participants were shown videos intended to elicit certain emoti
 
 ### Big data : Overview
 
-<sup><sub>23 subjects x 18 videos x 2 paradigms = 828 EEG recordings !
-(+14 electrodes per EEG recording) </sub></sup>
+<sup><sub>23 subjects x 18 videos x 2 paradigms = 828 EEG recordings (x14 electrodes) !</sub></sup>
 
-![width=400](images/stim.gif) ![width=400](images/basl.gif)
+![width=300](images/stim.gif)
+![width=300](images/basl.gif)
 
 ---
 
