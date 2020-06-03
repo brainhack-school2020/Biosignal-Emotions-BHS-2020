@@ -41,23 +41,19 @@ DREAMER dataset: Participants were shown videos intended to elicit certain emoti
 ---
 
 ## Tools
-### Scipy
+
 ![width=200](images/scipy.png)
 ![width=200](images/scipy_importexample.png)
 ![width=200](images/scipy_signalexample.png)
+
 <sup><sub>
 - Can read .MAT files in python
-
 -Example for EEG :
-
 Easy specification of Theta, Alpha, Beta bands
-
 Filter the signal
-
 Compute PSD (Welch)
 </sub></sup>
 
-### Plotly
 ![width=200](images/plotly.png)
 
 <sup><sub> Interactive data visualization (Exploration) </sub></sup>
@@ -65,7 +61,7 @@ Compute PSD (Welch)
 ---
 
 ## Tools
-### Neurokit2
+
 ![width=500](images/neurokit2.png)
 ![width=600](images/neurokit2_importexample.png)
 
