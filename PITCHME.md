@@ -67,9 +67,11 @@ Example for ECG : 2 lines to extract Features !
 
 ---
 
-### Big data : Overview
+### Big data ! Overview
 
 <sup><sub><sub>23 subjects x 18 videos x 2 paradigms = 828 EEG recordings (x14 electrodes)!</sub></sub></sup>
+
+##### Baseline & Stimulus
 
 ![width=400](images/basl.gif)
 ![width=400](images/stim.gif)
@@ -132,12 +134,15 @@ Pearson's correlation
 
 ---
 
-## What we learned in the BHS2020
+#### What we learned in the BHS2020
 
-- Distance teamwork
-- Enhanced our Python skills
+- Theoretical novelties : a lot !
+- Modern tools for coding and IT
+- Distance teamwork (GitHub)
+- Project organization
+- Better Python skills
 - Modern data visualization tools and practices
-
+- Time flies !
 
 ---
 
