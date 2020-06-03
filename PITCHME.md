@@ -38,10 +38,12 @@ DREAMER dataset: Participants were shown videos intended to elicit certain emoti
 ---
 
 ## Tools
-### Scipy ![width=100](images/scipy.png)
+### Scipy
+![width=100](images/scipy.png)
 ![width=100](images/scipy_importexample.png)
 ![width=100](images/scipy_signalexample.png)
-### Neurokit2 ![width=100](images/neurokit2.png)
+### Neurokit2
+![width=100](images/neurokit2.png)
 ![width=100](images/neurokit2_importexample.png)
 ![width=100](images/neurokit2_ecgdemo.png)
 ### Plotly
