@@ -80,9 +80,10 @@ Challenge : Extract relevant features from all this !
 
 #### Biosignals preprocessing : Features extraction
 
-EEG
+EEG & ECG
 
 ![width=200](images/EEG_features.png)
+![width=200](images/ECG_features.png)
 
 <sup><sub> ECG : Features = Maximum of the PSDs for each of the 14 electrodes for each band : Theta (8-16Hz), Alpha (16-26Hz), Beta (26-60Hz)</sub></sup>
 
