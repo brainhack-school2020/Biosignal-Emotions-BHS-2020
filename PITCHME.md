@@ -6,6 +6,10 @@
 
 ---
 
+### Hook !
+
+---
+
 ### Outline 
 
 1. Test
@@ -20,6 +24,45 @@
 @snap[south span-100]
 <iframe src="https://brainhack-school2020.github.io/Biosignal-Emotions-BHS-2020/" width="1000" height="500" frameborder="0" marginwidth="0" marginheight="0"></iframe>
 @snapend
+
+
+---
+
+### Tools
+
+## Scipy
+
+![width=800](images/scipy.png)
+
+## Neurokit2
+
+## Plotly
+
+---
+
+### Big data : Overview
+
+---
+
+### Biosignals preprocessing : Features extraction
+
+## EEG
+
+## ECG
+
+---
+
+### Hoping for correlation
+
+## Pearson's correlation : Valence and Arousal versus Biosignal Features
+
+---
+
+### Interactive visualization : Exploration
+
+## EEG
+
+## ECG
 
 ---
 
