@@ -24,9 +24,9 @@
 
 1. Project definition
 2. Tools
-3. Biosignals data
-4. Emotional data
-5. Machine Learning aspect
+3. Biosignal data
+4. Decisions and replication
+5. Building a classifier
 6. What we learned in BHS2020
 
 ---
@@ -118,9 +118,20 @@ Pearson's correlation
 ##### Still challenging to find relevant features for automatic emotion recognition ...
 
 ---
+#### Decisions, decisions...
+
+- How should we preprocess the biosignal data?
+- Should we transform the data? How? MixMax scaling? Z-scoring?
+- Which features should we use? 
+- Should we divide features extracted from “stimuli” data (collected when emotional videos were played) by those extracted from “baseline” data?   
+- What should we even predict?!
+
+##### Replication of existing work? Not always straightforward!
+
+---
 
 @snap[north span-100]
-### Emotion data
+### Affective data
 @snapend
 
 @snap[south span-100]
@@ -139,16 +150,33 @@ Pearson's correlation
 
 ---
 
-#### What we learned in the BHS2020
+@snap[north span-100]
+### Classifier Comparison
+@snapend
 
-- Modern tools for coding and IT
-- Distance teamwork (GitHub, GitPitch)
-- Project organization
-- Better Python skills
-- Modern data visualization tools and practices
-- OpenScience mindset and good practices
+@snap[south span-100]
+<iframe src="https://brainhack-school2020.github.io/Biosignal-Emotions-BHS-2020/classifier_comparison.html" width="1000" height="500" frameborder="0" marginwidth="0" marginheight="0"></iframe>
+@snapend
 
 ---
 
-# Thank you!
-#### Many thanks for the instructors and organizers !
+#### Future work
+
+- Seeing how changing earlier decisions affects performance (e.g. preprocessing)
+- Experimenting with methods to reduce prediction runtime
+- Testing classifier performance on entirely new dataset
+
+---
+
+#### What we learned in BHS2020
+
+- More experience with GitHub
+- New data visualization tools
+- Deeper understanding of machine learning
+- Better Python skills
+- Appropriate use of notebooks (interactive visualizations vs. complex pipelines for HPC) 
+- Exposure to open science tools and practices!
+
+---
+
+#### Many thanks to the instructors and organizers!
