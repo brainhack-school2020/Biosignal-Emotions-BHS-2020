@@ -138,10 +138,6 @@ Pearson's correlation
 
 ---
 
-<iframe src="https://brainhack-school2020.github.io/Biosignal-Emotions-BHS-2020/" width="2000" height="900"></iframe>
-
----
-
 ### Affective data
 
 <iframe src="https://brainhack-school2020.github.io/Biosignal-Emotions-BHS-2020/" width="1500" height="500" frameborder="0" marginwidth="0" marginheight="0"></iframe>
