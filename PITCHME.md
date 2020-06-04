@@ -40,8 +40,14 @@ Predicting affective states based on biosignals for automatic stress detection i
 
 DREAMER dataset: Participants were shown videos intended to elicit certain emotions while wearing an EEG headset and ECG sensors
 
-<sup><sub> (The DREAMER dataset must be requested to the authors : https://ieeexplore.ieee.org/document/7887697 ) </sub></sup>
+<sup><sub> (The DREAMER dataset must be requested from the authors : https://ieeexplore.ieee.org/document/7887697 ) </sub></sup>
 
+---
+
+### EEG & ECG Acquisition
+
+![width=200](images/DREAMER_papertitle.png)
+![width=200](images/hardware.png)
 
 ---
 
