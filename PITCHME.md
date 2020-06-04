@@ -10,8 +10,13 @@
 
 ---
 
-# Punchline !
+### Detecting Stress ?
 
+![width=200](https://everythingweknowsofar.com/wp-content/uploads/2016/07/1446064502480.jpg)
+
+<p>Have you ever felt stress and didn't manage to communicate it ?</p>
+<p>Could your body speak it for you ?</p>
+<p>What about having a wearable that can dynamically inform us about it ?</p>
 
 ---
 
@@ -137,7 +142,7 @@ Pearson's correlation
 #### What we learned in the BHS2020
 
 - Modern tools for coding and IT
-- Distance teamwork (GitHub)
+- Distance teamwork (GitHub, GitPitch)
 - Project organization
 - Better Python skills
 - Modern data visualization tools and practices
