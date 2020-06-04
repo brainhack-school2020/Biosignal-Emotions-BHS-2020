@@ -1,9 +1,3 @@
-<div style="width:1100px;height:500px;display:block;">
-<iframe src="https://brainhack-school2020.github.io/Biosignal-Emotions-BHS-2020/classifier_comparison_1000_500.html" width="100%" height="100%" frameborder="0" marginwidth="0" marginheight="0"></iframe>
-</div>
-
----
-
 ### Biosignal processing for automatic emotion recognition
 
 #### by the Effective Affective Team 
@@ -144,25 +138,18 @@ Pearson's correlation
 
 ---
 
-@snap[north span-100]
 ### Affective data
-@snapend
 
-@snap[south span-100]
 <iframe src="https://brainhack-school2020.github.io/Biosignal-Emotions-BHS-2020/" width="1500" height="500" frameborder="0" marginwidth="0" marginheight="0"></iframe>
-@snapend
 
 ---
 
-@snap[north span-100]
 ### Cross-validation
-@snapend
 
-@snap[south span-100]
 <iframe src="https://brainhack-school2020.github.io/Biosignal-Emotions-BHS-2020/DREAMER_group_cross_validation.html" width="1500" height="500" frameborder="0" marginwidth="0" marginheight="0"></iframe>
-@snapend
 
 ---
+### Classifier Comparison
 
 <div style="width:1100px !important;height:500px !important;display:block;">
 <iframe src="https://brainhack-school2020.github.io/Biosignal-Emotions-BHS-2020/classifier_comparison_1000_500.html" width="100%" height="100%" frameborder="0" marginwidth="0" marginheight="0"></iframe>
