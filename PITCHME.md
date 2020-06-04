@@ -163,7 +163,7 @@ Pearson's correlation
 @snapend
 
 @snap[south span-90]
-<iframe src="https://brainhack-school2020.github.io/Biosignal-Emotions-BHS-2020/classifier_comparison.html" width="1500" height="500" frameborder="0" marginwidth="0" marginheight="0"></iframe>
+<iframe src="https://brainhack-school2020.github.io/Biosignal-Emotions-BHS-2020/classifier_comparison_hleg.html" width="1500" height="500" frameborder="0" marginwidth="0" marginheight="0"></iframe>
 @snapend
 
 ---
