@@ -151,3 +151,4 @@ Pearson's correlation
 ---
 
 # Thank you!
+#### Many thanks for the instructors and organizers !
