@@ -162,7 +162,7 @@ Pearson's correlation
 ### Classifier Comparison
 @snapend
 
-@snap[south span-90]
+@snap[south span-100]
 <iframe src="https://brainhack-school2020.github.io/Biosignal-Emotions-BHS-2020/classifier_comparison_1000_500.html" width="1100" height="600" frameborder="0" marginwidth="0" marginheight="0"></iframe>
 @snapend
 
