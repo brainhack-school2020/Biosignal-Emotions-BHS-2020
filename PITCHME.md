@@ -142,7 +142,7 @@ Pearson's correlation
 ### Affective data
 @snapend
 
-@snap[south span-90]
+@snap[south span-100]
 <iframe src="https://brainhack-school2020.github.io/Biosignal-Emotions-BHS-2020/" width="1500" height="500" frameborder="0" marginwidth="0" marginheight="0"></iframe>
 @snapend
 
@@ -152,7 +152,7 @@ Pearson's correlation
 ### Cross-validation
 @snapend
 
-@snap[south span-90]
+@snap[south span-100]
 <iframe src="https://brainhack-school2020.github.io/Biosignal-Emotions-BHS-2020/DREAMER_group_cross_validation.html" width="1500" height="500" frameborder="0" marginwidth="0" marginheight="0"></iframe>
 @snapend
 
@@ -163,7 +163,7 @@ Pearson's correlation
 @snapend
 
 @snap[south span-100]
-<iframe src="https://brainhack-school2020.github.io/Biosignal-Emotions-BHS-2020/classifier_comparison_1000_500.html" width="1100" height="600" frameborder="0" marginwidth="0" marginheight="0"></iframe>
+<iframe src="https://brainhack-school2020.github.io/Biosignal-Emotions-BHS-2020/classifier_comparison_1000_500.html" width="1100px" height="600px" frameborder="0"></iframe>
 @snapend
 
 ---
