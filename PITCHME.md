@@ -12,11 +12,11 @@
 
 ### Detecting Stress ?
 
-![width=200](https://everythingweknowsofar.com/wp-content/uploads/2016/07/1446064502480.jpg)
+![width=400](https://everythingweknowsofar.com/wp-content/uploads/2016/07/1446064502480.jpg)
 
-<p>Have you ever felt stress and didn't manage to communicate it ?</p>
-<p>Could your body speak it for you ?</p>
-<p>What about having a wearable that can dynamically inform us about it ?</p>
+<p><sup><sub>Have you ever felt stress and didn't manage to communicate it ?</sub></sup></p>
+<p><sup><sub>Could your body speak it for you ?</sub></sup></p>
+<p><sup><sub>What about having a wearable that can dynamically inform us about it ?</sub></sup></p>
 
 ---
 
