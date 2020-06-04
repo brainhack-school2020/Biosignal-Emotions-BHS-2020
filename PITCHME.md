@@ -46,8 +46,9 @@ DREAMER dataset: Participants were shown videos intended to elicit certain emoti
 
 ### EEG & ECG Acquisition
 
-<p>![width=500](images/DREAMER_papertitle.png)</p>
-<p>![width=500](images/hardware.png)</p>
+![width=500](images/DREAMER_papertitle.png)
+
+![width=500](images/hardware.png)
 
 ---
 
