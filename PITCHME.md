@@ -136,7 +136,7 @@ Pearson's correlation
 @snapend
 
 @snap[south span-100]
-<iframe src="https://brainhack-school2020.github.io/Biosignal-Emotions-BHS-2020/" width="1500" height="450" frameborder="0" marginwidth="0" marginheight="0"></iframe>
+<iframe src="https://brainhack-school2020.github.io/Biosignal-Emotions-BHS-2020/" width="900" height="500" frameborder="0" marginwidth="0" marginheight="0"></iframe>
 @snapend
 
 ---
@@ -146,7 +146,7 @@ Pearson's correlation
 @snapend
 
 @snap[south span-100]
-<iframe src="https://brainhack-school2020.github.io/Biosignal-Emotions-BHS-2020/DREAMER_group_cross_validation.html" width="1500" height="450" frameborder="0" marginwidth="0" marginheight="0"></iframe>
+<iframe src="https://brainhack-school2020.github.io/Biosignal-Emotions-BHS-2020/DREAMER_group_cross_validation.html" width="900" height="500" frameborder="0" marginwidth="0" marginheight="0"></iframe>
 @snapend
 
 ---
@@ -156,7 +156,7 @@ Pearson's correlation
 @snapend
 
 @snap[south span-100]
-<iframe src="https://brainhack-school2020.github.io/Biosignal-Emotions-BHS-2020/classifier_comparison.html" width="1500" height="450" frameborder="0" marginwidth="0" marginheight="0"></iframe>
+<iframe src="https://brainhack-school2020.github.io/Biosignal-Emotions-BHS-2020/classifier_comparison.html" width="900" height="500" frameborder="0" marginwidth="0" marginheight="0"></iframe>
 @snapend
 
 ---
