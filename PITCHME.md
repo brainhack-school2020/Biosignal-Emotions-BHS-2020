@@ -118,13 +118,14 @@ Pearson's correlation
 ##### Still challenging to find relevant features for automatic emotion recognition ...
 
 ---
-#### Decisions, decisions...
+### Decisions, decisions...
 
 - How should we preprocess the biosignal data?
 - Should we transform the data? How? MixMax scaling? Z-scoring?
 - Which features should we use? 
 - Should we divide features extracted from “stimuli” data (collected when emotional videos were played) by those extracted from “baseline” data?   
 - What should we even predict?!
+
 
 ##### Replication of existing work? Not always straightforward!
 
@@ -160,7 +161,7 @@ Pearson's correlation
 
 ---
 
-#### Future work
+### Future work
 
 - Seeing how changing earlier decisions affects performance (e.g. preprocessing)
 - Experimenting with methods to reduce prediction runtime
@@ -168,7 +169,7 @@ Pearson's correlation
 
 ---
 
-#### What we learned in BHS2020
+### What we learned in BHS2020
 
 - More experience with GitHub
 - New data visualization tools
@@ -179,4 +180,4 @@ Pearson's correlation
 
 ---
 
-#### Many thanks to the instructors and organizers!
+## Many thanks to the instructors and organizers!
