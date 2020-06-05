@@ -168,7 +168,7 @@ See how classifier performance changes with...
 - More experience with GitHub <img src="https://github.githubassets.com/images/modules/open_graph/github-mark.png" alt="GitHub" width="75"/>
 - Deeper understanding of machine learning <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Scikit_learn_logo_small.svg/1200px-Scikit_learn_logo_small.svg.png" alt="Scikit learn" width="75"/>
 - Improved coding skills <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" alt="Python" width="50"/> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Jupyter_logo.svg/1200px-Jupyter_logo.svg.png" alt="Jupyter" width="50"/> <img src="https://cdn.onlinewebfonts.com/svg/img_437009.png" alt="Python" width="50"/> 
-- Appropriate use of notebooks <img src="https://dash.plotly.com/assets/images/logo-plotly.png" alt="Plotly" width="100"/>  vs. <img src="https://www.computecanada.ca/wp-content/uploads/2015/04/BILINGUAL-CC-WEB-LOGO.png" alt="ComputeCanada" width="50"/>
+- Appropriate use of notebooks <img src="https://dash.plotly.com/assets/images/logo-plotly.png" alt="Plotly" width="100"/>  <sub> vs. </sub> <img src="https://www.computecanada.ca/wp-content/uploads/2015/04/BILINGUAL-CC-WEB-LOGO.png" alt="ComputeCanada" width="50"/>
 - Exposure to open science practices <img src="https://i2.wp.com/openscience.com/wp-content/uploads/2012/07/open_access.png?ssl=1" alt="BHS" width="25"/> 
 
 ---
