@@ -128,7 +128,7 @@ Pearson's correlation
 ### Decisions, decisions...
 
 - Biosignal data preprocessing?
-- Feature selection method?
+- Feature selection?
 - What should we even predict?!
 
 <img src="https://imgs.xkcd.com/comics/decision_paralysis.png" alt="xkcd" width="215"/>
@@ -157,7 +157,7 @@ Pearson's correlation
 ### Future work
 
 See how classifier performance changes with...
-- Our earlier decisions <img src="https://github.com/brainhack-school2020/Biosignal-Emotions-BHS-2020/blob/master/images/neurokit2.png?raw=true" alt="Neurokit" width="300"/>  
+- Our earlier decisions <img src="https://neurokit.readthedocs.io/en/latest/_static/neurokit.png" alt="Neurokit" width="100"/>  
 - Methods to reduce runtime <img src="https://cdn.onlinewebfonts.com/svg/img_554245.png" alt="Runtime" width="75"/> 
 - An entirely new dataset <img src="https://upload.wikimedia.org/wikipedia/commons/4/40/OpenNeuro_Logo.png" alt="OpenNeuro" width="100"/> 
 
