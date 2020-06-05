@@ -25,7 +25,7 @@
 1. Project definition
 2. Tools
 3. Biosignal data
-4. Decisions and replication
+4. Challenges
 5. Building a classifier
 6. What we learned in BHS2020
 
