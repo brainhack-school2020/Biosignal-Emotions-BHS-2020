@@ -150,16 +150,16 @@ Pearson's correlation
 ---
 ### Classifier comparison
 
-<iframe src="https://brainhack-school2020.github.io/Biosignal-Emotions-BHS-2020/classifier_comparison_1000_500.html" width="1400" height="400" frameborder="0" marginwidth="0" marginheight="0"></iframe>
+<iframe src="https://brainhack-school2020.github.io/Biosignal-Emotions-BHS-2020/classifier_comparison_1000_500.html" width="1750" height="750" frameborder="0" marginwidth="0" marginheight="0"></iframe>
 
 ---
 
 ### Future work
 
 See how classifier performance changes with...
-- Our earlier decisions <img src="https://github.com/brainhack-school2020/Biosignal-Emotions-BHS-2020/blob/master/images/RawCleanedNeuroKit.PNG?raw=true" alt="Neurokit" width="100"/>  
-- Methods to reduce runtime <img src="https://cdn.onlinewebfonts.com/svg/img_554245.png" alt="Runtime" width="40"/> 
-- An entirely new dataset <img src="https://upload.wikimedia.org/wikipedia/commons/4/40/OpenNeuro_Logo.png" alt="OpenNeuro" width="50"/> 
+- Our earlier decisions <img src="https://github.com/brainhack-school2020/Biosignal-Emotions-BHS-2020/blob/master/images/RawCleanedNeuroKit.PNG?raw=true" alt="Neurokit" width="200"/>  
+- Methods to reduce runtime <img src="https://cdn.onlinewebfonts.com/svg/img_554245.png" alt="Runtime" width="50"/> 
+- An entirely new dataset <img src="https://upload.wikimedia.org/wikipedia/commons/4/40/OpenNeuro_Logo.png" alt="OpenNeuro" width="75"/> 
 
 ---
 
