@@ -131,6 +131,7 @@ Pearson's correlation
 - Feature selection method?
 - What should we even predict?!
 
+<img src="https://imgs.xkcd.com/comics/decision_paralysis.png" alt="xkcd" width="100"/>
 
 ##### Replication of existing work? Not always straightforward!
 
@@ -157,9 +158,10 @@ Pearson's correlation
 
 ### Future work
 
-- Seeing how changing earlier decisions affects performance (e.g. preprocessing)
-- Experimenting with methods to reduce prediction runtime
-- Testing classifier performance on entirely new dataset
+Experimenting with how classifier performance changes with...
+- Our earlier decisions <img src="https://github.com/brainhack-school2020/Biosignal-Emotions-BHS-2020/blob/master/images/RawCleanedNeuroKit.PNG" alt="Neurokit" width="100"/>  
+- Methods to reduce runtime <img src="https://cdn.onlinewebfonts.com/svg/img_554245.png" alt="Runtime" width="50"/> 
+- An entirely new dataset <img src="https://upload.wikimedia.org/wikipedia/commons/4/40/OpenNeuro_Logo.png" alt="OpenNeuro" width="50"/> 
 
 ---
 
@@ -169,10 +171,9 @@ Pearson's correlation
 - Deeper understanding of machine learning <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Scikit_learn_logo_small.svg/1200px-Scikit_learn_logo_small.svg.png" alt="Scikit learn" width="50"/>
 - Improved coding skills <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" alt="Python" width="50"/> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Jupyter_logo.svg/1200px-Jupyter_logo.svg.png" alt="Jupyter" width="50"/> <img src="https://cdn.onlinewebfonts.com/svg/img_437009.png" alt="Python" width="50"/> 
 - Appropriate use of notebooks <img src="https://dash.plotly.com/assets/images/logo-plotly.png" alt="Plotly" width="100"/>  vs. <img src="https://www.computecanada.ca/wp-content/uploads/2015/04/BILINGUAL-CC-WEB-LOGO.png" alt="ComputeCanada" width="50"/>
-- Exposure to open science practices! <img src="https://i2.wp.com/openscience.com/wp-content/uploads/2012/07/open_access.png?ssl=1" alt="BHS" width="50"/> 
+- Exposure to open science practices <img src="https://i2.wp.com/openscience.com/wp-content/uploads/2012/07/open_access.png?ssl=1" alt="BHS" width="50"/> 
 
 ---
 
 ## Many thanks to the instructors and organizers!
 
-<sup><sub> Greg, Agah, Yann </sub></sup>
