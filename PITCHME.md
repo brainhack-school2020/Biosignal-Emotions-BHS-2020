@@ -131,7 +131,7 @@ Pearson's correlation
 - Feature selection method?
 - What should we even predict?!
 
-<img src="https://imgs.xkcd.com/comics/decision_paralysis.png" alt="xkcd" width="300"/>
+<img src="https://imgs.xkcd.com/comics/decision_paralysis.png" alt="xkcd" width="215"/>
 
 ##### Replication of existing work? Not always straightforward!
 
