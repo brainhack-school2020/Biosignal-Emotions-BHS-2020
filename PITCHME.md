@@ -131,7 +131,7 @@ Pearson's correlation
 - Feature selection method?
 - What should we even predict?!
 
-<img src="https://imgs.xkcd.com/comics/decision_paralysis.png" alt="xkcd" width="100"/>
+<img src="https://imgs.xkcd.com/comics/decision_paralysis.png" alt="xkcd" width="300"/>
 
 ##### Replication of existing work? Not always straightforward!
 
@@ -177,4 +177,4 @@ Experimenting with how classifier performance changes with...
 
 ## Many thanks to the instructors and organizers!
 
-<sup><sub> Greg, Agah, Loic, Yann</sub></sup>
+<sup><sub> Agah, Greg, Loic, Yann</sub></sup>
