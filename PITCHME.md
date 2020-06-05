@@ -177,3 +177,4 @@ Experimenting with how classifier performance changes with...
 
 ## Many thanks to the instructors and organizers!
 
+<sup><sub> Greg, Agah, Loic, Yann</sub></sup>
