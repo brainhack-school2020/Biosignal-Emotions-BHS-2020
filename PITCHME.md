@@ -2,7 +2,7 @@
 
 #### by the Effective Affective Team 
 ##### AKA Danielle & Achraf
-<sup><sub>Made with GitPitch</sub></sup>
+<sup><sub>Made with GitPitch (Thank you Agah !)</sub></sup>
 
 <sup><sub> Link to this presentation :
   
