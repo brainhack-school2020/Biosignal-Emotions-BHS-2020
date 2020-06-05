@@ -150,7 +150,7 @@ Pearson's correlation
 ---
 ### Classifier comparison
 
-<iframe src="https://brainhack-school2020.github.io/Biosignal-Emotions-BHS-2020/classifier_comparison_1000_500.html" width="1500" height="500" frameborder="0" marginwidth="0" marginheight="0"></iframe>
+<iframe src="https://brainhack-school2020.github.io/Biosignal-Emotions-BHS-2020/classifier_comparison_1000_500.html" width="1600" height="600" frameborder="0" marginwidth="0" marginheight="0"></iframe>
 
 ---
 
@@ -175,4 +175,4 @@ Experimenting with how classifier performance changes with...
 
 ## Many thanks to the instructors and organizers!
 
-<sup><sub> Agah, Greg, Loic, Yann</sub></sup>
+<sup><sub> Our instructors: Agah, Greg, Loic, Yann</sub></sup>
