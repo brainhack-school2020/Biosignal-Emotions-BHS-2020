@@ -2,21 +2,21 @@
 
 #### by the Effective Affective Team 
 ##### AKA Danielle & Achraf
-<sup><sub>Made with GitPitch (Thank you Agah !)</sub></sup>
+<sup><sub>Made with GitPitch (thank you Agah!)</sub></sup>
 
-<sup><sub> Link to this presentation :
+<sup><sub> Link to this presentation:
   
   https://gitpitch.com/brainhack-school2020/Biosignal-Emotions-BHS-2020 </sub></sup>
 
 ---
 
-### Detecting Stress ?
+### Detecting Stress?
 
 ![width=400](https://everythingweknowsofar.com/wp-content/uploads/2016/07/1446064502480.jpg)
 
-<p><sup><sub>Have you ever felt stress and didn't manage to communicate it ?</sub></sup></p>
-<p><sup><sub>Could your body speak it for you ?</sub></sup></p>
-<p><sup><sub>What about having a wearable that can dynamically inform us about it ?</sub></sup></p>
+<p><sup><sub>Have you ever felt stress and didn't manage to communicate it?</sub></sup></p>
+<p><sup><sub>Could your body speak it for you?</sub></sup></p>
+<p><sup><sub>What about having a wearable that can dynamically inform us about it?</sub></sup></p>
 
 ---
 
@@ -40,7 +40,7 @@ Predicting affective states based on biosignals for automatic stress detection i
 
 DREAMER dataset: Participants were shown videos intended to elicit certain emotions while wearing an EEG headset and ECG sensors
 
-<sup><sub> (The DREAMER dataset must be requested from the authors : https://ieeexplore.ieee.org/document/7887697 ) </sub></sup>
+<sup><sub> (The DREAMER dataset must be requested from the authors: https://zenodo.org/record/546113) </sub></sup>
 
 ---
 
@@ -60,7 +60,7 @@ DREAMER dataset: Participants were shown videos intended to elicit certain emoti
 
 <sup><sub> Can read .MAT files in python </sub></sup>
 
-<sup><sub> Example for EEG : Easy specification of bands (Theta, Alpha, Beta), PSD</sub></sup>
+<sup><sub> Example for EEG: Easy specification of bands (Theta, Alpha, Beta), PSD</sub></sup>
 
 
 ![width=200](images/plotly.png)
@@ -74,7 +74,7 @@ DREAMER dataset: Participants were shown videos intended to elicit certain emoti
 ![width=500](images/neurokit2.png)
 ![width=600](images/neurokit2_importexample.png)
 
-Example for ECG : 2 lines to extract Features !
+Example for ECG: 2 lines to extract features!
 ![width=500](images/neurokit2_ecgdemo.png)
 
 ---
@@ -88,7 +88,7 @@ Example for ECG : 2 lines to extract Features !
 ![width=400](images/basl.gif)
 ![width=400](images/stim.gif)
 
-Challenge : Extract relevant features from all this !
+Challenge: Extract relevant features from all this!
 
 ---
 
@@ -99,9 +99,9 @@ EEG & ECG
 ![width=200](images/EEG_features.png)
 ![width=200](images/ECG_features.png)
 
-<sup><sub> EEG : Features = Maximum of the PSD for each electrode for 3 bands : Theta (8-16Hz), Alpha (16-26Hz), Beta (26-60Hz)</sub></sup>
+<sup><sub> EEG: Features = Maximum of the PSD for each electrode for 3 bands: Theta (8-16Hz), Alpha (16-26Hz), Beta (26-60Hz)</sub></sup>
 
-<sub><sub> ECG : Neurokit2 automatically extracts features e.g. Mean Heart Rate, HRV </sub></sub>
+<sub><sub> ECG: Neurokit2 automatically extracts features e.g. Mean Heart Rate, HRV </sub></sub>
 
 ---
 
@@ -116,21 +116,19 @@ EEG & ECG
 ![width=800](images/plotly_ECG.gif)
 
 ---
-#### Subjective ratings ↔ Physiological Features ?
+#### Subjective ratings ↔ Physiological Features?
 
 Pearson's correlation
 
 ![width=800](images/pearson_eeg_ecg.png)
 
-##### Still challenging to find relevant features for automatic emotion recognition ...
+##### Still challenging to find relevant features for automatic emotion recognition...
 
 ---
 ### Decisions, decisions...
 
-- How should we preprocess the biosignal data?
-- Should we transform the data? How? MixMax scaling? Z-scoring?
-- Which features should we use? 
-- Should we divide features extracted from “stimuli” data (collected when emotional videos were played) by those extracted from “baseline” data?   
+- Biosignal data preprocessing?
+- Feature selection method?
 - What should we even predict?!
 
 
@@ -167,15 +165,12 @@ Pearson's correlation
 
 ### What we learned in BHS2020
 
-- More experience with GitHub
-- New data visualization tools
-- Deeper understanding of machine learning
-- Better Python skills
-- Appropriate use of notebooks (interactive visualizations vs. complex pipelines for HPC) 
-- Exposure to open science tools and practices!
+- More experience with GitHub <img src="https://github.githubassets.com/images/modules/open_graph/github-mark.png" alt="GitHub" width="50"/>
+- Deeper understanding of machine learning <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Scikit_learn_logo_small.svg/1200px-Scikit_learn_logo_small.svg.png" alt="Scikit learn" width="50"/>
+- Improved coding skills <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" alt="Python" width="50"/> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Jupyter_logo.svg/1200px-Jupyter_logo.svg.png" alt="Jupyter" width="50"/> <img src="https://cdn.onlinewebfonts.com/svg/img_437009.png" alt="Python" width="50"/> 
+- Appropriate use of notebooks <img src="https://dash.plotly.com/assets/images/logo-plotly.png" alt="Plotly" width="100"/>  vs. <img src="https://www.computecanada.ca/wp-content/uploads/2015/04/BILINGUAL-CC-WEB-LOGO.png" alt="ComputeCanada" width="50"/>
+- Exposure to open science practices! <img src="https://i2.wp.com/openscience.com/wp-content/uploads/2012/07/open_access.png?ssl=1" alt="BHS" width="50"/> 
 
 ---
 
 ## Many thanks to the instructors and organizers!
-
-<sup><sub>Grag, Agah, Yann, ...</sub></sup>
