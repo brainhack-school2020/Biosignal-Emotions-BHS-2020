@@ -2,7 +2,7 @@
 
 #### by the Effective Affective Team 
 ##### AKA Danielle & Achraf
-<sup><sub>Made with GitPitch (thank you Agah!)</sub></sup>
+<sup><sub>Made with GitPitch</sub></sup>
 
 <sup><sub> Link to this presentation :
   
@@ -177,3 +177,5 @@ Pearson's correlation
 ---
 
 ## Many thanks to the instructors and organizers!
+
+<sup><sub>Grag, Agah, Yann, ...</sub></sup>
