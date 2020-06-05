@@ -174,3 +174,5 @@ Pearson's correlation
 ---
 
 ## Many thanks to the instructors and organizers!
+
+<sup><sub> Greg, Agah, Yann </sub></sup>
