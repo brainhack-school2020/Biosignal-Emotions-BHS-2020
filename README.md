@@ -33,7 +33,7 @@ I am currently studying Biomedical Engineering at Polytechnique Montréal (M.Eng
 
 My goal through the Brain Hack School 2020 is to learn as much as I can about modern ways of doing NeuroImaging, to improve my python skills through a hands-on multi-disciplinary project, and to exchange information and expertise with the other participants.
 
-The project idea is from Danielle with whom I will be collaborating.
+The project idea is from Danielle with whom I collaborate.
 
 #### About the project
 
@@ -104,3 +104,26 @@ At the end of this project, we plan to complete:
 * Screenshot of terminal outputs of the scripts we wrote for Compute Canada (minimal version) :
   * [Preprocessing command example](https://github.com/brainhack-school2020/Biosignal-Emotions-BHS-2020/blob/master/Deliverables/ComputeCanadaScriptExample_Preprocessing.png)
   * [Classification command example](https://github.com/brainhack-school2020/Biosignal-Emotions-BHS-2020/blob/master/Deliverables/ComputeCanadaScriptExample_Classification.png)
+  
+### Conclusion
+
+####
+* We worked with the DREAMER dataset which provided EEG and ECG data. The other datasets are worth exploring in that they provide other types of Biosignals such as Skin Temperature, Respiration. 
+* We could do a preprocessing of biosignals and extract features from EEG and ECG signals, as targeted.
+  However features extraction deserves more investigation in that
+* We tried to find strong correlations between the extracted features and subjective ratings, but the reality was that the correlations were low. This makes the detection of stress from biosignals challenging and not reliable as long as we don't find better features.
+
+* Affective data showed more consistency in that anger and disgust were found to represent stress. 
+* Classifiers exploration and performance : a few milliseconds overall. AdaBoost showed the highest accuracy but at the cost of longer processing time.
+
+#### What we learned in the BHS2020 project
+* Open Science and Collaborative tools and practices (Git, GitHub, GitPitch)
+* Improved coding skills : Python notebooks and scripting
+* Deeper understanding of Machine Learning
+### Acknowledgments
+
+We would like to thank the course organizers and our instructors who spent a lot of time helping us in the advancement of our project :
+* Greg Kiar
+* Agâh Karakuzu
+* Loic Tetrel
+* Yann Harel
