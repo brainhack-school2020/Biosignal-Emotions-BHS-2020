@@ -1,16 +1,12 @@
-# Project Description BrainHack School 2020
+# Biosignal processing for automatic emotion recognition
 
-![BrainHack School](bhs2020.png)
+by the Effective Affective Team
+
+Team Contributers: Danielle & Achraf
 
 ## Summary 
 
-*Project title* : **Biosignal processing for automatic emotion recognition**
-
-In this project we will be using multimodal datasets found from open data sources with the goal of using *biosignal processing* and *machine learning* techniques to perform *automatic emotion recognition*.
-The project will be performed using *Python* and *high performance computing* to build a classifier of discrete emotional states.
-We will make good use of *data visualization* and will be sharing our progress through a *notebook* for anyone interested.
-
-Right now, we're a team of 2 people (Danielle and Achraf), but other fellow BrainHack School 2020 participants are very welcome to participate if their interests fit!
+In this project, we used a multimodal biosignal dataset for automatic emotion recognition. The project was written in Python, encompassing preprocessing, feature extraction, and classification. Along the way, we familiarized ourselves with the data using interactive visualizations.
 
 ## Project definition 
 
@@ -20,12 +16,13 @@ Right now, we're a team of 2 people (Danielle and Achraf), but other fellow Brai
 
 Danielle:
 
- I’m a master’s student working on the development of a device for students on the autism spectrum. The project envisions a device that can address students’ auditory sensitivities by filtering out distressing classroom sounds in real-time. I plan to use machine learning techniques for the following 2 components of the project: 
+I’m a master’s student working on the development of a technology for students on the autism spectrum. The project envisions a device that can address students’ auditory sensitivities by filtering out distressing classroom sounds. The BrainHack School was a great opportunity for me to work on a practical project with open data before getting to collect my own.
 
- 1.	Audio event classification for the detection of identified classroom sounds
- 2.	Biosignal-based automatic emotion recognition for the detection of sound-induced distress
-
- Assuming that #2 is where I can make the most of the expertise of fellow BrainHack school participants, I thought I could focus on biosignal processing for automatic emotion recognition during the project weeks.
+During the project weeks, my goals were to:
+- Get more experience with Git and GitHub (very limited before)
+- Improve my Python skills
+- Deepen my understanding of applied machine learning
+- Use high-performance computing for the first time
  
 Achraf:
  
@@ -33,7 +30,7 @@ I am currently studying Biomedical Engineering at Polytechnique Montréal (M.Eng
 
 My goal through the Brain Hack School 2020 is to learn as much as I can about modern ways of doing NeuroImaging, to improve my python skills through a hands-on multi-disciplinary project, and to exchange information and expertise with the other participants.
 
-The project idea is from Danielle with whom I collaborate.
+The project idea is from Danielle with whom I will be collaborating.
 
 #### About the project
 
@@ -41,7 +38,7 @@ Psychological stress has been found to be associated with changes in certain bio
 
 ### Tools 
 
-Tools and techniques we plan to use:
+Tools and techniques we used:
  1.	High-performance computing: Compute Canada
  2.	Preprocessing and feature extraction with Python
  3.	Data visualization with Python
@@ -60,7 +57,7 @@ So far, we have access to the following emotion-correlated biosignal databases:
     - Emotion data: Rating on valence-arousal-dominance scale provided by participants
  - [An EEG dataset recorded during affective music listening](https://openneuro.org/datasets/ds002721/versions/1.0.1)
      - Biosignal data: EEG
-     - Emotion data: Rating on valence-arousal scale provided by participants
+     - Emotion data: Rating on valence-arousal scale provided by participants (though we're currently not sure where this can be downloaded)
  - [AffectiveROAD system and database to assess driver's attention.](https://affect.media.mit.edu/share-data.php)
      - Biosignal data: BVP, EDA, ECG, respiration rate, skin temperature
      - Emotion data: "Stress metric" provided by observing experimenter 
@@ -104,26 +101,3 @@ At the end of this project, we plan to complete:
 * Screenshot of terminal outputs of the scripts we wrote for Compute Canada (minimal version) :
   * [Preprocessing command example](https://github.com/brainhack-school2020/Biosignal-Emotions-BHS-2020/blob/master/Deliverables/ComputeCanadaScriptExample_Preprocessing.png)
   * [Classification command example](https://github.com/brainhack-school2020/Biosignal-Emotions-BHS-2020/blob/master/Deliverables/ComputeCanadaScriptExample_Classification.png)
-  
-### Conclusion
-
-####
-* We worked with the DREAMER dataset which provided EEG and ECG data. The other datasets are worth exploring in that they provide other types of Biosignals such as Skin Temperature, Respiration. 
-* We could do a preprocessing of biosignals and extract features from EEG and ECG signals, as targeted.
-  However features extraction deserves more investigation in that
-* We tried to find strong correlations between the extracted features and subjective ratings, but the reality was that the correlations were low. This makes the detection of stress from biosignals challenging and not reliable as long as we don't find better features.
-
-* Affective data showed more consistency in that anger and disgust were found to represent stress. 
-* Classifiers exploration and performance : a few milliseconds overall. AdaBoost showed the highest accuracy but at the cost of longer processing time.
-
-#### What we learned in the BHS2020 project
-* Open Science and Collaborative tools and practices (Git, GitHub, GitPitch)
-* Improved coding skills : Python notebooks and scripting
-* Deeper understanding of Machine Learning
-### Acknowledgments
-
-We would like to thank the course organizers and our instructors who spent a lot of time helping us in the advancement of our project :
-* Greg Kiar
-* Agâh Karakuzu
-* Loic Tetrel
-* Yann Harel
