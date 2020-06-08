@@ -92,5 +92,6 @@ At the end of this project, we plan to complete:
 
 #### Danielle's Week 3 deliverables
 * [Interactive Figure: "Participant Ratings of Film Clips in Valence-Arousal Space](https://brainhack-school2020.github.io/Biosignal-Emotions-BHS-2020/)
+  * [Bonus: a jupyter notebook generating this figure...](https://github.com/brainhack-school2020/Biosignal-Emotions-BHS-2020/blob/master/Deliverables/Week3_Emot_Plot_Danielle.ipynb) written while attempting to follow [PEP8](https://www.python.org/dev/peps/pep-0008/)! This was my first time trying to write code following any standard, so feedback is welcome :) 
 * [Interactive Figure: "Group 10-Fold Cross Validation with DREAMER data"](https://brainhack-school2020.github.io/Biosignal-Emotions-BHS-2020/DREAMER_group_cross_validation.html)
 * [Interactive Figure: "Score vs. Prediction Runtime for all CV Iterations and Classifiers"](https://brainhack-school2020.github.io/Biosignal-Emotions-BHS-2020/classifier_comparison.html)
