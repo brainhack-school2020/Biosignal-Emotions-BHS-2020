@@ -87,3 +87,10 @@ At the end of this project, we plan to complete:
      &rarr; Evaluation of classifier performance
      
      &rarr; Job files
+     
+### Week 3 deliverable: data visualization
+
+#### Danielle's Week 3 deliverables
+* [Interactive Figure: "Participant Ratings of Film Clips in Valence-Arousal Space](https://brainhack-school2020.github.io/Biosignal-Emotions-BHS-2020/)
+* [Interactive Figure: "Group 10-Fold Cross Validation with DREAMER data"](https://brainhack-school2020.github.io/Biosignal-Emotions-BHS-2020/DREAMER_group_cross_validation.html)
+* [Interactive Figure: "Score vs. Prediction Runtime for all CV Iterations and Classifiers"](https://brainhack-school2020.github.io/Biosignal-Emotions-BHS-2020/classifier_comparison.html)
