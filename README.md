@@ -94,13 +94,13 @@ The dataset we ended up using is the [DREAMER](https://ieeexplore.ieee.org/docum
 
 We first performed a preprocessing of the biosignals and explored the affective data, then we evaluated the performance of many classifiers.
 We created minimal python scripts that are to be executed on Compute Canada, and which let the user perform the data preprocessing and the classifiers evaluation.
-The preprocessing scripts we wrote were inspired by [Jiaqi1008's repository](https://github.com/Jiaqi1008/Emotion_detection).
 
 Achraf performed the preprocessing of the biosignals, explored visually the data and wrote minimal working version of scripts to be used in Compute Canada.
 Danielle focused on the Machine Learning pipeline and the evaluation of many classifiers performance for the affective data on Compute Canada.
 
 #### Preprocessing pipeline
 <ins>*Achraf*</ins>
+The preprocessing scripts I wrote were inspired by [Jiaqi1008's repository](https://github.com/Jiaqi1008/Emotion_detection).
 * The DREAMER dataset coming as a .MAT file, I used the library Scipy to load it : it contained EEG data, ECG data, and subjective ratings.
 * The preprocessing for EEG data consisted of extracting the maximum of the Power Spectrum Density (PSD) for the EEG signals for three bands (theta,alpha,beta), for each of the 14 electrodes used. The library Scipy was used for filtering and PSD extraction (Welch's method).
 * The preprocessing for ECG data was done thanks to the library [Neurokit2](https://github.com/neuropsychology/NeuroKit) by first preprocessing the data with the ecg_process() method then by extracting the features with the ecg_intervalrelated() method. The features extracted were the Mean Heart Rate and various Heart Rate Variability (HRV) metrics.
