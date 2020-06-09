@@ -97,7 +97,7 @@ The preprocessing scripts we wrote were inspired by [Jiaqi1008's repository](htt
 * The DREAMER dataset coming as a .MAT file, we used the library Scipy to load it : it contained EEG data, ECG data, and subjective ratings.
 * The preprocessing for EEG data consisted of extracting the maximum of the Power Spectrum Density (PSD) for the EEG signals for three bands (theta,alpha,beta), for each of the 14 electrodes used. The library Scipy was used for filtering and PSD extraction (Welch's method).
 * The preprocessing for ECG data was done thanks to the library [Neurokit2](https://github.com/neuropsychology/NeuroKit) by first preprocessing the data with the ecg_process() method then by extracting the features with the ecg_intervalrelated() method. The features extracted were the Mean Heart Rate and various Heart Rate Variability (HRV) metrics.
-* An output example of the script intended to be used in Compute Canada in a terminal would look like the following : ![width=100](https://github.com/brainhack-school2020/Biosignal-Emotions-BHS-2020/blob/master/Deliverables/ComputeCanadaScriptExample_Preprocessing.png)
+* An output example of the script intended to be used in Compute Canada in a terminal can be found [here](https://github.com/brainhack-school2020/Biosignal-Emotions-BHS-2020/blob/master/Deliverables/ComputeCanadaScriptExample_Preprocessing.png)
 
 #### Classification performance evaluation
 
@@ -105,7 +105,7 @@ The preprocessing scripts we wrote were inspired by [Jiaqi1008's repository](htt
 * Cross-validation
 * Classifiers explored
 
-* An output example of the script intended to be used in Compute Canada in a terminal would look like the following : ![width=100](https://github.com/brainhack-school2020/Biosignal-Emotions-BHS-2020/blob/master/Deliverables/ComputeCanadaScriptExample_Classification.png)
+* An output example of the script intended to be used in Compute Canada in a terminal can be found [here](https://github.com/brainhack-school2020/Biosignal-Emotions-BHS-2020/blob/master/Deliverables/ComputeCanadaScriptExample_Classification.png)
 
 ### Week 3 deliverable: data visualization
 
