@@ -30,7 +30,9 @@ The project presentation is available [here](https://gitpitch.com/brainhack-scho
 <ins>*Achraf*</ins>
  
 I am currently studying Biomedical Engineering at Polytechnique Montréal (M.Eng) and am enrolled in the Brain Hack School 2020 adventure for growing my technical skills as well as networking. I have been modestly introduced to NeuroImaging before enrolling in the biomedical engineering path and would like to broaden my knowledge of the field and sharpen my skills in it.
+
 My goal through the Brain Hack School 2020 was to learn as much as I can about modern ways of doing NeuroImaging, to improve my python skills through a hands-on multi-disciplinary project, and to exchange information and expertise with the other participants.
+
 The project idea is from Danielle with whom I was collaborating.
 
 #### About the project
@@ -107,6 +109,7 @@ The preprocessing scripts we wrote were inspired by [Jiaqi1008's repository](htt
 
 * An output example of the script intended to be used in Compute Canada in a terminal can be found [here](https://github.com/brainhack-school2020/Biosignal-Emotions-BHS-2020/blob/master/Deliverables/ComputeCanadaScriptExample_Classification.png)
 
+Our progress and results were reported as Jupyter Notebooks which are presented next.
 ### Week 3 deliverable: data visualization
 
 #### Danielle's Week 3 deliverables
@@ -132,6 +135,9 @@ The preprocessing scripts we wrote were inspired by [Jiaqi1008's repository](htt
 * Affective data showed more consistency in that anger and disgust were found to represent stress.
 * Affective data was analyzed in a Machine Learning perspective : we compared the performance of multiple classifiers which was of a few milliseconds overall. AdaBoost showed the highest accuracy but at the cost of longer processing time.
 #### What we learned in the BHS2020 project
+The first week was an intense theoretical and practical overview of many modern tools in neuroimaging, many of which we never heard of before.
+The second week taught us how important it is to take enough time to define clearly a project and specify goals for it. Instead of exploring many datasets at the same time, we chose to pick one and make the most out of it.
+The third and fourth week were the core of the brain-hacking adventure and taught us many things such as :
 * Open Science and Collaborative tools and practices (Git, GitHub, GitPitch)
 * Improved coding skills : Python notebooks and scripting
 * Deeper understanding of Machine Learning
