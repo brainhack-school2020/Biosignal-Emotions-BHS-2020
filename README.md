@@ -90,25 +90,30 @@ Our goals for the project were to complete:
 
 ### Progress & Results
 
-The dataset we ended up using is [DREAMER: A Database for Emotion Recognition through EEG and ECG Signals from Wireless Low-cost Off-the-Shelf Devices](https://ieeexplore.ieee.org/document/7887697).
+The dataset we ended up using is the [DREAMER: A Database for Emotion Recognition through EEG and ECG Signals from Wireless Low-cost Off-the-Shelf Devices](https://ieeexplore.ieee.org/document/7887697).
 We first performed a preprocessing of the biosignals and explored the affective data, then we evaluated the performance of many classifiers.
 We created minimal python scripts that are to be executed on Compute Canada, and which let the user perform the data preprocessing and the classifiers evaluation.
 The preprocessing scripts we wrote were inspired by [Jiaqi1008's repository](https://github.com/Jiaqi1008/Emotion_detection).
 
+Achraf performed the preprocessing of the biosignals, explored visually the data and wrote minimal working version of scripts to be used in Compute Canada.
+Danielle focused on the Machine Learning pipeline and the evaluation of many classifiers performance for the affective data on Compute Canada.
+
 #### Preprocessing pipeline
-* The DREAMER dataset coming as a .MAT file, we used the library Scipy to load it : it contained EEG data, ECG data, and subjective ratings.
+<ins>*Achraf*</ins>
+* The DREAMER dataset coming as a .MAT file, I used the library Scipy to load it : it contained EEG data, ECG data, and subjective ratings.
 * The preprocessing for EEG data consisted of extracting the maximum of the Power Spectrum Density (PSD) for the EEG signals for three bands (theta,alpha,beta), for each of the 14 electrodes used. The library Scipy was used for filtering and PSD extraction (Welch's method).
 * The preprocessing for ECG data was done thanks to the library [Neurokit2](https://github.com/neuropsychology/NeuroKit) by first preprocessing the data with the ecg_process() method then by extracting the features with the ecg_intervalrelated() method. The features extracted were the Mean Heart Rate and various Heart Rate Variability (HRV) metrics.
-* An output example of the script intended to be used in Compute Canada in a terminal can be found [here](https://github.com/brainhack-school2020/Biosignal-Emotions-BHS-2020/blob/master/Deliverables/ComputeCanadaScriptExample_Preprocessing.png)
+* I tested those preprocessing pipelines on Notebooks first, then wrote a script *DREAMER_main.py* implementing them in order to be used by Danielle for Compute Canada.
+An output example of the script in a terminal can be found [here](https://github.com/brainhack-school2020/Biosignal-Emotions-BHS-2020/blob/master/Deliverables/ComputeCanadaScriptExample_Preprocessing.png)
 
 #### Classification performance evaluation
-
+<ins>*Danielle*</ins>
 * Affective data : Disgust and Anger versus Calmness
 * k-Fold Cross-Validation : 10
 * Classifiers explored : Nearest Neighbors, Linear SVM, RBF SVM, Gaussian Process, Decision Tree, Random Forest, Neural Net, AdaBoost and Naive Bayes
-* An output example of the script intended to be used in Compute Canada in a terminal can be found [here](https://github.com/brainhack-school2020/Biosignal-Emotions-BHS-2020/blob/master/Deliverables/ComputeCanadaScriptExample_Classification.png)
+* Achraf implemented my Machine Learning pipeline in the *DREAMER_main.py* script, which I later enriched. An output example of such a script can be found [here](https://github.com/brainhack-school2020/Biosignal-Emotions-BHS-2020/blob/master/Deliverables/ComputeCanadaScriptExample_Classification.png)
 
-Our progress and results were reported in Jupyter Notebooks which are presented below.
+Our progress and results are presented in Week 3 deliverables below.
 
 ### Week 3 deliverable: data visualization
 
