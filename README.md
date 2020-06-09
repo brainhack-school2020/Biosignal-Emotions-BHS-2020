@@ -6,11 +6,11 @@
 
 *Project title* : **Biosignal processing for automatic emotion recognition**
 
-In this project we will be using multimodal datasets found from open data sources with the goal of using *biosignal processing* and *machine learning* techniques to perform *automatic emotion recognition*.
-The project will be performed using *Python* and *high performance computing* to build a classifier of discrete emotional states.
-We will make good use of *data visualization* and will be sharing our progress through a *notebook* for anyone interested.
+In this project we intended to use multimodal datasets found from open data sources with the goal of using *biosignal processing* and *machine learning* techniques to perform *automatic emotion recognition*.
+The project was performed using *Python* and *high performance computing* to build a classifier of discrete emotional states.
+We made use of *data visualization* and share our work through *notebooks*.
 
-Right now, we're a team of 2 people (Danielle and Achraf), but other fellow BrainHack School 2020 participants are very welcome to participate if their interests fit!
+The project presentation is available [here](https://gitpitch.com/brainhack-school2020/Biosignal-Emotions-BHS-2020).
 
 ## Project definition 
 
@@ -18,7 +18,7 @@ Right now, we're a team of 2 people (Danielle and Achraf), but other fellow Brai
 
 #### About us
 
-Danielle:
+<ins>*Danielle*</ins>
 
  I’m a master’s student working on the development of a device for students on the autism spectrum. The project envisions a device that can address students’ auditory sensitivities by filtering out distressing classroom sounds in real-time. I plan to use machine learning techniques for the following 2 components of the project: 
 
@@ -27,13 +27,11 @@ Danielle:
 
  Assuming that #2 is where I can make the most of the expertise of fellow BrainHack school participants, I thought I could focus on biosignal processing for automatic emotion recognition during the project weeks.
  
-Achraf:
+<ins>*Achraf*</ins>
  
 I am currently studying Biomedical Engineering at Polytechnique Montréal (M.Eng) and am enrolled in the Brain Hack School 2020 adventure for growing my technical skills as well as networking. I have been modestly introduced to NeuroImaging before enrolling in the biomedical engineering path and would like to broaden my knowledge of the field and sharpen my skills in it.
-
-My goal through the Brain Hack School 2020 is to learn as much as I can about modern ways of doing NeuroImaging, to improve my python skills through a hands-on multi-disciplinary project, and to exchange information and expertise with the other participants.
-
-The project idea is from Danielle with whom I will be collaborating.
+My goal through the Brain Hack School 2020 was to learn as much as I can about modern ways of doing NeuroImaging, to improve my python skills through a hands-on multi-disciplinary project, and to exchange information and expertise with the other participants.
+The project idea is from Danielle with whom I was collaborating.
 
 #### About the project
 
@@ -41,7 +39,7 @@ Psychological stress has been found to be associated with changes in certain bio
 
 ### Tools 
 
-Tools and techniques we plan to use:
+Tools and techniques we did use:
  1.	High-performance computing: Compute Canada
  2.	Preprocessing and feature extraction with Python
  3.	Data visualization with Python
@@ -70,23 +68,23 @@ So far, we have access to the following emotion-correlated biosignal databases:
 Our goals for the project were to complete:
  - Data preprocessing and feature extraction for at least one biosignal using Compute Canada.
  
-    - [x] &rarr; Python scripts
+    - [x]  Python scripts
     
-    - [ ] &rarr; Job files
+    - [ ]  Job files
     
  - Visualization of the relationship between the extracted features and the emotion data. 
  
-    - [x]  &rarr; Python scripts
+    - [x]   Python scripts
     
-    - [x]  &rarr; Image files included in report/notebook
+    - [x]   Image files included in report/notebook
 
  - Training of a classifier to predict the emotion data using Compute Canada.
  
-    - [x]  &rarr; Python scripts
+    - [x]   Python scripts
     
-    - [x] &rarr; Evaluation of classifier performance
+    - [x]   Evaluation of classifier performance
      
-    - [ ] &rarr; Job files
+    - [ ]   Job files
 
 ### Progress & Results
 
@@ -99,11 +97,15 @@ The preprocessing scripts we wrote were inspired by [Jiaqi1008's repository](htt
 * The DREAMER dataset coming as a .MAT file, we used the library Scipy to load it : it contained EEG data, ECG data, and subjective ratings.
 * The preprocessing for EEG data consisted of extracting the maximum of the Power Spectrum Density (PSD) for the EEG signals for three bands (theta,alpha,beta), for each of the 14 electrodes used. The library Scipy was used for filtering and PSD extraction (Welch's method).
 * The preprocessing for ECG data was done thanks to the library [Neurokit2](https://github.com/neuropsychology/NeuroKit) by first preprocessing the data with the ecg_process() method then by extracting the features with the ecg_intervalrelated() method. The features extracted were the Mean Heart Rate and various Heart Rate Variability (HRV) metrics.
-* An output example of the scripts in a terminal would look like the following : ![width=100](https://github.com/brainhack-school2020/Biosignal-Emotions-BHS-2020/blob/master/Deliverables/ComputeCanadaScriptExample_Preprocessing.png)
+* An output example of the script intended to be used in Compute Canada in a terminal would look like the following : ![width=100](https://github.com/brainhack-school2020/Biosignal-Emotions-BHS-2020/blob/master/Deliverables/ComputeCanadaScriptExample_Preprocessing.png)
 
 #### Classification performance evaluation
 
-  * ![width=100](https://github.com/brainhack-school2020/Biosignal-Emotions-BHS-2020/blob/master/Deliverables/ComputeCanadaScriptExample_Classification.png)
+* Affective data
+* Cross-validation
+* Classifiers explored
+
+* An output example of the script intended to be used in Compute Canada in a terminal would look like the following : ![width=100](https://github.com/brainhack-school2020/Biosignal-Emotions-BHS-2020/blob/master/Deliverables/ComputeCanadaScriptExample_Classification.png)
 
 ### Week 3 deliverable: data visualization
 
