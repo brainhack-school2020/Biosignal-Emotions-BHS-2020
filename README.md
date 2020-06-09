@@ -67,27 +67,44 @@ So far, we have access to the following emotion-correlated biosignal databases:
 
 ### Deliverables
 
-At the end of this project, we plan to complete:
+Our goals for the project were to complete:
  - Data preprocessing and feature extraction for at least one biosignal using Compute Canada.
  
-    &rarr; Python scripts
+    - [x] &rarr; Python scripts
     
-    &rarr; Job files
+    - [ ] &rarr; Job files
     
  - Visualization of the relationship between the extracted features and the emotion data. 
  
-    &rarr; Python scripts
+    - [x]  &rarr; Python scripts
     
-    &rarr; Image files included in report/notebook
+    - [x]  &rarr; Image files included in report/notebook
 
  - Training of a classifier to predict the emotion data using Compute Canada.
  
-     &rarr; Python scripts
+    - [x]  &rarr; Python scripts
     
-     &rarr; Evaluation of classifier performance
+    - [x] &rarr; Evaluation of classifier performance
      
-     &rarr; Job files
-     
+    - [ ] &rarr; Job files
+
+### Progress & Results
+
+The dataset we ended up using is [DREAMER: A Database for Emotion Recognition through EEG and ECG Signals from Wireless Low-cost Off-the-Shelf Devices](https://ieeexplore.ieee.org/document/7887697).
+We first performed a preprocessing of the biosignals and explored the affective data, then we evaluated the performance of many classifiers.
+We created minimal python scripts that are to be executed on Compute Canada, and which let the user perform the data preprocessing and the classifiers evaluation.
+The preprocessing scripts we wrote were inspired by [Jiaqi1008's repository](https://github.com/Jiaqi1008/Emotion_detection).
+
+#### Preprocessing pipeline
+* The DREAMER dataset coming as a .MAT file, we used the library Scipy to load it : it contained EEG data, ECG data, and subjective ratings.
+* The preprocessing for EEG data consisted of extracting the maximum of the Power Spectrum Density (PSD) for the EEG signals for three bands (theta,alpha,beta), for each of the 14 electrodes used. The library Scipy was used for filtering and PSD extraction (Welch's method).
+* The preprocessing for ECG data was done thanks to the library [Neurokit2](https://github.com/neuropsychology/NeuroKit) by first preprocessing the data with the ecg_process() method then by extracting the features with the ecg_intervalrelated() method. The features extracted were the Mean Heart Rate and various Heart Rate Variability (HRV) metrics.
+* An output example of the scripts in a terminal would look like the following : ![width=100](https://github.com/brainhack-school2020/Biosignal-Emotions-BHS-2020/blob/master/Deliverables/ComputeCanadaScriptExample_Preprocessing.png)
+
+#### Classification performance evaluation
+
+  * ![width=100](https://github.com/brainhack-school2020/Biosignal-Emotions-BHS-2020/blob/master/Deliverables/ComputeCanadaScriptExample_Classification.png)
+
 ### Week 3 deliverable: data visualization
 
 #### Danielle's Week 3 deliverables
@@ -109,17 +126,16 @@ At the end of this project, we plan to complete:
 ####
 * We worked with the DREAMER dataset which provided EEG and ECG data. The other datasets are worth exploring in that they provide other types of Biosignals such as Skin Temperature, Respiration.
 * We could do a preprocessing of biosignals and extract features from EEG and ECG signals, as targeted.
-  However features extraction deserves more investigation in that
 * We tried to find strong correlations between the extracted features and subjective ratings, but the reality was that the correlations were low. This makes the detection of stress from biosignals challenging and not reliable as long as we don't find better features.
 * Affective data showed more consistency in that anger and disgust were found to represent stress.
-* Classifiers exploration and performance : a few milliseconds overall. AdaBoost showed the highest accuracy but at the cost of longer processing time.
+* Affective data was analyzed in a Machine Learning perspective : we compared the performance of multiple classifiers which was of a few milliseconds overall. AdaBoost showed the highest accuracy but at the cost of longer processing time.
 #### What we learned in the BHS2020 project
 * Open Science and Collaborative tools and practices (Git, GitHub, GitPitch)
 * Improved coding skills : Python notebooks and scripting
 * Deeper understanding of Machine Learning
 ### Acknowledgments
 We would like to thank the course organizers and our instructors who spent a lot of time helping us in the advancement of our project :
-* Greg Kiar
+* Gregory Kiar
 * Agâh Karakuzu
 * Loic Tetrel
 * Yann Harel
