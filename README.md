@@ -91,6 +91,7 @@ Our goals for the project were to complete:
 ### Progress & Results
 
 The dataset we ended up using is the [DREAMER](https://ieeexplore.ieee.org/document/7887697) dataset which can and must be requested from the authors [here](https://zenodo.org/record/546113).
+
 We first performed a preprocessing of the biosignals and explored the affective data, then we evaluated the performance of many classifiers.
 We created minimal python scripts that are to be executed on Compute Canada, and which let the user perform the data preprocessing and the classifiers evaluation.
 The preprocessing scripts we wrote were inspired by [Jiaqi1008's repository](https://github.com/Jiaqi1008/Emotion_detection).
