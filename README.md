@@ -135,7 +135,7 @@ Our progress and results were reported in Jupyter Notebooks which are presented 
 * *docs* folder : contains the interactive Plotly figures for the [GitPitch presentation](https://gitpitch.com/brainhack-school2020/Biosignal-Emotions-BHS-2020)
 * *images* folder : contains the images for the [GitPitch presentation](https://gitpitch.com/brainhack-school2020/Biosignal-Emotions-BHS-2020)
 * *DREAMER_main.py* : main script to be used in Compute Canada.
-* *Greg_tutorial.ipynb* and *Greg_tutorial.py* are respectively a demo notebook and the script built based on this notebook that Gregory Kiar used our repository during his lecture to demonstrate how one can first try code on a notebook then implement it as a script (May 29th 2020 course).
+* *Greg_tutorial.ipynb* and *Greg_tutorial.py* are respectively a demo notebook and the script built based on this notebook that Gregory Kiar used during his lecture to demonstrate how one can first try code on a notebook then implement it as a script (May 29th 2020 course).
 * *LICENSE* : Creative Commons CC0 1.0 Universal license
 * *PITCHME.md* : Markdown source file for the [GitPitch presentation](https://gitpitch.com/brainhack-school2020/Biosignal-Emotions-BHS-2020)
 * *PotentialResources.md* : Markdown file we used as a common register for links that could help advancing the project
