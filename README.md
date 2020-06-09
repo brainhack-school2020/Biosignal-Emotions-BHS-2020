@@ -100,7 +100,9 @@ Danielle focused on the Machine Learning pipeline and the evaluation of many cla
 
 #### Preprocessing pipeline
 <ins>*Achraf*</ins>
+
 The preprocessing scripts I wrote were inspired by [Jiaqi1008's repository](https://github.com/Jiaqi1008/Emotion_detection).
+
 * The DREAMER dataset coming as a .MAT file, I used the library Scipy to load it : it contained EEG data, ECG data, and subjective ratings.
 * The preprocessing for EEG data consisted of extracting the maximum of the Power Spectrum Density (PSD) for the EEG signals for three bands (theta,alpha,beta), for each of the 14 electrodes used. The library Scipy was used for filtering and PSD extraction (Welch's method).
 * The preprocessing for ECG data was done thanks to the library [Neurokit2](https://github.com/neuropsychology/NeuroKit) by first preprocessing the data with the ecg_process() method then by extracting the features with the ecg_intervalrelated() method. The features extracted were the Mean Heart Rate and various Heart Rate Variability (HRV) metrics.
