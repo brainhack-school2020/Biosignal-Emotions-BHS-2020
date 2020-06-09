@@ -103,13 +103,13 @@ The preprocessing scripts we wrote were inspired by [Jiaqi1008's repository](htt
 
 #### Classification performance evaluation
 
-* Affective data
-* Cross-validation
-* Classifiers explored
-
+* Affective data : Disgust and Anger versus Calmness
+* k-Fold Cross-Validation : 10
+* Classifiers explored : Nearest Neighbors, Linear SVM, RBF SVM, Gaussian Process, Decision Tree, Random Forest, Neural Net, AdaBoost and Naive Bayes
 * An output example of the script intended to be used in Compute Canada in a terminal can be found [here](https://github.com/brainhack-school2020/Biosignal-Emotions-BHS-2020/blob/master/Deliverables/ComputeCanadaScriptExample_Classification.png)
 
-Our progress and results were reported as Jupyter Notebooks which are presented next.
+Our progress and results were reported in Jupyter Notebooks which are presented below.
+
 ### Week 3 deliverable: data visualization
 
 #### Danielle's Week 3 deliverables
