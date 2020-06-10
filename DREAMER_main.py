@@ -187,10 +187,15 @@ def SelectTargetEmotions(df,TargetEmotionsList=pd.DataFrame()):
     data['Stress_bin'] = data['Target_Emotion'].map({'anger': 1, 'fear': 1, 'calmness': 0})
     return data
 
-def BuildKFold(data,n=10,features=pd.DataFrame()):
+def BuildKFold(data,n=10,features=pd.DataFrame(),Biosignal_Option='both'):
     # features not used for now, but can be used in something like : for feature in features: X = datal.loc[:,feature].to_numpy()
     group_kfold = GroupKFold(n_splits=n)
-    X = data.loc[:,'psdtheta_1':'SampEn'].to_numpy()
+    if Biosignal_Option=='eeg':
+        X = data.loc[:,'psdtheta_1':'psdbeta_14'].to_numpy()
+    elif Biosignal_Option=='ecg':
+        X = data.loc[:,'Rate_Mean':'SampEn'].to_numpy()
+    elif Biosignal_Option=='both':
+        X = data.loc[:,'psdtheta_1':'SampEn'].to_numpy()
     y = data['Stress_bin'].to_numpy()
     groups = data['Participant'].to_numpy()
     for train_index, test_index in group_kfold.split(X, y, groups):
@@ -262,7 +267,7 @@ def driver():
     if(results.user_request[0]=="preprocessing"):
         results.dreamer_matfile = results.user_request[1]
         results.Biosignal_Option = results.user_request[2]
-        del results.user_request
+        #del results.user_request
         # --- Create a DataFrame containing the parsing summary
         # --- Convert the Argparse's namespace to a dictionary via vars( ) and convert the resulting dictionary into a DataFrame via pd.DataFrame( )
         df_Configuration = pd.DataFrame(vars(results))
@@ -305,12 +310,13 @@ def driver():
         else:
             print("No scaling. Skipping this step.")
         print(df_Features)
-        return df_Features
+        return df_Features, results
     elif(results.user_request[0]=="classification"):  
 
         url = results.user_request[1]
+        Classification_Biosignal_Option = results.user_request[2]
 
-        results = []
+        Results = [] # Achraf : I renamed your previous "results" into "Results" because there is a conflict between it and the argparser's results
         names = ["Nearest Neighbors", "Linear SVM", "RBF SVM", "Gaussian Process",
                 "Decision Tree", "Random Forest", "Neural Net", "AdaBoost",
                 "Naive Bayes"]
@@ -328,12 +334,16 @@ def driver():
             clf = make_pipeline(MinMaxScaler(), classifier)
             df = CSVtoDataFrame(url) # 'https://raw.githubusercontent.com/brainhack-school2020/Biosignal-Emotions-BHS-2020/master/Data/DREAMER_Preprocessed_NotTransformed_NotThresholded.csv'
             data = SelectTargetEmotions(df)
-            X,y,groups,X_test, y_test = BuildKFold(data)
+            X,y,groups,X_test, y_test = BuildKFold(data,Biosignal_Option=Classification_Biosignal_Option)
             score, runtime = run_clf(clf,X,y,groups,X_test, y_test)
-            results.append(['Name', name, 'Mean_Score', np.mean(score), 'Mean_Runtime', np.mean(runtime)])
+            Results.append(['Name', name, 'Mean_Score', np.mean(score), 'Mean_Runtime', np.mean(runtime)])
             print(['Name', name, 'Mean_Score', np.mean(score), 'Mean_Runtime', np.mean(runtime)])
-        return pd.DataFrame() # TODO : Return a DataFrame containing the results of the classification
+        return pd.DataFrame(Results), results # TODO : Convert correctly Results into a valid DataFrame (for now the output is imperfect : one would need to convert Results as a Dictionary then as a DataFrame)
 
 # Main scripting details
 if __name__ == "__main__":
-    df_Features = driver()
+    df, results = driver()
+    if results.user_request[0]=="preprocessing" and not(df.empty):
+        df.to_csv("DREAMER_features.csv")
+    elif results.user_request[0]=="classification" and not(df.empty):
+        df.to_csv("DREAMER_classification.csv")
