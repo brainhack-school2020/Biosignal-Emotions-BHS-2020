@@ -32,7 +32,7 @@ This notebook was run with ```Python 3.7.6```. A ```requirements.txt``` file lis
 pip install -r documents/requirements.txt
 ```
 
-4. Move the ```DREAMER.mat``` file downloaded from Zenodo to ```.Biosignal-Emotions-BHS-2020/Data```. 
+4. Move the ```DREAMER.mat``` file downloaded from Zenodo to ```Biosignal-Emotions-BHS-2020/Data```. 
 
 5. For preprocessing, feature extraction, and classification with only the EEG data, only the ECG data, and both the EEG and ECG data, you can run:
 
