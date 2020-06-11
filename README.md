@@ -163,6 +163,7 @@ We would like to thank the course organizers and our instructors who spent a lot
 * *DREAMER_main.py*: main script to be used in Compute Canada.
 * *LICENSE*: Creative Commons CC0 1.0 Universal license
 * *PITCHME.md*: Markdown source file for the [GitPitch presentation](https://gitpitch.com/brainhack-school2020/Biosignal-Emotions-BHS-2020)
+* *run.sh*: Bash script for running the preprocessing and classifiers evaluation 
 
 #### Instructions
 
