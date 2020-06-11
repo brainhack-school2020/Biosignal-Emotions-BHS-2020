@@ -83,14 +83,13 @@ def driver():
     parser = ArgumentParser(__file__, description)
     parser.add_argument("--dreamer_matfile", action="store", 
                         help="Path to raw data .mat file: DREAMER.mat")
-    parser.add_argument("--csvname", "-n", action="store",
+    parser.add_argument("--csv_name", "-n", action="store",
                         help="filename for the csv, if not empty will save as csv")
     results = parser.parse_args()
     raw = sio.loadmat(results.dreamer_matfile)
     df_emotion = participant_emotion(raw)
-    if results.csvname:
-        df.to_csv(csvname)
-        
+    if results.csv_name:
+        df_emotion.to_csv(results.csv_name)
     return df_emotion
                     
 if __name__ == "__main__":
