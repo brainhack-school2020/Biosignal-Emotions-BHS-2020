@@ -264,10 +264,16 @@ def driver():
     # --- Execute the parsing ---
     results = parser.parse_args()
     
-    if(results.user_request[0]=="preprocessing"):
+
+    action=results.user_request[0]
+
+    if(action=="preprocessing"):
         results.dreamer_matfile = results.user_request[1]
         results.Biosignal_Option = results.user_request[2]
-        #del results.user_request
+        output_filename = results.user_request[3]
+        print(results)
+        del results.user_request
+        print('Action = '+str(action))
         # --- Create a DataFrame containing the parsing summary
         # --- Convert the Argparse's namespace to a dictionary via vars( ) and convert the resulting dictionary into a DataFrame via pd.DataFrame( )
         df_Configuration = pd.DataFrame(vars(results))
@@ -310,11 +316,14 @@ def driver():
         else:
             print("No scaling. Skipping this step.")
         print(df_Features)
-        return df_Features, results
-    elif(results.user_request[0]=="classification"):  
+        return df_Features, action, output_filename
+    elif(action=="classification"):  
 
         url = results.user_request[1]
         Classification_Biosignal_Option = results.user_request[2]
+        output_filename = results.user_request[3]
+
+        del results.user_request
 
         Results = [] # Achraf : I renamed your previous "results" into "Results" because there is a conflict between it and the argparser's results
         names = ["Nearest Neighbors", "Linear SVM", "RBF SVM", "Gaussian Process",
@@ -338,12 +347,12 @@ def driver():
             score, runtime = run_clf(clf,X,y,groups,X_test, y_test)
             Results.append(['Name', name, 'Mean_Score', np.mean(score), 'Mean_Runtime', np.mean(runtime)])
             print(['Name', name, 'Mean_Score', np.mean(score), 'Mean_Runtime', np.mean(runtime)])
-        return pd.DataFrame(Results), results # TODO : Convert correctly Results into a valid DataFrame (for now the output is imperfect : one would need to convert Results as a Dictionary then as a DataFrame)
+        return pd.DataFrame(Results), action, output_filename # TODO : Convert correctly Results into a valid DataFrame (for now the output is imperfect : one would need to convert Results as a Dictionary then as a DataFrame)
 
 # Main scripting details
 if __name__ == "__main__":
-    df, results = driver()
-    if results.user_request[0]=="preprocessing" and not(df.empty):
-        df.to_csv("DREAMER_features.csv")
-    elif results.user_request[0]=="classification" and not(df.empty):
-        df.to_csv("DREAMER_classification.csv")
+    df, action, output_filename = driver()
+    if action=="preprocessing" and not(df.empty):
+        df.to_csv(output_filename) #df.to_csv("DREAMER_features.csv")
+    elif action=="classification" and not(df.empty):
+        df.to_csv(output_filename) #df.to_csv("DREAMER_classification.csv")
