@@ -118,12 +118,6 @@ I evaluated a number of classifiers [based on a script from the sci-kit learn do
 
 ### Conclusion and acknowledgements
 
-* We worked with the DREAMER dataset which provided EEG and ECG data. The other datasets are worth exploring in that they provide other types of Biosignals such as Skin Temperature, Respiration.
-* We could do a preprocessing of biosignals and extract features from EEG and ECG signals, as targeted.
-* We tried to find strong correlations between the extracted features and subjective ratings, but the reality was that the correlations were low. This makes the detection of stress from biosignals challenging and not reliable as long as we don't find better features.
-* Affective data showed more consistency in that anger and disgust were found to represent stress.
-* Affective data was analyzed in a Machine Learning perspective : we compared the performance of multiple classifiers which was of a few milliseconds overall. AdaBoost showed the highest accuracy but at the cost of longer processing time.
-
 #### What we learned in the BHS2020 project
 During the BrainHack School, we hoped to learn as much as we could about modern (neuro)scientific practice, to improve our Python skills through a hands-on multi-disciplinary project, and to exchange information and expertise with the other participants.
 
