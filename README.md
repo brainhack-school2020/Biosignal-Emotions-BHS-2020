@@ -2,7 +2,7 @@
 
 ## Summary 
 
-In this project for [BrainHack School 2020](https://school.brainhackmtl.org/), we used a multimodal biosignal dataset to predict the "target emotion" of audiovisual stimuli. The project was written in Python and encompassed preprocessing, feature extraction, and classification. More information about the contents of this repository can be found at the end of this page.
+In this project for [BrainHack School 2020](https://school.brainhackmtl.org/), we used multimodal biosignal data to predict the "target emotion" of audiovisual stimuli. The project was written in Python and encompassed preprocessing, feature extraction, and classification. More information about the contents of this repository and instructions for how to run them can be found in [the "repoInfo" Markdown file](https://github.com/brainhack-school2020/Biosignal-Emotions-BHS-2020/blob/master/docs/repoInfo.MD) located in [the docs folder](https://github.com/brainhack-school2020/Biosignal-Emotions-BHS-2020/tree/master/docs).
 
 The project presentation is available [here](https://gitpitch.com/brainhack-school2020/Biosignal-Emotions-BHS-2020).
 
@@ -14,17 +14,11 @@ The project presentation is available [here](https://gitpitch.com/brainhack-scho
 
 ##### Danielle
 
-I started my research master's this January, and my thesis project will involve the automatic classification of biosignals, among other things. My background is in cognitive science, and while I've learned about the basics of machine learning, I never got the chance to work on a larger, practical project.
-
-The BrainHack School was a great opportunity for me to work with open data before getting to collect my own.
+I started my research master's this January, and my thesis project will involve the automatic classification of biosignals among other things. My background is in cognitive science, and while I've learned about the basics of machine learning, I never got the chance to work on a larger, practical project. 
  
 ##### Achraf
  
 I am currently studying Biomedical Engineering at Polytechnique Montréal (M.Eng) and am enrolled in the Brain Hack School 2020 adventure for growing my technical skills as well as networking. I have been modestly introduced to NeuroImaging before enrolling in the biomedical engineering path and would like to broaden my knowledge of the field and sharpen my skills in it.
-
-My goal through the Brain Hack School 2020 was to learn as much as I can about modern ways of doing NeuroImaging, to improve my python skills through a hands-on multi-disciplinary project, and to exchange information and expertise with the other participants.
-
-The project idea is from Danielle with whom I was collaborating.
 
 #### About the project
 
@@ -84,34 +78,26 @@ We were able to complete:
     
     - [x]   Evaluation of classifier performance
      
-    - [ ]   Job file
+    - [x]   Shell script
 
 ### Progress & Results
 
-We first preprocessed the biosignals and explored the relationship of extracted features with the emotion data, then we evaluated the performance of a number of classifiers.
-We created a minimal python script that perform the data preprocessing, feature extraction, and the classifier evaluation.
-
-Achraf focused on preprocessing the biosignals, visually explored the biosignal data and wrote minimal working version of scripts.
-Danielle focused on the machine learning pipeline and the evaluation of classifiers performance for the affective data.
+We first preprocessed the biosignals and explored the relationship of extracted features with the emotion data, then we evaluated the performance of a number of classifiers. We created a minimal python script that performs the data preprocessing, feature extraction, and the classifier evaluation.
 
 #### Achraf: Preprocessing and feature extraction
 
-The preprocessing scripts I wrote were inspired by [Jiaqi1008's repository](https://github.com/Jiaqi1008/Emotion_detection).
-
-* The DREAMER dataset coming as a .MAT file, I used the library Scipy to load it: it contained EEG data, ECG data, and subjective ratings.
-* The preprocessing for EEG data consisted of extracting the maximum of the Power Spectrum Density (PSD) for the EEG signals for three bands (theta,alpha,beta), for each of the 14 electrodes used. The library Scipy was used for filtering and PSD extraction (Welch's method).
-* The preprocessing for ECG data was done thanks to the library [Neurokit2](https://github.com/neuropsychology/NeuroKit) by first preprocessing the data with the ecg_process() method then by extracting the features with the ecg_intervalrelated() method. The features extracted were the Mean Heart Rate and various Heart Rate Variability (HRV) metrics.
-* I tested those preprocessing pipelines on Notebooks first, then wrote a script *DREAMER_main.py* implementing them.
-An output example of the script in a terminal can be found [here](https://github.com/brainhack-school2020/Biosignal-Emotions-BHS-2020/blob/master/Deliverables/ComputeCanadaScriptExample_Preprocessing.png)
+The preprocessing scripts I wrote were inspired by [Jiaqi1008's repository](https://github.com/Jiaqi1008/Emotion_detection). The DREAMER dataset being a .mat file, I used the library Scipy to load it: it contained EEG data, ECG data, and subjective ratings. The preprocessing for EEG data consisted of extracting the maximum of the Power Spectrum Density (PSD) for the EEG signals for three bands (theta, alpha, beta), for each of the 14 electrodes used. The library Scipy was used for filtering and PSD extraction (Welch's method). The preprocessing for ECG data was done thanks to the library [Neurokit2](https://github.com/neuropsychology/NeuroKit) by first preprocessing the data with the ecg_process() method then by extracting the features with the ecg_intervalrelated() method. The features extracted were the Mean Heart Rate and various Heart Rate Variability (HRV) metrics. I tested those preprocessing pipelines in notebooks first, then I wrote a script [DREAMER_main.py](https://github.com/brainhack-school2020/Biosignal-Emotions-BHS-2020/blob/master/DREAMER_main.py) implementing them. An output example of the script in a terminal can be found [here](https://github.com/brainhack-school2020/Biosignal-Emotions-BHS-2020/blob/master/Deliverables/ComputeCanadaScriptExample_Preprocessing.png)
 
 #### Danielle: Evaluation of classifiers
 
-* Affective data: Disgust and Anger versus Calmness
-* Group 10-Fold Cross-Validation using Scikit-learn
-* I explored a number of classifiers [based on a script from the sci-kit learn documentation](https://scikit-learn.org/stable/auto_examples/classification/plot_classifier_comparison.html), inspired by the following Classifiers explored: Nearest Neighbors, Linear SVM, RBF SVM, Gaussian Process, Decision Tree, Random Forest, Neural Net, AdaBoost and Naive Bayes
-* Achraf implemented my Machine Learning pipeline in the *DREAMER_main.py* script, which I later enriched. 
+I was interested in training a classifier to detect stress, but at the beginning of the project, I wasn't sure how exactly we should use the data to do so. We first considered predicting self-reported valence and arousal scores, but then we explored the data and looked at the relationship between some of the features we extracted and valence/arousal. It seemed like these features did not indicate changes in valence or arousal as much as we'd hoped. It would be interesting to see how well we could predict valence and arousal using different methods of preprocessing, feature extraction, scaling, thresholding etc., but for the sake of this project, we thought we'd start with an easier classification problem.
 
-Our progress and results are presented in deliverables below.
+In the paper describing DREAMER [(Katsigiannis and Ramzan, 2018)](https://ieeexplore.ieee.org/document/7887697), Table I contains the "target emotion" of each video clip with the video ID. The target emotion was not includied in the .mat file downloaded from Zenodo, so I [added this information to each datapoint based on the video ID](https://github.com/brainhack-school2020/Biosignal-Emotions-BHS-2020/blob/master/Data/load_emotion_data.py). Including this information allowed us to predict the emotions that were intended to be evoked by each stimulus, rather than self-reported emotions.
+
+There were 9 different target emotions, ranging from excitement to surprise to sadness. Before determining whether we could predict the full sprectrum of emotions, I wanted to see whether we could distinguish "calmness" from two emotions on the opposite side of the spectrum: "anger" and "fear". This constituted a binary classification task with "calmness" and "not calmness".
+
+Group 10-Fold Cross-Validation using Scikit-learn
+I evaluated a number of classifiers [based on a script from the sci-kit learn documentation](https://scikit-learn.org/stable/auto_examples/classification/plot_classifier_comparison.html): Nearest Neighbors, Support Vector Machine with a linear kernel, Support Vector Machine with an RBF kernel, Gaussian Process, Decision Tree, Random Forest, Multi-layer Perceptron,  Naive Bayes and AdaBoost.
 
 #### Week 3 deliverable: data visualization
 
@@ -139,55 +125,19 @@ Our progress and results are presented in deliverables below.
 * Affective data was analyzed in a Machine Learning perspective : we compared the performance of multiple classifiers which was of a few milliseconds overall. AdaBoost showed the highest accuracy but at the cost of longer processing time.
 
 #### What we learned in the BHS2020 project
-The first week was an intense theoretical and practical overview of many modern tools in neuroimaging, many of which we never heard of before or had limited experience with. The second week taught us how important it is to take enough time to define clearly a project and specify goals for it. Instead of exploring many datasets at the same time, we chose to pick one and make the most out of it.
-The third and fourth week were the core of the brain-hacking adventure and taught us many things such as:
+During the BrainHack School, we hoped to learn as much as we could about modern (neuro)scientific practice, to improve our Python skills through a hands-on multi-disciplinary project, and to exchange information and expertise with the other participants.
+
+The first week was an intense theoretical and practical overview of many modern tools in neuroimaging, many of which we had very limited experience with or had never even heard of. The second week taught us how important it is to take enough time to clearly define a project and specify goals for it. Instead of exploring many datasets at the same time, we chose to pick one and make the most out of it.
+The third and fourth weeks were the core of the brain-hacking adventure and taught us many things such as:
 * Open Science and Collaborative tools and practices (Git, GitHub, GitPitch)
 * Improved coding skills: Python notebooks and scripting
 * Deeper understanding of Machine Learning
 * SSH, Windows Subsystem for Linux
 
 ### Acknowledgments
-We would like to thank the course organizers and our instructors who spent a lot of time helping us in the advancement of our project :
+We would like to thank the course organizers and our instructors who spent a lot of time helping us in the advancement of our project:
 * Gregory Kiar
 * Agâh Karakuzu
 * Loic Tetrel
 * Yann Harel
-
-### Repository description
-* *Classification* folder: contains a Jupyter Notebook for the classifiers evaluation
-* *Data* folder: contains scripts and Jupyter Notebooks for preprocessing, feature extraction, and data visualization. It contains also an *Old* folder containing notebooks from early on in our project when we were exploring other datasets.
-* *Deliverables* folder: contains the deliverables for Week 3
-* *docs* folder: contains the interactive Plotly figures for the [GitPitch presentation](https://gitpitch.com/brainhack-school2020/Biosignal-Emotions-BHS-2020), *DREAMER_info.PDF*, a document with more information on the dataset, as well as a, *PotentialResources.md*, a Markdown file we used to document links that could help with advancing the project
-* *Greg_tutorial* folder: contains *Greg_tutorial.ipynb* and *Greg_tutorial.py* are respectively a demo notebook and the script built based on this notebook that Greg Kiar used during his talk to demonstrate how one can first try code on a notebook then implement it as a script (May 29th 2020 course).
-* *images* folder: contains the images for the [GitPitch presentation](https://gitpitch.com/brainhack-school2020/Biosignal-Emotions-BHS-2020)
-* *DREAMER_main.py*: main script to be used in Compute Canada.
-* *LICENSE*: Creative Commons CC0 1.0 Universal license
-* *PITCHME.md*: Markdown source file for the [GitPitch presentation](https://gitpitch.com/brainhack-school2020/Biosignal-Emotions-BHS-2020)
-* *run.sh*: Bash script for running the preprocessing and classifiers evaluation 
-
-#### Instructions
-
-1. Clone this repository
-
-This can be done with:
-
-```
-git clone https://github.com/brainhack-school2020/Biosignal-Emotions-BHS-2020
-```
-Then change the working directory to ```Biosignal-Emotions-BHS-2020```. 
-
-2. Install the required dependencies (it is recommended that you create and activate a [virtual environment](https://docs.python.org/3/tutorial/venv.html) beforehand)
-
-This notebook was run with ```Python 3.7.6```. A ```requirements.txt``` file lists all of the packages in the virtual environment with which all of the notebooks and scripts were run. To download these packages, you can run:
-
-```
-pip install -r documents/requirements.txt
-```
-
-3. To run any of the notebooks, run the following command: 
-
-```
-jupyter notebook PathToNotebook.ipynb
-```
-
 
