@@ -271,9 +271,7 @@ def driver():
         results.dreamer_matfile = results.user_request[1]
         results.Biosignal_Option = results.user_request[2]
         output_filename = results.user_request[3]
-        print(results)
         del results.user_request
-        print('Action = '+str(action))
         # --- Create a DataFrame containing the parsing summary
         # --- Convert the Argparse's namespace to a dictionary via vars( ) and convert the resulting dictionary into a DataFrame via pd.DataFrame( )
         df_Configuration = pd.DataFrame(vars(results))
