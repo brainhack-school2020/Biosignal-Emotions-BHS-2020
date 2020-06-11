@@ -12,13 +12,13 @@ The project presentation is available [here](https://gitpitch.com/brainhack-scho
 
 #### About us
 
-*Danielle*
+##### Danielle
 
 I started my research master's this January, and my thesis project will involve the automatic classification of biosignals, among other things. My background is in cognitive science, and while I've learned about the basics of machine learning, I never got the chance to work on a larger, practical project.
 
 The BrainHack School was a great opportunity for me to work with open data before getting to collect my own.
  
-*Achraf*
+##### Achraf
  
 I am currently studying Biomedical Engineering at Polytechnique Montréal (M.Eng) and am enrolled in the Brain Hack School 2020 adventure for growing my technical skills as well as networking. I have been modestly introduced to NeuroImaging before enrolling in the biomedical engineering path and would like to broaden my knowledge of the field and sharpen my skills in it.
 
@@ -67,60 +67,57 @@ More information on how the data were collected can be found in the PDF [DREAMER
 
 ### Deliverables
 
-Our goals for the project were to complete:
- - Data preprocessing and feature extraction for at least one biosignal using Compute Canada.
+We were able to complete:
+ - Data preprocessing and feature extraction for at least one biosignal.
  
-    - [x]  Python scripts
-    
-    - [ ]  Job files
-    
+    - [x]  Python script
+        
  - Visualization of the relationship between the extracted features and the emotion data. 
  
-    - [x]   Python scripts
+    - [x]   Jupyter notebook
     
-    - [x]   Image files included in report/notebook
+    - [x]   Both interactive and static visualizations
 
- - Training of a classifier to predict the emotion data using Compute Canada.
+ - Training a classifier to predict the emotion data.
  
-    - [x]   Python scripts
+    - [x]   Python script
     
     - [x]   Evaluation of classifier performance
      
-    - [ ]   Job files
+    - [ ]   Job file
 
 ### Progress & Results
 
-We first performed a preprocessing of the biosignals and explored the relationship of extracted features with the affective data, then we evaluated the performance of a number of classifiers.
-We created minimal python scripts that are to be executed on Compute Canada, and which let the user perform the data preprocessing and the classifier evaluation.
+We first preprocessed the biosignals and explored the relationship of extracted features with the emotion data, then we evaluated the performance of a number of classifiers.
+We created a minimal python script that perform the data preprocessing, feature extraction, and the classifier evaluation.
 
-Achraf performed the preprocessing of the biosignals, visually explored the biosignal data and wrote minimal working version of scripts to be used in Compute Canada.
-Danielle focused on the Machine Learning pipeline and the evaluation of many classifiers performance for the affective data on Compute Canada.
+Achraf focused on preprocessing the biosignals, visually explored the biosignal data and wrote minimal working version of scripts.
+Danielle focused on the machine learning pipeline and the evaluation of classifiers performance for the affective data.
 
-#### Preprocessing pipeline
-<ins>*Achraf*</ins>
+#### Achraf: Preprocessing and feature extraction
 
 The preprocessing scripts I wrote were inspired by [Jiaqi1008's repository](https://github.com/Jiaqi1008/Emotion_detection).
 
-* The DREAMER dataset coming as a .MAT file, I used the library Scipy to load it : it contained EEG data, ECG data, and subjective ratings.
+* The DREAMER dataset coming as a .MAT file, I used the library Scipy to load it: it contained EEG data, ECG data, and subjective ratings.
 * The preprocessing for EEG data consisted of extracting the maximum of the Power Spectrum Density (PSD) for the EEG signals for three bands (theta,alpha,beta), for each of the 14 electrodes used. The library Scipy was used for filtering and PSD extraction (Welch's method).
 * The preprocessing for ECG data was done thanks to the library [Neurokit2](https://github.com/neuropsychology/NeuroKit) by first preprocessing the data with the ecg_process() method then by extracting the features with the ecg_intervalrelated() method. The features extracted were the Mean Heart Rate and various Heart Rate Variability (HRV) metrics.
-* I tested those preprocessing pipelines on Notebooks first, then wrote a script *DREAMER_main.py* implementing them in order to be used by Danielle for Compute Canada.
+* I tested those preprocessing pipelines on Notebooks first, then wrote a script *DREAMER_main.py* implementing them.
 An output example of the script in a terminal can be found [here](https://github.com/brainhack-school2020/Biosignal-Emotions-BHS-2020/blob/master/Deliverables/ComputeCanadaScriptExample_Preprocessing.png)
 
-#### Classification performance evaluation
-<ins>*Danielle*</ins>
-* Affective data : Disgust and Anger versus Calmness
-* Group k-Fold Cross-Validation using Sklearn: 10
-* I explored a number of classifiers [based on a script from the sci-kit learn documentation](https://scikit-learn.org/stable/auto_examples/classification/plot_classifier_comparison.html), inspired by the following Classifiers explored: Nearest Neighbors, Linear SVM, RBF SVM, Gaussian Process, Decision Tree, Random Forest, Neural Net, AdaBoost and Naive Bayes
-* Achraf implemented my Machine Learning pipeline in the *DREAMER_main.py* script, which I later enriched. An output example of such a script can be found [here](https://github.com/brainhack-school2020/Biosignal-Emotions-BHS-2020/blob/master/Deliverables/ComputeCanadaScriptExample_Classification.png)
+#### Danielle: Evaluation of classifiers
 
-Our progress and results are presented in Week 3 deliverables below.
+* Affective data: Disgust and Anger versus Calmness
+* Group 10-Fold Cross-Validation using Scikit-learn
+* I explored a number of classifiers [based on a script from the sci-kit learn documentation](https://scikit-learn.org/stable/auto_examples/classification/plot_classifier_comparison.html), inspired by the following Classifiers explored: Nearest Neighbors, Linear SVM, RBF SVM, Gaussian Process, Decision Tree, Random Forest, Neural Net, AdaBoost and Naive Bayes
+* Achraf implemented my Machine Learning pipeline in the *DREAMER_main.py* script, which I later enriched. 
+
+Our progress and results are presented in deliverables below.
 
 #### Week 3 deliverable: data visualization
 
 ##### Danielle's Week 3 deliverables
 * [Interactive Figure: "Participant Ratings of Film Clips in Valence-Arousal Space](https://brainhack-school2020.github.io/Biosignal-Emotions-BHS-2020/)
-  * [Bonus: a jupyter notebook generating this figure...](https://github.com/brainhack-school2020/Biosignal-Emotions-BHS-2020/blob/master/Deliverables/Week3_Emot_Plot_Danielle.ipynb) written while attempting to follow [PEP8](https://www.python.org/dev/peps/pep-0008/)! This was my first time trying to write code following any standard, so feedback is welcome :) 
+  * [Bonus: a jupyter notebook generating this figure...](https://github.com/brainhack-school2020/Biosignal-Emotions-BHS-2020/blob/master/Deliverables/Week3_Emot_Plot_Danielle.ipynb) written while attempting to follow [PEP8](https://www.python.org/dev/peps/pep-0008/)! 
 * [Interactive Figure: "Group 10-Fold Cross Validation with DREAMER data"](https://brainhack-school2020.github.io/Biosignal-Emotions-BHS-2020/DREAMER_group_cross_validation.html)
 * [Interactive Figure: "Score vs. Prediction Runtime for all CV Iterations and Classifiers"](https://brainhack-school2020.github.io/Biosignal-Emotions-BHS-2020/classifier_comparison.html)
 
@@ -140,10 +137,10 @@ Our progress and results are presented in Week 3 deliverables below.
 * We tried to find strong correlations between the extracted features and subjective ratings, but the reality was that the correlations were low. This makes the detection of stress from biosignals challenging and not reliable as long as we don't find better features.
 * Affective data showed more consistency in that anger and disgust were found to represent stress.
 * Affective data was analyzed in a Machine Learning perspective : we compared the performance of multiple classifiers which was of a few milliseconds overall. AdaBoost showed the highest accuracy but at the cost of longer processing time.
+
 #### What we learned in the BHS2020 project
-The first week was an intense theoretical and practical overview of many modern tools in neuroimaging, many of which we never heard of before.
-The second week taught us how important it is to take enough time to define clearly a project and specify goals for it. Instead of exploring many datasets at the same time, we chose to pick one and make the most out of it.
-The third and fourth week were the core of the brain-hacking adventure and taught us many things such as :
+The first week was an intense theoretical and practical overview of many modern tools in neuroimaging, many of which we never heard of before or had limited experience with. The second week taught us how important it is to take enough time to define clearly a project and specify goals for it. Instead of exploring many datasets at the same time, we chose to pick one and make the most out of it.
+The third and fourth week were the core of the brain-hacking adventure and taught us many things such as:
 * Open Science and Collaborative tools and practices (Git, GitHub, GitPitch)
 * Improved coding skills : Python notebooks and scripting
 * Deeper understanding of Machine Learning
