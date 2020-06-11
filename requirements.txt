@@ -49,7 +49,7 @@ protobuf==3.0.0
 ptyprocess==0.6.0
 pycairo==1.16.2
 pycparser==2.20
-pycrypto==2.6.1
+pycryptodome==3.9.7
 pycups==1.9.73
 Pygments==2.6.1
 pygobject==3.26.1
