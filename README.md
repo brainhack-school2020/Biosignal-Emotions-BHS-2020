@@ -142,8 +142,10 @@ Our progress and results are presented in deliverables below.
 The first week was an intense theoretical and practical overview of many modern tools in neuroimaging, many of which we never heard of before or had limited experience with. The second week taught us how important it is to take enough time to define clearly a project and specify goals for it. Instead of exploring many datasets at the same time, we chose to pick one and make the most out of it.
 The third and fourth week were the core of the brain-hacking adventure and taught us many things such as:
 * Open Science and Collaborative tools and practices (Git, GitHub, GitPitch)
-* Improved coding skills : Python notebooks and scripting
+* Improved coding skills: Python notebooks and scripting
 * Deeper understanding of Machine Learning
+* SSH, Windows Subsystem for Linux
+
 ### Acknowledgments
 We would like to thank the course organizers and our instructors who spent a lot of time helping us in the advancement of our project :
 * Gregory Kiar
