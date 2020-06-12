@@ -1,5 +1,7 @@
 # Biosignal processing for automatic emotion recognition
 
+![width=100](brain_emotions.jpg)
+
 ## Summary 
 
 In this project for [BrainHack School 2020](https://school.brainhackmtl.org/), we used multimodal biosignal data to predict the "target emotion" of audiovisual stimuli. The project was written in Python and encompassed preprocessing, feature extraction, and classification. More information about the contents of this repository and instructions for how to run them can be found in [the "repoInfo" Markdown file](https://github.com/brainhack-school2020/Biosignal-Emotions-BHS-2020/blob/master/docs/repoInfo.MD) located in [the docs folder](https://github.com/brainhack-school2020/Biosignal-Emotions-BHS-2020/tree/master/docs).
