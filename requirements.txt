@@ -18,7 +18,6 @@ jupyter-core==4.6.3
 keyring==10.6.0
 keyrings.alt==3.0
 kiwisolver==1.2.0
-language-selector==0.1
 launchpadlib==1.10.6
 lazr.restfulclient==0.13.5
 lazr.uri==1.0.3
