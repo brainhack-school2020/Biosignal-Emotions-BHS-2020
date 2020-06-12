@@ -10,6 +10,7 @@
 * [LICENSE](https://github.com/brainhack-school2020/Biosignal-Emotions-BHS-2020/blob/master/LICENSE): Creative Commons CC0 1.0 Universal license
 * [PITCHME.md](https://github.com/brainhack-school2020/Biosignal-Emotions-BHS-2020/blob/master/PITCHME.md): Markdown source file for the [GitPitch presentation](https://gitpitch.com/brainhack-school2020/Biosignal-Emotions-BHS-2020)
 * [run.sh](https://github.com/brainhack-school2020/Biosignal-Emotions-BHS-2020/blob/master/run.sh): Bash script for running the preprocessing, feature extraction, and classifier evaluation
+* [requirements.txt](https://github.com/brainhack-school2020/Biosignal-Emotions-BHS-2020/blob/master/requirements.txt): Lists the packages in the virtual environment with which all of the notebooks and scripts were run (has some unnecessary packages)
 
 #### Instructions 
 
@@ -26,7 +27,7 @@ Then change the working directory to ```Biosignal-Emotions-BHS-2020```.
 
 3. Install the required dependencies (it is recommended that you create and activate a [virtual environment](https://docs.python.org/3/tutorial/venv.html) beforehand)
 
-The scripts and notebooks were run with ```Python 3.7.6```. A ```requirements.txt``` file lists all of the packages in the virtual environment with which all of the notebooks and scripts were run. To download these packages, you can run:
+The scripts and notebooks were run with ```Python 3.7.6```. To download the packages from the ```requirements.txt``` file, you can run:
 
 ```
 pip install -r documents/requirements.txt
@@ -48,4 +49,4 @@ jupyter notebook Deliverables/Week3_Emot_Plot_Danielle.ipynb
 
 Alternatively, you can open them in binder in your browser:
 
-https://notebooks.gesis.org/binder/jupyter/user/brainhack-schoo-otions-bhs-2020-thcg2gk2/tree [![Binder](https://mybinder.org/badge_logo.svg)](https://notebooks.gesis.org/binder/jupyter/user/brainhack-schoo-otions-bhs-2020-thcg2gk2/tree)
+https://notebooks.gesis.org/binder/v2/gh/brainhack-school2020/Biosignal-Emotions-BHS-2020/85279820daf948d114d780e39d609c4f704f8cb1 [![Binder](https://notebooks.gesis.org/binder/v2/gh/brainhack-school2020/Biosignal-Emotions-BHS-2020/85279820daf948d114d780e39d609c4f704f8cb1)
