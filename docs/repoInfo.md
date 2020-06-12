@@ -1,15 +1,15 @@
 ### Repository description
 
-* Classification folder: contains a Jupyter Notebook for the classifier evaluation
-* Data folder: contains scripts and Jupyter Notebooks for preprocessing, feature extraction, and data visualization. It contains also an *Old* folder containing notebooks from early on in our project when we were exploring other datasets.
-* *Deliverables* folder: contains the deliverables for Week 3
-* *docs* folder: contains the interactive Plotly figures for the [GitPitch presentation](https://gitpitch.com/brainhack-school2020/Biosignal-Emotions-BHS-2020), DREAMER_info.PDF, a document with more information on the dataset, as well as a, *PotentialResources.md*, a Markdown file we used to document links that could help with advancing the project
-* *Greg_tutorial* folder: contains *Greg_tutorial.ipynb* and *Greg_tutorial.py* are respectively a demo notebook and the script built based on this notebook that Greg Kiar used during his talk to demonstrate how one can first try code on a notebook then implement it as a script (May 29th 2020 course).
-* *images* folder: contains the images for the [GitPitch presentation](https://gitpitch.com/brainhack-school2020/Biosignal-Emotions-BHS-2020)
-* *DREAMER_main.py*: main script to be used in Compute Canada.
-* *LICENSE*: Creative Commons CC0 1.0 Universal license
-* *PITCHME.md*: Markdown source file for the [GitPitch presentation](https://gitpitch.com/brainhack-school2020/Biosignal-Emotions-BHS-2020)
-* *run.sh*: Bash script for running the preprocessing and classifiers evaluation 
+* [Classification](https://github.com/brainhack-school2020/Biosignal-Emotions-BHS-2020/tree/master/Classification) folder: contains a Jupyter Notebook for the classifier evaluation
+* [Data](https://github.com/brainhack-school2020/Biosignal-Emotions-BHS-2020/tree/master/Data) folder: contains scripts and Jupyter Notebooks for preprocessing, feature extraction, and data visualization. It also contains an [Old](https://github.com/brainhack-school2020/Biosignal-Emotions-BHS-2020/tree/master/Data/Old) folder containing notebooks from early on in our project when we were exploring other datasets
+* [Deliverables](https://github.com/brainhack-school2020/Biosignal-Emotions-BHS-2020/tree/master/Deliverables) folder: contains some of our visualizations, in the form of image files, HTML files, or Jupyter Notebooks
+* [docs](https://github.com/brainhack-school2020/Biosignal-Emotions-BHS-2020/tree/master/docs) folder: contains this document, some interactive figures, [DREAMER_info.pdf](https://github.com/brainhack-school2020/Biosignal-Emotions-BHS-2020/blob/master/docs/DREAMER_info.pdf), a document with more information on the dataset, as well as *PotentialResources.md*, a Markdown file we used to document links that could help with advancing the project
+* [Greg_tutorial](https://github.com/brainhack-school2020/Biosignal-Emotions-BHS-2020/blob/master/Greg_tutorial) folder: contains [Greg_tutorial.ipynb](https://github.com/brainhack-school2020/Biosignal-Emotions-BHS-2020/blob/master/Greg_tutorial/Greg_tutorial.ipynb) and [Greg_tutorial.py](https://github.com/brainhack-school2020/Biosignal-Emotions-BHS-2020/blob/master/Greg_tutorial/Greg_tutorial.py), which are respectively a demo notebook and the script built based on this notebook that Greg Kiar used during [his talk on scripting in Python](https://www.youtube.com/watch?v=zpOQENxs1G4) (May 29th 2020 course).
+* [images](https://github.com/brainhack-school2020/Biosignal-Emotions-BHS-2020/blob/master/images) folder: contains some images used in the [GitPitch presentation](https://gitpitch.com/brainhack-school2020/Biosignal-Emotions-BHS-2020)
+* [DREAMER_main.py](https://github.com/brainhack-school2020/Biosignal-Emotions-BHS-2020/blob/master/DREAMER_main.py]: main script for preprocessing, feature extraction, and classifier evaluation
+* [LICENSE](https://github.com/brainhack-school2020/Biosignal-Emotions-BHS-2020/blob/master/LICENSE): Creative Commons CC0 1.0 Universal license
+* [PITCHME.md](https://github.com/brainhack-school2020/Biosignal-Emotions-BHS-2020/blob/master/PITCHME.md): Markdown source file for the [GitPitch presentation](https://gitpitch.com/brainhack-school2020/Biosignal-Emotions-BHS-2020)
+* [run.sh](https://github.com/brainhack-school2020/Biosignal-Emotions-BHS-2020/blob/master/run.sh): Bash script for running the preprocessing, feature extraction, and classifier evaluation
 
 #### Instructions 
 
@@ -26,7 +26,7 @@ Then change the working directory to ```Biosignal-Emotions-BHS-2020```.
 
 3. Install the required dependencies (it is recommended that you create and activate a [virtual environment](https://docs.python.org/3/tutorial/venv.html) beforehand)
 
-This notebook was run with ```Python 3.7.6```. A ```requirements.txt``` file lists all of the packages in the virtual environment with which all of the notebooks and scripts were run. To download these packages, you can run:
+The scripts and notebooks were run with ```Python 3.7.6```. A ```requirements.txt``` file lists all of the packages in the virtual environment with which all of the notebooks and scripts were run. To download these packages, you can run:
 
 ```
 pip install -r documents/requirements.txt
@@ -45,3 +45,7 @@ bash run.sh
 ```
 jupyter notebook Deliverables/Week3_Emot_Plot_Danielle.ipynb	
 ```
+
+Alternatively, you can open them in binder in your browser:
+
+https://notebooks.gesis.org/binder/jupyter/user/brainhack-schoo-otions-bhs-2020-thcg2gk2/tree [![Binder](https://mybinder.org/badge_logo.svg)](https://notebooks.gesis.org/binder/jupyter/user/brainhack-schoo-otions-bhs-2020-thcg2gk2/tree)
