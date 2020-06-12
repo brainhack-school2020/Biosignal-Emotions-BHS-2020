@@ -14,7 +14,7 @@ The project presentation is available [here](https://gitpitch.com/brainhack-scho
 
 ##### Danielle
 
-I started my research master's this January, and my thesis project will involve the automatic classification of biosignals among other things. My background is in cognitive science, and while I've learned about the basics of machine learning, I never got the chance to work on a larger, practical project. 
+I started my research master's this January, and my thesis project will involve the automatic classification of biosignals among other things. My background is in cognitive science, and while I've already learned about the basics of machine learning and neuroinformatics, I would like to improve my skills by working on a practical project with real data. 
  
 ##### Achraf
  
@@ -22,7 +22,7 @@ I am currently studying Biomedical Engineering at Polytechnique Montréal (M.Eng
 
 #### About the project
 
-Psychological stress has been found to be associated with changes in certain biosignals. Features extracted from these biosignals have increasingly been used for predicting an individual's emotional state, [including the EEG alpha asymmetry index, heart rate variability, and skin conductance response](https://s3.amazonaws.com/academia.edu.documents/60215566/2019_Giannakakis_Review_on_psychological_stress_detection_using_biosignals20190806-1688-7kttp7.pdf?response-content-disposition=inline%3B%20filename%3DReview_on_psychological_stress_detection.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIATUSBJ6BALIEFO2U4%2F20200521%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200521T161015Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Security-Token=IQoJb3JpZ2luX2VjENj%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIQCDcDSZcyT6u4Lc7Hc16sNh2InzAcekbrsiPyXV2UtM%2FQIgKLX0wumug7pgD59QsVol60DUF42liQhPUKjn7NITiNEqtAMIMBAAGgwyNTAzMTg4MTEyMDAiDDW7xJRp4wDPxgLtryqRA6P76YemmmJBvBnoRuW0%2BGaK9mS1Z61PKckoR8jxyxtvu45NdtS2qyfCAlopFhEH9zMMwHKKs7dwPdwbXuLt6HSQ06bRW8RTtGFE%2FooJvC9%2BZY2Pff1h%2Bnk8HW%2FM%2FDjlP5AzkmDpJ0KUO04PFxoqqBvFFIIy83iafxPVE0fly3fktUhE0kKsuOnBOjyABMzUPYI3nqjej%2BiJ8QpCQbqXx6r8YAuNJ5Nr4LGP2SVFKXA787KJnsrmD1uisIdjqLnjhzXaDZreoeukKMOF3yjQ1xG7srPW%2FWzoFSxLP79bNDEq54MJ145kg2i6vw8UqgdmDmNXjl3y7cLYLSJ%2BEFWkvYHCySYan1qdnjJDbTFYMm7GnRPM%2FVFfe6iwkPDI4gdwKyHnPH4JkEMvI2b7l%2FasmhHHjA932H5ziezXh%2FsJZNi5PdK26OwxxGM3MfiMjBpnf%2FtT%2FDPsq4B9i2i0azwQNiJYgDgw74VA%2BQJEtGPQnHaJjM%2FLud%2BMz35zKh%2BYRUMQqwFWPUOhA6EdYUgYcOUPWY7KMNexmvYFOusBM0Sz5ZgfGF1vsvoowJ42W%2BMbymHSuGfWGkUFug4P8pS02TC2eB9GPSMyN9CHbQ7PV2%2BbWVsPGBeqUtNSe6xOLqVR9goW4K3xWjw1cnSopEyUpXU%2F8C3qsCfUPGEUT2sw05J9F%2BlBBdSD7nZ4pH9SZxKFq5A6JRhzRcKIT11ba4UUznzwcBY6X%2FYgz3PpQYOl%2Bet5MFCw%2F3BcjRgR7nGytsLHNC9LmHGg9YAeQ7N%2Fo9%2BAGVVm6RDXpOeqExF7NkcKDofYQidkfUS6iGhOfdUA%2Fl1IkH4s%2BRbeATH2yeIOsIdEB%2FGqV8vOlEkrPg%3D%3D&X-Amz-Signature=62de6e2c0bd6f2dc619c179bf22988be24a3abdcbe8bbed4fd2c4dfdd2c6b780). 
+Psychological stress has been found to be associated with changes in certain biosignals. Features extracted from these biosignals have increasingly been used for predicting an individual's emotional state, including the EEG alpha asymmetry index, heart rate variability, and skin conductance response [(Giannakakis et al. 2019)](https://s3.amazonaws.com/academia.edu.documents/60215566/2019_Giannakakis_Review_on_psychological_stress_detection_using_biosignals20190806-1688-7kttp7.pdf?response-content-disposition=inline%3B%20filename%3DReview_on_psychological_stress_detection.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIATUSBJ6BALIEFO2U4%2F20200521%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200521T161015Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Security-Token=IQoJb3JpZ2luX2VjENj%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIQCDcDSZcyT6u4Lc7Hc16sNh2InzAcekbrsiPyXV2UtM%2FQIgKLX0wumug7pgD59QsVol60DUF42liQhPUKjn7NITiNEqtAMIMBAAGgwyNTAzMTg4MTEyMDAiDDW7xJRp4wDPxgLtryqRA6P76YemmmJBvBnoRuW0%2BGaK9mS1Z61PKckoR8jxyxtvu45NdtS2qyfCAlopFhEH9zMMwHKKs7dwPdwbXuLt6HSQ06bRW8RTtGFE%2FooJvC9%2BZY2Pff1h%2Bnk8HW%2FM%2FDjlP5AzkmDpJ0KUO04PFxoqqBvFFIIy83iafxPVE0fly3fktUhE0kKsuOnBOjyABMzUPYI3nqjej%2BiJ8QpCQbqXx6r8YAuNJ5Nr4LGP2SVFKXA787KJnsrmD1uisIdjqLnjhzXaDZreoeukKMOF3yjQ1xG7srPW%2FWzoFSxLP79bNDEq54MJ145kg2i6vw8UqgdmDmNXjl3y7cLYLSJ%2BEFWkvYHCySYan1qdnjJDbTFYMm7GnRPM%2FVFfe6iwkPDI4gdwKyHnPH4JkEMvI2b7l%2FasmhHHjA932H5ziezXh%2FsJZNi5PdK26OwxxGM3MfiMjBpnf%2FtT%2FDPsq4B9i2i0azwQNiJYgDgw74VA%2BQJEtGPQnHaJjM%2FLud%2BMz35zKh%2BYRUMQqwFWPUOhA6EdYUgYcOUPWY7KMNexmvYFOusBM0Sz5ZgfGF1vsvoowJ42W%2BMbymHSuGfWGkUFug4P8pS02TC2eB9GPSMyN9CHbQ7PV2%2BbWVsPGBeqUtNSe6xOLqVR9goW4K3xWjw1cnSopEyUpXU%2F8C3qsCfUPGEUT2sw05J9F%2BlBBdSD7nZ4pH9SZxKFq5A6JRhzRcKIT11ba4UUznzwcBY6X%2FYgz3PpQYOl%2Bet5MFCw%2F3BcjRgR7nGytsLHNC9LmHGg9YAeQ7N%2Fo9%2BAGVVm6RDXpOeqExF7NkcKDofYQidkfUS6iGhOfdUA%2Fl1IkH4s%2BRbeATH2yeIOsIdEB%2FGqV8vOlEkrPg%3D%3D&X-Amz-Signature=62de6e2c0bd6f2dc619c179bf22988be24a3abdcbe8bbed4fd2c4dfdd2c6b780). This research has allowed for the development of technologies that can to respond to users' emotions [Carroll et al. 2013](https://ieeexplore.ieee.org/abstract/document/6681439) and motivated the creation of multiple datasets containing emotion-correlated biosignal data [(Wiem & Lachiri, 2017)](https://pdfs.semanticscholar.org/3750/b635d455fee489305b24ead4b7e9233b7209.pdf). In this project, we were broadly interested in the task of emotion recognition, aiming to use a publicly available dataset to explore how we could predict emotions using biosignals.
 
 ### Tools 
 
@@ -35,14 +35,14 @@ Tools and techniques we used:
 
 ### Data 
 
-At the start of the project, we considered using the following emotion-correlated biosignal databases: 
+At the start of the project, we considered using the following databases: 
 
  - [DREAMER: A Database for Emotion Recognition through EEG and ECG Signals from Wireless Low-cost Off-the-Shelf Devices](https://ieeexplore.ieee.org/document/7887697)
     - Biosignal data: EEG and ECG
     - Emotion data: Rating on valence-arousal-dominance scale provided by participants and tags for the "target emotion" of the stimuli
  - [The MAHNOB-HCI-Tagging database](https://mahnob-db.eu/hci-tagging/)
    - Biosignal data: EEG (in the form of BDF files), ECG, respiration amplitude, and skin temperature
-   - Emotion data: Rating on valence-arousal scale provided by participants, and for some of the data, emotion tags (e.g. amused) selected by participants
+   - Emotion data: Rating on valence-arousal scale provided by participants, and for some of the data, emotion tags (e.g. amused) selected by participants 
  - [An EEG dataset recorded during affective music listening](https://openneuro.org/datasets/ds002721/versions/1.0.1)
      - Biosignal data: EEG
      - Emotion data: Rating on valence-arousal scale provided by participants (though it's not immediately clear where this can be downloaded)
@@ -90,14 +90,18 @@ The preprocessing scripts I wrote were inspired by [Jiaqi1008's repository](http
 
 #### Danielle: Evaluation of classifiers
 
-I was interested in training a classifier to detect stress, but at the beginning of the project, I wasn't sure how exactly we should use the data to do so. We first considered predicting self-reported valence and arousal scores, but then we explored the data and looked at the relationship between some of the features we extracted and valence/arousal. It seemed like these features did not indicate changes in valence or arousal as much as we'd hoped. It would be interesting to see how well we could predict valence and arousal using different methods of preprocessing, feature extraction, scaling, thresholding etc., but for the sake of this project, we thought we'd start with an easier classification problem.
+I was interested in training a classifier to detect stress, but at the beginning of the project, I wasn't sure how exactly we should use the data to do so. I wanted to be able to compare my results to others, but there appears to be a wide range of ways to evaluate stress detection, further complicated by the fact that research on automatic emotion recognition and stress detection has relied on different models of emotion [(Wiem & Lachiri, 2017)](https://pdfs.semanticscholar.org/3750/b635d455fee489305b24ead4b7e9233b7209.pdf).
+
+We first considered predicting self-reported valence and arousal scores, but then we explored the data and looked at the relationship between some of the features we extracted and valence/arousal. It seemed like these features did not indicate changes in valence or arousal as much as we'd hoped. It would be interesting to see how well we could predict valence and arousal using different methods of preprocessing, feature extraction, scaling, thresholding etc., but for the sake of this project, we thought we'd start with an easier classification problem.
 
 In the paper describing DREAMER [(Katsigiannis and Ramzan, 2018)](https://ieeexplore.ieee.org/document/7887697), Table I contains the "target emotion" of each video clip with the video ID. The target emotion was not includied in the .mat file downloaded from Zenodo, so I [added this information to each datapoint based on the video ID](https://github.com/brainhack-school2020/Biosignal-Emotions-BHS-2020/blob/master/Data/load_emotion_data.py). Including this information allowed us to predict the emotions that were intended to be evoked by each stimulus, rather than self-reported emotions.
 
-There were 9 different target emotions, ranging from excitement to surprise to sadness. Before determining whether we could predict the full sprectrum of emotions, I wanted to see whether we could distinguish "calmness" from two emotions on the opposite side of the spectrum: "anger" and "fear". This constituted a binary classification task with "calmness" and "not calmness".
+There were 9 different target emotions: "calmness", "surprise", "amusement", "fear", "excitement", "disgust", "happiness", "anger", and "sadness". Before determining whether we could predict the full sprectrum of emotions, I wanted to see whether we could distinguish "calmness" from two emotions on the opposite side of the spectrum: "anger" and "fear". This constituted a binary classification task: "calmness" vs. "not calmness".
 
-Group 10-Fold Cross-Validation using Scikit-learn
-I evaluated a number of classifiers [based on a script from the sci-kit learn documentation](https://scikit-learn.org/stable/auto_examples/classification/plot_classifier_comparison.html): Nearest Neighbors, Support Vector Machine with a linear kernel, Support Vector Machine with an RBF kernel, Gaussian Process, Decision Tree, Random Forest, Multi-layer Perceptron,  Naive Bayes and AdaBoost.
+To try to get an idea of how the classifiers would perform given biosignal data from completely new people, I evaluated the classifers using (Group 10-Fold Cross-Validation)[https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GroupKFold.html], with the groups being the participants - meaning that the training set and validation set always consisted of data from separate participants. However, it's important to note that we used the entire dataset for data exploration; there was no held-out test set that we only used solely for evaluation. To get a more accurate idea of the classifiers' generalizability, it could be useful to evaluate them on another emotion-correlated biosignal dataset.
+
+I selected a number of classifiers [based on a script from the sci-kit learn documentation](https://scikit-learn.org/stable/auto_examples/classification/plot_classifier_comparison.html): Nearest Neighbors, Support Vector Machine with a linear kernel, Support Vector Machine with an RBF kernel, Gaussian Process, Decision Tree, Random Forest, Multi-layer Perceptron, Naive Bayes and AdaBoost.
+
 
 #### Week 3 deliverable: data visualization
 
@@ -135,3 +139,12 @@ We would like to thank the course organizers and our instructors who spent a lot
 * Loic Tetrel
 * Yann Harel
 
+### References
+
+Carroll, E. A., Czerwinski, M., Roseway, A., Kapoor, A., Johns, P., Rowan, K., & Schraefel, M. C. (2013, September). Food and mood: Just-in-time support for emotional eating. In *2013 Humaine Association Conference on Affective Computing and Intelligent Interaction* (pp. 252-257). IEEE.
+
+Giannakakis, G., Grigoriadis, D., Giannakaki, K., Simantiraki, O., Roniotis, A., & Tsiknakis, M. (2019). Review on psychological stress detection using biosignals. *IEEE Transactions on Affective Computing.*
+
+Katsigiannis, S., & Ramzan, N. (2017). DREAMER: A database for emotion recognition through EEG and ECG signals from wireless low-cost off-the-shelf devices. *IEEE journal of biomedical and health informatics*, 22(1), 98-107.
+
+Wiem, M. B. H., & Lachiri, Z. (2017). Emotion classification in arousal valence model using MAHNOB-HCI database. *Int. J. Adv. Comput. Sci. Appl. IJACSA*, 8(3).
