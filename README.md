@@ -56,7 +56,7 @@ Ultimately, we decided to use the [DREAMER](https://ieeexplore.ieee.org/document
 
 The dataset contains EEG and ECG data from 23 participants were shown 18 videos intended to elicit 9 different emotions - as well as "neutral videos" thought to have no valence for "baseline" data. Biosignal data was collected using the Emotiv EPOC wireless EEG headset and the Shimmer2 ECG sensor. We were especially interested in how accurately we could classify emotions using biosignal data collected by portable, inexpensive devices due to the potential of automatic emotion recognition incorporated into wearables. An image of the equipment is shown below [(from Katsigiannis and Ramzan, 2018)](https://ieeexplore.ieee.org/document/7887697).
 
-![width=200](images/hardware.png)
+![width=100](images/hardware.png)
 
 More information on how the data were collected can be found in the PDF [DREAMER_info](https://github.com/brainhack-school2020/Biosignal-Emotions-BHS-2020/blob/master/docs/DREAMER_info.pdf)  (downloaded from [Zenodo](https://zenodo.org/record/546113)) or in the paper by [Katsigiannis and Ramzan (2018)](https://ieeexplore.ieee.org/document/7887697).
 
@@ -124,18 +124,20 @@ I selected a number of classifiers [based on a script from the sci-kit learn doc
 
 ### Conclusion and acknowledgements
 
-#### What we learned in the BHS2020 project
 During the BrainHack School, we hoped to learn as much as we could about modern (neuro)scientific practice, to improve our Python skills through a hands-on multi-disciplinary project, and to exchange information and expertise with the other participants.
 
-The first week was an intense theoretical and practical overview of many modern tools in neuroimaging, many of which we had very limited experience with or had never even heard of. The second week taught us how important it is to take enough time to clearly define a project and specify goals for it. Instead of exploring many datasets at the same time, we chose to pick one and make the most out of it.
-The third and fourth weeks were the core of the brain-hacking adventure and taught us many things such as:
-* Open Science and Collaborative tools and practices (Git, GitHub, GitPitch)
-* Improved coding skills: Python notebooks and scripting
-* Deeper understanding of Machine Learning
-* SSH, Windows Subsystem for Linux
+The first week was an intense theoretical and practical overview of many modern tools in neuroimaging, many of which we had very limited experience with or had never even heard of. The second week taught us how important it is to take enough time to clearly define a project and specify goals for it. Starting with a relatively broad project, it was difficult to narrow our goals down to one dataset and method, but ultimately we chose to pick one and see it through to the end. 
 
-### Acknowledgments
-We would like to thank the course organizers and our instructors who spent a lot of time helping us in the advancement of our project:
+The third and fourth weeks were the core of the brain-hacking adventure and taught us many things such as:
+
+* Improved coding skills: Python notebooks & scripting
+* Deeper understanding of Machine Learning
+* Open science tools and practices
+
+While we weren't able to incorporate all of the tools that we had hoped to use in our project, we are grateful to have been exposed to them. Knowing where we can find [helpful online resources](https://school.brainhackmtl.org/schedule/) on all of the topics covered, we hope to slowly integrate what we've learned into our own work, post-BrainHack.
+
+We would like to thank the course organizers and our instructors who spent a lot of time helping us with of our project and generally enlightening us:
+
 * Gregory Kiar
 * Agâh Karakuzu
 * Loic Tetrel
