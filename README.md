@@ -70,17 +70,17 @@ We were able to complete:
         
  - Visualization of the relationship between the extracted features and the emotion data. 
  
-    - [x]   [Jupyter notebook](####week-3-deliverable:-data-visualization)
+    - [x]   [Jupyter notebook](https://github.com/brainhack-school2020/Biosignal-Emotions-BHS-2020/blob/master/Deliverables/DREAMER_Achraf.ipynb)
     
-    - [x]   [Both interactive and static visualizations](####week-3-deliverable:-data-visualization)
+    - [x]   Both [interactive] and [static](https://github.com/brainhack-school2020/Biosignal-Emotions-BHS-2020/blob/master/Deliverables/RMSSD_fear_anger_calm.png) visualizations
 
  - Training a classifier to predict the emotion data.
  
     - [x]   [Python script](https://github.com/brainhack-school2020/Biosignal-Emotions-BHS-2020/blob/master/DREAMER_main.py)
     
-    - [x]   Evaluation of classifier performance
+    - [x]   [Evaluation of classifier performance](https://github.com/brainhack-school2020/Biosignal-Emotions-BHS-2020/blob/master/Classification/DREAMER_classifier_comparison.ipynb)
      
-    - [x]   Shell script
+    - [x]   [Shell script](https://github.com/brainhack-school2020/Biosignal-Emotions-BHS-2020/blob/master/run.sh)
 
 ### Progress & Results
 
@@ -100,7 +100,7 @@ In the paper describing DREAMER [(Katsigiannis and Ramzan, 2018)](https://ieeexp
 
 There were 9 different target emotions: "calmness", "surprise", "amusement", "fear", "excitement", "disgust", "happiness", "anger", and "sadness". Before determining whether we could predict the full sprectrum of emotions, I wanted to see whether we could distinguish "calmness" from two emotions on the opposite side of the spectrum: "anger" and "fear". This constituted a binary classification task: "calmness" vs. "not calmness".
 
-To try to get an idea of how the classifiers would perform given biosignal data from completely new people, I evaluated the classifers using (Group 10-Fold Cross-Validation)[https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GroupKFold.html], with the groups being the participants - meaning that the training set and validation set always consisted of data from separate participants. However, it's important to note that we used the entire dataset for data exploration; there was no held-out test set that we only used solely for evaluation. Evaluating the classifiers on another emotion-correlated biosignal dataset may provide a more realistic idea of the classifiers' generalizability.
+To try to get an idea of how the classifiers would perform given biosignal data from completely new people, I evaluated the classifers using [Group 10-Fold Cross-Validation](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GroupKFold.html), with the groups being the participants - meaning that the training set and validation set always consisted of data from separate participants. However, we should note that we used the entire dataset for data exploration; there was no held-out test set that we only used solely for evaluation. Evaluating the classifiers on another emotion-correlated biosignal dataset may provide a more realistic idea of the classifiers' generalizability.
 
 I selected a number of classifiers [based on a script from the sci-kit learn documentation](https://scikit-learn.org/stable/auto_examples/classification/plot_classifier_comparison.html): Nearest Neighbors, Support Vector Machine with a linear kernel, Support Vector Machine with an RBF kernel, Gaussian Process, Decision Tree, Random Forest, Multi-layer Perceptron, AdaBoost, and Naive Bayes. The accuracy averaged over the splits for each classifier is shown below:
 
@@ -117,7 +117,7 @@ I selected a number of classifiers [based on a script from the sci-kit learn doc
 | AdaBoost          | 0.98          |
 | Naive Bayes       | 0.59          |
 
-[AdaBoost](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.AdaBoostClassifier.html), an ensemble method, had the highest mean accuracy. However, I measured the average prediction runtime, and it was relatively slow compared to the others (about 5-10 ms, while most of the other classifiers were around 1 ms, on my machine). While we didn't get to do this during our BHS project, it would be interesting to see how methods to reduce runtime affect performance.
+[AdaBoost](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.AdaBoostClassifier.html), an ensemble method, had the highest mean accuracy. I also measured the average prediction runtime, and AdaBoost was relatively slow compared to the other classifiers (about 5-10 ms, while most of the others were around 1 ms, on my machine). While we didn't get to do this during this project, it would be interesting to see how methods to reduce runtime affect performance.
 
 #### Week 3 deliverable: data visualization
 
