@@ -3,10 +3,6 @@
 
 Team contributers: Danielle and Achraf
 
-<p align="center">
- <img src="brain_emotions.jpg" alt="Brain_emotions" width="300"/></center>
-</p>
-
 ## Summary 
 
 In this project for [BrainHack School 2020](https://school.brainhackmtl.org/), we used multimodal biosignal data to predict the "target emotion" of audiovisual stimuli. The project was written in Python and encompassed preprocessing, feature extraction, and classification. More information about the contents of this repository and instructions for how to run them can be found in [the "repoInfo" Markdown file](https://github.com/brainhack-school2020/Biosignal-Emotions-BHS-2020/blob/master/docs/repoInfo.md) located in [the docs folder](https://github.com/brainhack-school2020/Biosignal-Emotions-BHS-2020/tree/master/docs).
@@ -62,7 +58,7 @@ Ultimately, we decided to use the [DREAMER](https://ieeexplore.ieee.org/document
 The dataset contains EEG and ECG data from 23 participants were shown 18 videos intended to elicit 9 different emotions - as well as "neutral videos" thought to have no valence for "baseline" data. Biosignal data was collected using the Emotiv EPOC wireless EEG headset and the Shimmer2 ECG sensor. We were especially interested in how accurately we could classify emotions using biosignal data collected by portable, inexpensive devices due to the potential of automatic emotion recognition incorporated into wearables. An image of the equipment is shown below [(from Katsigiannis & Ramzan, 2018)](https://ieeexplore.ieee.org/document/7887697).
 
 <p align="center">
- <img src="images/hardware.png" alt="DREAMER_hardware" width="500"/></center>
+ <img src="images/hardware.png" alt="DREAMER_hardware" width="500"/>
 </p>
 
 More information on how the data were collected can be found in the PDF [DREAMER_info](https://github.com/brainhack-school2020/Biosignal-Emotions-BHS-2020/blob/master/docs/DREAMER_info.pdf)  (downloaded from [Zenodo](https://zenodo.org/record/546113)) or in the paper by [Katsigiannis and Ramzan (2018)](https://ieeexplore.ieee.org/document/7887697).
