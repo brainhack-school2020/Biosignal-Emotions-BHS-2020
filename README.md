@@ -72,7 +72,7 @@ We were able to complete:
  
     - [x]   [Jupyter notebook](https://github.com/brainhack-school2020/Biosignal-Emotions-BHS-2020/blob/master/Deliverables/DREAMER_Achraf.ipynb)
     
-    - [x]   Both [interactive] and [static](https://github.com/brainhack-school2020/Biosignal-Emotions-BHS-2020/blob/master/Deliverables/RMSSD_fear_anger_calm.png) visualizations
+    - [x]   Both [interactive](https://brainhack-school2020.github.io/Biosignal-Emotions-BHS-2020/HR_fear_anger_calm.html) and [static](https://github.com/brainhack-school2020/Biosignal-Emotions-BHS-2020/blob/master/Deliverables/RMSSD_fear_anger_calm.png) visualizations
 
  - Training a classifier to predict the emotion data.
  
@@ -103,7 +103,6 @@ There were 9 different target emotions: "calmness", "surprise", "amusement", "fe
 To try to get an idea of how the classifiers would perform given biosignal data from completely new people, I evaluated the classifers using [Group 10-Fold Cross-Validation](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GroupKFold.html), with the groups being the participants - meaning that the training set and validation set always consisted of data from separate participants. However, we should note that we used the entire dataset for data exploration; there was no held-out test set that we only used solely for evaluation. Evaluating the classifiers on another emotion-correlated biosignal dataset may provide a more realistic idea of the classifiers' generalizability.
 
 I selected a number of classifiers [based on a script from the sci-kit learn documentation](https://scikit-learn.org/stable/auto_examples/classification/plot_classifier_comparison.html): Nearest Neighbors, Support Vector Machine with a linear kernel, Support Vector Machine with an RBF kernel, Gaussian Process, Decision Tree, Random Forest, Multi-layer Perceptron, AdaBoost, and Naive Bayes. The accuracy averaged over the splits for each classifier is shown below:
-
 
 | Name              | Mean Accuracy |
 |-------------------|---------------|
@@ -145,7 +144,7 @@ The first week was an intense theoretical and practical overview of many modern 
 The third and fourth weeks were the core of the brain-hacking adventure and taught us many things such as:
 
 * Improved coding skills: Python notebooks & scripting
-* Deeper understanding of Machine Learning
+* Deeper understanding of machine learning
 * Open science tools and practices
 
 While we weren't able to incorporate all of the tools that we had hoped to use in our project, we are grateful to have been exposed to them. Knowing where we can find [helpful online resources](https://school.brainhackmtl.org/schedule/) on all of the topics covered, we hope to slowly integrate what we've learned into our own work, post-BrainHack.
