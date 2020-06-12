@@ -1,6 +1,6 @@
 # Biosignal processing for automatic emotion recognition
 
-<div style="text-align:center">![width=80](brain_emotions.jpg)</div>
+![width=80](brain_emotions.jpg)
 
 ## Summary 
 
