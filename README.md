@@ -1,4 +1,6 @@
 # Biosignal processing for automatic emotion recognition
+[![Binder](https://mybinder.org/badge_logo.svg)](https://notebooks.gesis.org/binder/jupyter/user/brainhack-schoo-otions-bhs-2020-thcg2gk2/tree)
+
 Team contributers: Danielle and Achraf
 
 ![width=75px](brain_emotions.jpg)
