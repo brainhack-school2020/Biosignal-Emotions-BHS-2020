@@ -122,7 +122,8 @@ I selected a number of classifiers [based on a script from the sci-kit learn doc
 
 ##### Danielle's Week 3 deliverables
 * [Interactive Figure: "Participant Ratings of Film Clips in Valence-Arousal Space](https://brainhack-school2020.github.io/Biosignal-Emotions-BHS-2020/)
-  * [Bonus: a jupyter notebook generating this figure...](https://github.com/brainhack-school2020/Biosignal-Emotions-BHS-2020/blob/master/Deliverables/Week3_Emot_Plot_Danielle.ipynb) written while attempting to follow [PEP8](https://www.python.org/dev/peps/pep-0008/)! 
+  * [Bonus: a jupyter notebook generating this figure...](https://github.com/brainhack-school2020/Biosignal-Emotions-BHS-2020/blob/master/Deliverables/Week3_Emot_Plot_Danielle.ipynb) written while using a [linter](https://pypi.org/project/pycodestyle/), which I know about thanks to [Greg's talk on scripting](https://www.youtube.com/watch?v=zpOQENxs1G4)! [![Binder](https://mybinder.org/badge_logo.svg)](https://gesis.mybinder.org/binder/v2/gh/brainhack-school2020/Biosignal-Emotions-BHS-2020/85279820daf948d114d780e39d609c4f704f8cb1?filepath=Deliverables%2FWeek3_Emot_Plot_Danielle.ipynb)
+
 * [Interactive Figure: "Group 10-Fold Cross Validation with DREAMER data"](https://brainhack-school2020.github.io/Biosignal-Emotions-BHS-2020/DREAMER_group_cross_validation.html)
 * [Interactive Figure: "Score vs. Prediction Runtime for all CV Iterations and Classifiers"](https://brainhack-school2020.github.io/Biosignal-Emotions-BHS-2020/classifier_comparison.html)
 
