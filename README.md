@@ -1,5 +1,5 @@
 # Biosignal processing for automatic emotion recognition
-[![Binder](https://mybinder.org/badge_logo.svg)](https://notebooks.gesis.org/binder/jupyter/user/brainhack-schoo-otions-bhs-2020-thcg2gk2/tree)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://notebooks.gesis.org/binder/v2/gh/brainhack-school2020/Biosignal-Emotions-BHS-2020/85279820daf948d114d780e39d609c4f704f8cb1)
 
 Team contributers: Danielle and Achraf
 
