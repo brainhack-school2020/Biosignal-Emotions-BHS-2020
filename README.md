@@ -1,4 +1,5 @@
 # Biosignal processing for automatic emotion recognition
+Team contributers: Danielle and Achraf
 
 ![width=75px](brain_emotions.jpg)
 
