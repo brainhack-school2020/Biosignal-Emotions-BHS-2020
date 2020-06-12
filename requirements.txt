@@ -3,7 +3,6 @@ backcall==0.2.0
 certifi==2020.4.5.2
 cffi==1.14.0
 chardet==3.0.4
-command-not-found==0.3
 cryptography==2.9.2
 cupshelpers==1.0
 cycler==0.10.0
