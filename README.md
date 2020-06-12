@@ -1,6 +1,6 @@
 # Biosignal processing for automatic emotion recognition
 
-![width=80](brain_emotions.jpg)
+![width=75px](brain_emotions.jpg)
 
 ## Summary 
 
@@ -24,14 +24,14 @@ I am currently studying Biomedical Engineering at Polytechnique Montréal (M.Eng
 
 #### About the project
 
-Psychological stress has been found to be associated with changes in certain biosignals. Features extracted from these biosignals have increasingly been used for predicting an individual's emotional state, including the EEG alpha asymmetry index, heart rate variability, and skin conductance response [(Giannakakis et al. 2019)](https://s3.amazonaws.com/academia.edu.documents/60215566/2019_Giannakakis_Review_on_psychological_stress_detection_using_biosignals20190806-1688-7kttp7.pdf?response-content-disposition=inline%3B%20filename%3DReview_on_psychological_stress_detection.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIATUSBJ6BALIEFO2U4%2F20200521%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200521T161015Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Security-Token=IQoJb3JpZ2luX2VjENj%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIQCDcDSZcyT6u4Lc7Hc16sNh2InzAcekbrsiPyXV2UtM%2FQIgKLX0wumug7pgD59QsVol60DUF42liQhPUKjn7NITiNEqtAMIMBAAGgwyNTAzMTg4MTEyMDAiDDW7xJRp4wDPxgLtryqRA6P76YemmmJBvBnoRuW0%2BGaK9mS1Z61PKckoR8jxyxtvu45NdtS2qyfCAlopFhEH9zMMwHKKs7dwPdwbXuLt6HSQ06bRW8RTtGFE%2FooJvC9%2BZY2Pff1h%2Bnk8HW%2FM%2FDjlP5AzkmDpJ0KUO04PFxoqqBvFFIIy83iafxPVE0fly3fktUhE0kKsuOnBOjyABMzUPYI3nqjej%2BiJ8QpCQbqXx6r8YAuNJ5Nr4LGP2SVFKXA787KJnsrmD1uisIdjqLnjhzXaDZreoeukKMOF3yjQ1xG7srPW%2FWzoFSxLP79bNDEq54MJ145kg2i6vw8UqgdmDmNXjl3y7cLYLSJ%2BEFWkvYHCySYan1qdnjJDbTFYMm7GnRPM%2FVFfe6iwkPDI4gdwKyHnPH4JkEMvI2b7l%2FasmhHHjA932H5ziezXh%2FsJZNi5PdK26OwxxGM3MfiMjBpnf%2FtT%2FDPsq4B9i2i0azwQNiJYgDgw74VA%2BQJEtGPQnHaJjM%2FLud%2BMz35zKh%2BYRUMQqwFWPUOhA6EdYUgYcOUPWY7KMNexmvYFOusBM0Sz5ZgfGF1vsvoowJ42W%2BMbymHSuGfWGkUFug4P8pS02TC2eB9GPSMyN9CHbQ7PV2%2BbWVsPGBeqUtNSe6xOLqVR9goW4K3xWjw1cnSopEyUpXU%2F8C3qsCfUPGEUT2sw05J9F%2BlBBdSD7nZ4pH9SZxKFq5A6JRhzRcKIT11ba4UUznzwcBY6X%2FYgz3PpQYOl%2Bet5MFCw%2F3BcjRgR7nGytsLHNC9LmHGg9YAeQ7N%2Fo9%2BAGVVm6RDXpOeqExF7NkcKDofYQidkfUS6iGhOfdUA%2Fl1IkH4s%2BRbeATH2yeIOsIdEB%2FGqV8vOlEkrPg%3D%3D&X-Amz-Signature=62de6e2c0bd6f2dc619c179bf22988be24a3abdcbe8bbed4fd2c4dfdd2c6b780). This research has allowed for the development of technologies that can to respond to users' emotions [Carroll et al. 2013](https://ieeexplore.ieee.org/abstract/document/6681439) and motivated the creation of multiple datasets containing emotion-correlated biosignal data [(Wiem & Lachiri, 2017)](https://pdfs.semanticscholar.org/3750/b635d455fee489305b24ead4b7e9233b7209.pdf). In this project, we were broadly interested in the task of emotion recognition, aiming to use a publicly available dataset to explore how we could predict emotions using biosignals.
+Psychological stress has been found to be associated with changes in certain biosignals. Features extracted from these biosignals have increasingly been used for predicting an individual's emotional state, including the EEG alpha asymmetry index, heart rate variability, and skin conductance response [(Giannakakis et al. 2019)](https://s3.amazonaws.com/academia.edu.documents/60215566/2019_Giannakakis_Review_on_psychological_stress_detection_using_biosignals20190806-1688-7kttp7.pdf?response-content-disposition=inline%3B%20filename%3DReview_on_psychological_stress_detection.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIATUSBJ6BALIEFO2U4%2F20200521%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200521T161015Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Security-Token=IQoJb3JpZ2luX2VjENj%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIQCDcDSZcyT6u4Lc7Hc16sNh2InzAcekbrsiPyXV2UtM%2FQIgKLX0wumug7pgD59QsVol60DUF42liQhPUKjn7NITiNEqtAMIMBAAGgwyNTAzMTg4MTEyMDAiDDW7xJRp4wDPxgLtryqRA6P76YemmmJBvBnoRuW0%2BGaK9mS1Z61PKckoR8jxyxtvu45NdtS2qyfCAlopFhEH9zMMwHKKs7dwPdwbXuLt6HSQ06bRW8RTtGFE%2FooJvC9%2BZY2Pff1h%2Bnk8HW%2FM%2FDjlP5AzkmDpJ0KUO04PFxoqqBvFFIIy83iafxPVE0fly3fktUhE0kKsuOnBOjyABMzUPYI3nqjej%2BiJ8QpCQbqXx6r8YAuNJ5Nr4LGP2SVFKXA787KJnsrmD1uisIdjqLnjhzXaDZreoeukKMOF3yjQ1xG7srPW%2FWzoFSxLP79bNDEq54MJ145kg2i6vw8UqgdmDmNXjl3y7cLYLSJ%2BEFWkvYHCySYan1qdnjJDbTFYMm7GnRPM%2FVFfe6iwkPDI4gdwKyHnPH4JkEMvI2b7l%2FasmhHHjA932H5ziezXh%2FsJZNi5PdK26OwxxGM3MfiMjBpnf%2FtT%2FDPsq4B9i2i0azwQNiJYgDgw74VA%2BQJEtGPQnHaJjM%2FLud%2BMz35zKh%2BYRUMQqwFWPUOhA6EdYUgYcOUPWY7KMNexmvYFOusBM0Sz5ZgfGF1vsvoowJ42W%2BMbymHSuGfWGkUFug4P8pS02TC2eB9GPSMyN9CHbQ7PV2%2BbWVsPGBeqUtNSe6xOLqVR9goW4K3xWjw1cnSopEyUpXU%2F8C3qsCfUPGEUT2sw05J9F%2BlBBdSD7nZ4pH9SZxKFq5A6JRhzRcKIT11ba4UUznzwcBY6X%2FYgz3PpQYOl%2Bet5MFCw%2F3BcjRgR7nGytsLHNC9LmHGg9YAeQ7N%2Fo9%2BAGVVm6RDXpOeqExF7NkcKDofYQidkfUS6iGhOfdUA%2Fl1IkH4s%2BRbeATH2yeIOsIdEB%2FGqV8vOlEkrPg%3D%3D&X-Amz-Signature=62de6e2c0bd6f2dc619c179bf22988be24a3abdcbe8bbed4fd2c4dfdd2c6b780). This research has allowed for the development of technologies that can to respond to users' emotions [(Carroll et al. 2013)](https://ieeexplore.ieee.org/abstract/document/6681439) and motivated the creation of multiple datasets containing emotion-correlated biosignal data [(Wiem & Lachiri, 2017)](https://pdfs.semanticscholar.org/3750/b635d455fee489305b24ead4b7e9233b7209.pdf). In this project, we were broadly interested in the task of emotion recognition, aiming to use a publicly available dataset to explore how we could predict emotions using biosignals.
 
 ### Tools 
 
 Tools and techniques we used:
- 1.	Bash and Python <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Bash_Logo_black_and_white_icon_only.svg/1200px-Bash_Logo_black_and_white_icon_only.svg.png" alt="Bash" width="50"/> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" alt="Python" width="50"/> 
+ 1.	Bash and Python <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Bash_Logo_black_and_white_icon_only.svg/1200px-Bash_Logo_black_and_white_icon_only.svg.png" alt="Bash" width="40"/> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" alt="Python" width="40"/> 
  2. Git and GitHub <img src="https://github.githubassets.com/images/modules/open_graph/github-mark.png" alt="GitHub" width="50"/>
- 3.	Preprocessing and feature extraction with Scipy and Neurokit <img src="https://docs.scipy.org/doc/scipy-0.12.0/reference/_static/scipyshiny_small.png" alt="Scipy" width="50"/> <img src="https://neurokit.readthedocs.io/en/latest/_static/neurokit.png" alt="NeuroKit" width="50"/>
+ 3.	Preprocessing and feature extraction with Scipy and Neurokit <img src="https://docs.scipy.org/doc/scipy-0.12.0/reference/_static/scipyshiny_small.png" alt="Scipy" width="40"/> <img src="https://neurokit.readthedocs.io/en/latest/_static/neurokit.png" alt="NeuroKit" width="40"/>
  4.	Data visualization with Plotly <img src="https://dash.plotly.com/assets/images/logo-plotly.png" alt="Plotly" width="50"/>
  5. Machine learning with Scikit-learn <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Scikit_learn_logo_small.svg/1200px-Scikit_learn_logo_small.svg.png" alt="Scikit-learn" width="50"/>
 
@@ -56,7 +56,7 @@ Ultimately, we decided to use the [DREAMER](https://ieeexplore.ieee.org/document
 
 The dataset contains EEG and ECG data from 23 participants were shown 18 videos intended to elicit 9 different emotions - as well as "neutral videos" thought to have no valence for "baseline" data. Biosignal data was collected using the Emotiv EPOC wireless EEG headset and the Shimmer2 ECG sensor. We were especially interested in how accurately we could classify emotions using biosignal data collected by portable, inexpensive devices due to the potential of automatic emotion recognition incorporated into wearables. An image of the equipment is shown below [(from Katsigiannis and Ramzan, 2018)](https://ieeexplore.ieee.org/document/7887697).
 
-![width=100](images/hardware.png)
+![width=75px](images/hardware.png)
 
 More information on how the data were collected can be found in the PDF [DREAMER_info](https://github.com/brainhack-school2020/Biosignal-Emotions-BHS-2020/blob/master/docs/DREAMER_info.pdf)  (downloaded from [Zenodo](https://zenodo.org/record/546113)) or in the paper by [Katsigiannis and Ramzan (2018)](https://ieeexplore.ieee.org/document/7887697).
 
@@ -66,17 +66,17 @@ More information on how the data were collected can be found in the PDF [DREAMER
 We were able to complete:
  - Data preprocessing and feature extraction for at least one biosignal.
  
-    - [x]  Python script
+    - [x]  [Python script](https://github.com/brainhack-school2020/Biosignal-Emotions-BHS-2020/blob/master/DREAMER_main.py)
         
  - Visualization of the relationship between the extracted features and the emotion data. 
  
-    - [x]   Jupyter notebook
+    - [x]   [Jupyter notebook](#### Week 3 deliverable: data visualization)
     
-    - [x]   Both interactive and static visualizations
+    - [x]   [Both interactive and static visualizations](#### Week 3 deliverable: data visualization)
 
  - Training a classifier to predict the emotion data.
  
-    - [x]   Python script
+    - [x]   [Python script](https://github.com/brainhack-school2020/Biosignal-Emotions-BHS-2020/blob/master/DREAMER_main.py)
     
     - [x]   Evaluation of classifier performance
      
@@ -100,10 +100,24 @@ In the paper describing DREAMER [(Katsigiannis and Ramzan, 2018)](https://ieeexp
 
 There were 9 different target emotions: "calmness", "surprise", "amusement", "fear", "excitement", "disgust", "happiness", "anger", and "sadness". Before determining whether we could predict the full sprectrum of emotions, I wanted to see whether we could distinguish "calmness" from two emotions on the opposite side of the spectrum: "anger" and "fear". This constituted a binary classification task: "calmness" vs. "not calmness".
 
-To try to get an idea of how the classifiers would perform given biosignal data from completely new people, I evaluated the classifers using (Group 10-Fold Cross-Validation)[https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GroupKFold.html], with the groups being the participants - meaning that the training set and validation set always consisted of data from separate participants. However, it's important to note that we used the entire dataset for data exploration; there was no held-out test set that we only used solely for evaluation. To get a more accurate idea of the classifiers' generalizability, it could be useful to evaluate them on another emotion-correlated biosignal dataset.
+To try to get an idea of how the classifiers would perform given biosignal data from completely new people, I evaluated the classifers using (Group 10-Fold Cross-Validation)[https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GroupKFold.html], with the groups being the participants - meaning that the training set and validation set always consisted of data from separate participants. However, it's important to note that we used the entire dataset for data exploration; there was no held-out test set that we only used solely for evaluation. Evaluating the classifiers on another emotion-correlated biosignal dataset may provide a more realistic idea of the classifiers' generalizability.
 
-I selected a number of classifiers [based on a script from the sci-kit learn documentation](https://scikit-learn.org/stable/auto_examples/classification/plot_classifier_comparison.html): Nearest Neighbors, Support Vector Machine with a linear kernel, Support Vector Machine with an RBF kernel, Gaussian Process, Decision Tree, Random Forest, Multi-layer Perceptron, Naive Bayes and AdaBoost.
+I selected a number of classifiers [based on a script from the sci-kit learn documentation](https://scikit-learn.org/stable/auto_examples/classification/plot_classifier_comparison.html): Nearest Neighbors, Support Vector Machine with a linear kernel, Support Vector Machine with an RBF kernel, Gaussian Process, Decision Tree, Random Forest, Multi-layer Perceptron, AdaBoost, and Naive Bayes. The accuracy averaged over the splits for each classifier is shown below:
 
+
+| Name              | Mean Accuracy |
+|-------------------|---------------|
+| Nearest Neighbors | 0.87          |
+| Linear SVM        | 0.67          |
+| RBF SVM           | 0.87          |
+| Gaussian Process  | 0.7           |
+| Decision Tree     | 0.9           |
+| Random Forest     | 0.9           |
+| Neural Net        | 0.73          |
+| AdaBoost          | 0.98          |
+| Naive Bayes       | 0.59          |
+
+[AdaBoost](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.AdaBoostClassifier.html), an ensemble method, had the highest mean accuracy. However, I measured the average prediction runtime, and it was relatively slow compared to the others (about 5-10 ms, while most of the other classifiers were around 1 ms, on my machine). While we didn't get to do this during our BHS project, it would be interesting to see how methods to reduce runtime affect performance.
 
 #### Week 3 deliverable: data visualization
 
