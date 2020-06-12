@@ -41,10 +41,8 @@ ptyprocess==0.6.0
 pycairo==1.16.2
 pycparser==2.20
 pycryptodome==3.9.7
-pycups==1.9.73
 Pygments==2.6.1
 pymacaroons==0.13.0
-PyNaCl==1.1.2
 pyparsing==2.4.7
 pyRFC3339==1.0
 python-dateutil==2.8.1
