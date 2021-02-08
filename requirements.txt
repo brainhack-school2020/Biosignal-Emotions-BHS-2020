@@ -6,7 +6,7 @@ chardet==3.0.4
 cryptography==2.9.2
 cycler==0.10.0
 decorator==4.4.2
-httplib2==0.18.1
+httplib2==0.19.0
 idna==2.9
 ipykernel==5.3.0
 ipython==7.15.0
