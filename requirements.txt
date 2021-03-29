@@ -41,7 +41,7 @@ ptyprocess==0.6.0
 pycairo==1.16.2
 pycparser==2.20
 pycryptodome==3.9.7
-Pygments==2.6.1
+Pygments==2.7.4
 pymacaroons==0.13.0
 pyparsing==2.4.7
 pyRFC3339==1.0
